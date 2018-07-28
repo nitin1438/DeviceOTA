@@ -1,0 +1,14 @@
+<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+    <Stable>
+        <marlin>
+            <Filename>pixeldust_marlin-oreo-we-re-back-n-kickass-r7-hotfix.zip</Filename>
+            <RomUrl id="rom" title="" description="">
+                https://www.androidfilehost.com/?fid=5862345805528056147
+            </RomUrl>
+            <ChangelogUrl id="changelog" title="" description="">
+                https://drive.google.com/open?id=1r545brLsKfCBo5PgHuWWJQAf1ONxZ5oV
+            </ChangelogUrl>
+            <PaypalUrl id="donation" title="" description="">https://tinyurl.com/yawypkah</PaypalUrl>
+        </marlin>
+    </Stable>
+</SlimOTA>
