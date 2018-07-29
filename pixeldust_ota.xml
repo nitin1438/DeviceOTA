@@ -1,0 +1,14 @@
+<SlimOTA
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+  <Stable>
+
+    <merlin>
+      <Filename>pixeldust_marlin-oreo-we-re-back-n-kickass-r7-hotfix.zip</Filename>
+      <RomUrl id="rom" title="rom" description="Download The Latest Build">https://androidfilehost.com/?fid=5862345805528056147</RomUrl>
+      <RomMirrorUrl id="romirror" title="XDA Thread" description="Visit The XDA Thread">https://forum.xda-developers.com/pixel-xl/development/rom-pixeldust-marlin-t3581750/</RomMirrorUrl>
+      <ChangelogUrl id="changelogs" title="Changelogs" description="Check Out The Latest Changes">https://github.com/pixeldustproject-o/DeviceOTA/raw/o2/Changelogs/Changelog_merlin.txt</ChangelogUrl>
+      <PaypalUrl id="donation" title="Donation" description="Donate To The Developer">https://tinyurl.com/yawypkah</PaypalUrl>
+    </merlin>
+
+  </Stable>
+</SlimOTA>
