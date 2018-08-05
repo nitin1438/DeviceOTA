@@ -9,6 +9,14 @@
       <ChangelogUrl id="changelogs" title="Changelogs" description="Check Out The Latest Changes">https://github.com/pixeldustproject-o/DeviceOTA/raw/o2/Changelogs/Changelog_marlin.txt</ChangelogUrl>
       <PaypalUrl id="donation" title="Donation" description="Donate To The Developer">https://tinyurl.com/yawypkah</PaypalUrl>
     </marlin>
+    
+    <taimen>
+      <Filename>pixeldust_taimen-oreo-release-eight-20180803.zip</Filename>
+      <RomUrl id="rom" title="rom" description="Download The Latest Build">https://androidfilehost.com/?fid=5862345805528066574</RomUrl>
+      <RomMirrorUrl id="romirror" title="XDA Thread" description="Visit The XDA Thread">https://forum.xda-developers.com/pixel-2-xl/development/rom-pixel-dust-oreo-taimen-t3822544/</RomMirrorUrl>
+      <ChangelogUrl id="changelogs" title="Changelogs" description="Check Out The Latest Changes">https://github.com/pixeldustproject-o/DeviceOTA/raw/o2/Changelogs/Changelog_marlin.txt</ChangelogUrl>
+      <PaypalUrl id="donation" title="Donation" description="Donate To The Developer">https://tinyurl.com/yawypkah</PaypalUrl>
+    </taimen>
 
   </Stable>
 </SlimOTA>
