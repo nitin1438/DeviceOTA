@@ -1,5 +1,555 @@
 
- 2018-07-18:
+ 2018-08-10:
+
+ * device/google/marlin
+5f9a89f  marlin: Fix typo from CodeAurora in the QTI whitelist  [Bruno Martins]
+
+ * frameworks/base
+b28dd00  Ripple all things!  [Alex]
+
+ * kernel/huawei/angler
+768baeb  Merge branch 'o2-upstream' of https://github.com/ezio84/abc_kernel_huawei_angler into o2  [spezi77]
+740c72f  Merge tag 'android-8.1.0_r0.91' into o2-upstream  [ezio84]
+
+ * packages/apps/PixelDustWallpapers
+a2e6202  Update app name.  [spezi77]
+
+ * packages/apps/PixeldustOTA
+ade39cb  DE strings: Improve the romirror summary.  [spezi77]
+482e63d  Bring a few inconsistencies in order & update strings.  [spezi77]
+3baaa41  Change launcher icon for PD.  [spezi77]
+
+ * vendor/google_devices
+caa6220  [TEMP] sailfish: Remove embms.  [spezi77]
+0319846  [TEMP] For now remove embms in order to prevent a crash and FC dialog.  [spezi77]
+c4d2a23  marlin: Add proprietary verizon bits for vowifi  [razorloves]
+
+ * vendor/huawei
+0d3c81e  Update angler blobs to August factory img  [ezio84]
+
+ * vendor/pixeldust
+438745c  Update fingerprints for August update (angler, marlin, sailfish).  [spezi77]
+3f13571  sdclang: Bring back "Disable debugging no matter which build type"  [spezi77]
+
+
+ 2018-08-09:
+
+ * vendor/pixeldust
+f51929a  Switch to sdclang 6.0.1  [spezi77]
+
+
+ 2018-08-08:
+
+ * build/make
+75e7f61  Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/build into o2-sdc  [spezi77]
+
+ * frameworks/av
+d039186  Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/frameworks/av into o2  [spezi77]
+
+ * frameworks/base
+6905b2f  Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/frameworks/base into o2-deving  [spezi77]
+
+ * frameworks/native
+f55fe0e  Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/frameworks/native into o2-sdc  [spezi77]
+
+ * frameworks/opt/telephony
+9c241fa  Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/frameworks/opt/telephony into o2  [spezi77]
+
+ * hardware/interfaces
+84b9f78  Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/hardware/interfaces into o2  [spezi77]
+
+ * packages/apps/Bluetooth
+40bb6c3  Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/packages/apps/Bluetooth into o2  [spezi77]
+
+ * packages/apps/Settings
+7f69bed  Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/packages/apps/Settings into o2-deving  [spezi77]
+
+ * packages/services/Telephony
+eb83f12  Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/packages/services/Telephony into o2  [spezi77]
+
+ * system/bt
+1229603  Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/system/bt into o2  [spezi77]
+
+ * system/core
+da4c05f  Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/system/core into o2  [spezi77]
+
+ * system/vold
+91dbdfa  Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/system/vold into o2  [spezi77]
+
+ * vendor/googleapps
+cde1966  Googleapps: Update to 8.1 Gapps from August.  [spezi77]
+
+
+ 2018-08-07:
+
+ * frameworks/base
+f474bcc  SystemUI:Add LTE Tile works only with 1 sim phone (maybe will rework xyyx :))  [Decad3nce]
+
+ * packages/apps/Settings
+3b4fed7  Ambient Play: Allow to configure the scan interval [2/2].  [spezi77]
+fc4a728  Ambient Settings: reorder and add a category for ambient play.  [spezi77]
+95a7ea7  Add preference for Ambient Play. Credits: CypherOS.  [spezi77]
+c8f7582  Fix multi-sim dialog in RTL  [Alex]
+d559ece  SimSettings: sync with LOS  [xyyx]
+11f8260  Settings: Add SettingsMultiSelectListPreference style  [Yoshinori Hirano]
+8790cbd  APN: fix editing again https://imgur.com/a/xH5Ih  [xyyx]
+476e0b3  SimSettings: Handle NoClassDefFoundError on devices without telephony-ext  [LuK1337]
+1ea24f3  APN: let user decide what he wants to do * allow add button and Revert "Disallow adding/editing dun APNs unless allowed by carrier."  [xyyx]
+a90c3a9  IMS: Do not disable WiFi Calling for "registration error"  [Suresh Koleti]
+0c32d25  SimSettings: Disable ManualSubProvisioning by default  [xyyx]
+156c97c  Settings: fix neverending progress on sim activation change  [maxwen]
+043f9fd  Settings: no need to show a success alert dialog on sim switch  [maxwen]
+1dedad2  Settings: vectorize ic_live_help icon and fix theming for SimDialogActivity  [xyyx]
+f6b96d3  SimSettings: Correctly disabling sim switch without sim card  [xyyx]
+df08d99  Clean up SIM enable toggle implementation  [Danny Baumann]
+26e5371  Settings: port manual provisiong support commit 7adcacb2b7b586f2cc1fe26db769e63553a89494 Author: Ricardo Cerqueira <ricardo@cyngn.com> Date:   Thu Jul 28 12:29:40 2016 +0100  [Thecrazyskull]
+076e6bf  Settings: Fix ANR when erase all network settings  [juwei]
+
+ * packages/services/Telephony
+f914ce6  ToggleLte: multisim compatibility  [xyyx]
+0afb9e7  Fix theming  [xyyx]
+20f18e8  Telephony: use SettingsLib styles  [maxwen]
+9c94409  Telephony: Fix translatability of network modes  [Michael Bestas]
+09fc835  Add TD-SCDMA related network mode options  [Sandeep Gutta]
+b2d341b  Fix multiple apn items issue  [Susheel Nyamala]
+f72edd1  ToggleLte: fix WCDMA only  [xyyx]
+c1d3788  Reload CarrierConfig based on changes to ro.xxx.version  [Dave Daynard]
+c0e4715  Restore previous network value after toggleLTE  [xyyx]
+be634f2  Implement toggleLte Using logic based on Ryan Hope's commits  [Scott Warner]
+
+ * vendor/googleapps
+4d9b3c3  Back to Google's Dialer & Contacts.  [spezi77]
+
+ * vendor/pixeldust
+05b3f68  Revert "dialer_default_class: Change to AospDialer."  [spezi77]
+
+
+ 2018-08-06:
+
+ * frameworks/base
+79a6e32  Ambient Play: Allow to configure the scan interval [1/2].  [spezi77]
+d2793e7  Ambient weather: Indicate that weather service is disabled.  [spezi77]
+d62bb2d  Ambient Play: Hide AmbientIndication if Song and Artist are null.  [spezi77]
+e8a4530  Ambient Play: Fix up. - Initialize int read to supress a warning. - Fix a NP which was in my logcat.  [spezi77]
+8d4e84a  Introduce Ambient Indication Interface  [Chris]
+
+ * kernel/google/marlin
+4e3ecd6  Linux 3.18.118-rc1.  [spezi77]
+c57aa20  sched/core: Fix &rd->cpudl memory leak  [Mathieu Poirier]
+737f6a1  sched/core: Fix &rd->rto_mask memory leak  [Mathieu Poirier]
+90f5eb9  sched/rt: Minimize rq->lock contention in do_sched_rt_period_timer()  [Dave Kleikamp]
+feef9f7  sched/fair: Update rq clock before updating nohz CPU load  [Matt Fleming]
+e094f50  tick/nohz: Optimize nohz idle enter  [Gaurav Jindal]
+a83cb9b  tick/broadcast: Prevent NULL pointer dereference  [Thomas Gleixner]
+39f0b94  hrtimer: Switch hrtimer_callback_running to relaxed  [franciscofranco]
+8ffdf9b  arm64: atomic: add missing macros  [franciscofranco]
+b9ce42e  arm64: defining macros to optimize power usage  [Sumit Singh]
+d5ae257  arm64: vdso: Mark vDSO code as read-only  [David Brown]
+
+ * packages/apps/Settings
+794a780  Revert "Move AmbientTicker preference where it should get more attention (2/2)."  [spezi77]
+
+ * vendor/pixeldust
+e47e6db3  Also add sailfish to OTA list.  [spezi77]
+3d9fae6  Add taimen in OTA list  [Nitin1438]
+
+
+ 2018-08-05:
+
+ * packages/apps/Launcher3
+f3c7a5f  Launcher3: Clean Up  [Mrinal Ghosh]
+d82252f  Launcher3: disable DOTS_ONLY for badge renderer * also show the number of notifications  [maxwen]
+05ad78d  Launcher3: Follow The System Setting's Theme  [Mrinal Ghosh]
+
+ * packages/apps/Settings
+2b6a40c  Improve DE strings.  [spezi77]
+122639e  SystemUIThemes: Underp.  [spezi77]
+ec4956b  OTA: Improve strings. Also add DE translations  [spezi77]
+aaa6ee3  OTA: Fix a FC caused by wrong package naming.  [spezi77]
+211ffc7  Settings: Introduce PixelDustOTA  [Mrinal Ghosh]
+97a9389  Lock system theme picker if not supported by device.  [spezi77]
+6288fb6  Make theme selector unavailable when substratum is detected  [Alex Cruz]
+974e5ea  Ambient display: Improve DE strings for battery & weather.  [spezi77]
+a19ee93  Move Ambient music ticker strings.  [spezi77]
+bb155aa  Also improve Ambient music ticker DE strings.  [spezi77]
+a01c488  Ambient Display: improve DE strings.  [spezi77]
+e2c0cd5  Move Ambient display weather preference to the place it belongs [2/2].  [spezi77]
+9c27e91  Move Ambient music ticker strings.  [spezi77]
+2d8de23  Also improve Ambient music ticker DE strings.  [spezi77]
+ec088a5  Ambient Display: improve DE strings.  [spezi77]
+5a91f6b  Move Ambient display weather preference to the place it belongs [2/2].  [spezi77]
+52a46b9  Settings: Fix bluetooth pan memory leakage  [juwei]
+
+ * packages/services/Telephony
+ea6d690  IMS: Add API to get IMS Registration Status based on subId  [Zhao Fan]
+
+ * vendor/pixeldust
+f189326  config: Include vendor for Now Playing [2/2]  [Joe Maples]
+21203ab  Revert "vendor: add network list overlay"  [spezi77]
+
+
+ 2018-08-04:
+
+ * vendor/googleapps
+16b2752  Remove GoogleContacts.  [spezi77]
+
+ * vendor/pixeldust
+0cebcfb  Revert "Build FMRadio."  [spezi77]
+
+
+ 2018-08-03:
+
+ * frameworks/base
+83838ce  [SQUASHED] Revert of "Ambient music ticker" commits.  [spezi77]
+
+ * kernel/google/marlin
+a6d82f6  defconfig: Bump up to 1.3  [spezi77]
+c2542fc  Linux 3.18.117  [spezi77]
+a15cdda  BACKPORT: sched/idle: Optimize the generic idle loop  [Gaurav Jindal (Gaurav Jindal)]
+
+ * vendor/pixeldust
+982807c  vendor: Update Pixeldust_Z00L reverts commit c6140ae reverts commit 4eefa0b reverts commit f458915  [Mrinal Ghosh]
+
+
+ 2018-08-02:
+
+ * packages/apps/PixelDustSettings
+98ff5ea  [Squashed] Revert of all "Ambient music ticker" commits.  [spezi77]
+
+
+ 2018-08-01:
+
+ * vendor/pixeldust
+ae1fdac  Build Launcher3. Also cleanup apps which are no longer in this repo, but have become part of pixel gapps.  [spezi77]
+c8b23b3  Large Clock:  adjust padding in doze  [William Bellavance]
+e2402f5  Revert "Build LeanLauncher."  [spezi77]
+
+
+ 2018-07-31:
+
+ * frameworks/base
+9e79521  Force light theme if device does not support SystemUIThemes.  [spezi77]
+
+ * vendor/googleapps
+dc6f2b9  Drop NexusLauncher. We'll use our custom LeanLauncher instead!  [spezi77]
+
+ * vendor/pixeldust
+f353d9a  Build LeanLauncher.  [spezi77]
+
+
+ 2018-07-30:
+
+ * build/make
+59b8e66  Add PD device property required for PixeldustOTA.  [spezi77]
+5c15572  Revert "Generate properties for PixeldustOTA."  [spezi77]
+b02dd6b  Generate properties for PixeldustOTA.  [spezi77]
+
+ * device/google/marlin
+baed5b7  marlin: Signal that we provide our own telephony-ext  [Ethan Chen]
+aa0b478  marlin: drop telephony  [shagbag913]
+
+ * frameworks/base
+d1b0c7f  Add generic colors  [Alex]
+
+ * packages/apps/Launcher3
+5ef76c6  Revert "add companion app for "At A Glance""  [Mrinal Ghosh]
+8f85c1e  Revert "forward at a glance actions to companion, which should handle them, as it can declare the necessary permission more safely"  [Mrinal Ghosh]
+e98f2ba  Revert "add settings activity as launcher activity, can be hidden anyway"  [Mrinal Ghosh]
+b0e6a0c  Launcher3: Change Few Things To Compile It With Rom Source * fix package declaration * build lean companion  [Mrinal Ghosh]
+
+ * packages/apps/PixeldustOTA
+58ca57c  Improve a few strings and add DE strings.  [spezi77]
+
+ * vendor/googleapps
+6306670  Drop GoogleDialer. Let's replace it with an enhanced AospDialer  [spezi77]
+
+ * vendor/pixeldust
+ba25cf3  dialer_default_class: Change to AospDialer.  [spezi77]
+4f96e80  Update version string for release eight incl. OTA-support.  [spezi77]
+83ec361  Build FMRadio.  [spezi77]
+65f8ce7  versioning: Use dateformat for signaling OTA updates. Remove any other digits from the version string to prevent conflicts  [spezi77]
+0233012  Fix ota version string :)  [spezi77]
+02a890f  Move OTA properties.  [spezi77]
+
+
+ 2018-07-29:
+
+ * device/huawei/angler
+253ed04  Angler: Opt out from System UI Engine.  [spezi77]
+1e09045  Enable BatteryLed: In PD we use the capability bit (credits LOS).  [spezi77]
+
+ * frameworks/base
+ef412ee  Add a flag to allow devices to opt out from System UI Engine. For some devices 'Systeme UI Themes' might not be a desired option because it requires to customize the vendor image.  [spezi77]
+
+ * packages/apps/PixeldustOTA
+48e5be4  OTA: Changes For PixelDust  [Mrinal Ghosh]
+9bd69c2  Stop giving wrong info to user. We have disabled auto updating by default  [xyyx]
+
+ * vendor/pixeldust
+6c9dc6e  vendor: Update OTA configuration xml link  [Mrinal Ghosh]
+31ad5d4  OTA: Use https://github.com/pixeldust *-o/DeviceOTA/ as url  [spezi77]
+88eba95  Introduce OTA. OTA URL still needs to point to a real server address.  [spezi77]
+
+
+ 2018-07-28:
+
+ * device/huawei/angler
+22cf367  angler: Enable boot and system server dex-preopt  [Artem Borisov]
+
+ * packages/apps/PixelDustSettings
+a29d7de  Improve various DE strings.  [spezi77]
+
+ * vendor/pixeldust
+45e86f5  Angler: Use the minimal set of Pixel prebuilts from: https://gitlab.com/spezi77/vendor_googleapps/tree/minimal-set  [spezi77]
+f8e8761  Angler: Update fingerprint to 8.1.0 (OPM6.171019.030.E1, Jul 2018).  [spezi77]
+
+
+ 2018-07-27:
+
+ * packages/apps/PixelDustSettings
+4c317d9  Three-fingers-swipe to screenshot: Add DE strings.  [spezi77]
+f1f9452  Pulse: Add missing DE strings.  [spezi77]
+eeffd24  ButtonSettings: Improve DE strings.  [spezi77]
+
+
+ 2018-07-26:
+
+ * frameworks/base
+7fd806b  Add config_show4GForLTE to fix error: AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.android.phone/com.android.phone.MobileNetworkSettings}: android.content.res.Resources$NotFoundException: Resource ID #0x0  [nitin1438]
+
+ * kernel/google/marlin
+2d54c3b  defconfig: Bump up to 1.2  [spezi77]
+d2e440d  scripts/wireguard: More reliable version selection  [Jason A. Donenfeld]
+9d833f3  scripts/wireguard: Only allow one execution at a time, with others failing open  [Jason A. Donenfeld]
+aa49d0c  add stock_defconfig  [flar2]
+2e04e3e  kernel: Use the stock config for /proc/config.gz  [Sultan Alsawaf]
+65b854b  Linux 3.18.116  [spezi77]
+aa7f8fb  Linux 3.18.115  [spezi77]
+11f8410  Linux 3.18.114  [spezi77]
+
+ * packages/apps/PixelDustSettings
+f39e212  Move Ambient display weather preference to the place it belongs [1/2].  [spezi77]
+5271494  Cleanup Ambient music ticker strings. - Moved to Settings Signed-off-by: spezi77 <spezi7713@gmx.net>  [spezi77]
+10166ea  [SQUASHED] Add translations for Germany and several further countries. Still incomplete, but better than nothing!  [spezi77]
+
+
+ 2018-07-25:
+
+ * packages/apps/PixelDustSettings
+0f2e8d9  Remove strings from abandoned preferences.  [spezi77]
+
+ * packages/apps/Settings
+82b85b2  Notification light dialogs: Fix a typo.  [spezi77]
+8e8255e  Add translations: CS, DE, HU, IT, PL, RU, SK, TR, ZH-rCN.  [spezi77]
+
+ * vendor/google_devices
+3f21a01  marlin/sailfish: OPM4.171019.021.P1  [mydongistiny]
+
+
+ 2018-07-24:
+
+ * frameworks/base
+83a60f3  Add a few translations for several countries.  [spezi77]
+f509285  SystemUI: Always show alarm info in footer * and remove animation after: https://imgur.com/a/QK1Eu  [xyyx]
+0e05acc  Prevent deadlock when going out of idle state  [Gabriele M]
+6bdd058  Remove force show system bars in splitscreen mode  [maxwen]
+7154c59  Fonts: GoBold: Fix a typo.  [spezi77]
+
+
+ 2018-07-23:
+
+ * build/make
+0f794a2  build: add org.codeaurora to package whitelist  [maxwen]
+
+ * frameworks/base
+f71816b  Revert "Fix InCallActivity onStop call when launch from Lockscreen"  [spezi77]
+49e1c1e  SystemUI: Support display for radio tech  [Shufeng Hou]
+
+ * vendor/pixeldust
+b6ceb38  Now let's really enhance the ROM with a "native" PDF viewer (Part 2/2).  [spezi77]
+585cd5f  vendor: add network list overlay  [Marko Man]
+
+
+ 2018-07-22:
+
+ * frameworks/base
+4e0b82f  Blacklist NFC icon from status bar by default  [Pranav Vashi]
+51e18cd  Remove call to expand QS panel while pressing the Airplane QS tile  [Alex Cruz]
+
+ * packages/apps/PixelDustSettings
+bc62a8b  Toast Animation: Fix up the default value. 0 = None 1 = Default etc.  [spezi77]
+
+
+ 2018-07-21:
+
+
+ 2018-07-20:
+
+ * build/make
+8678e5f  Make change and version bump to OPM6.171019.030.H1  [android-build-team Robot]
+2751399  [DO NOT MERGE] Update Platform Security String to 2018-08-05 for August Bug:109889880 (cherry picked from commit f6bee62b8eb5819f23e31d1dfb1622d48f5ab554)  [Adam Seaton]
+49da9c2  DO NOT MERGE: Update Platform Security String to 2018-07-05 for oc-mr1-dev Bug:79883349 (cherry picked from commit cfbe84b8a0ac6ad680edad1c21b08672ed96127d)  [Adam Seaton]
+4044f63  DO NOT MERGE: Updating security string for oc-mr1-dev to 2018-06-05  [Adam Seaton]
+
+ * device/lge/bullhead-kernel
+33b2427  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+
+ * external/bouncycastle
+8f7cf36  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+ce8fe6e  Fix probable prime confidence calculations.  [Adam Vartanian]
+
+ * external/curl
+19b00dd  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+7ae7de2  Disable unused protocols.  [Elliott Hughes]
+
+ * external/e2fsprogs
+8f324dd  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+f2a5ea8  Ignore quotes in safe_print().  [Jeff Sharkey]
+
+ * external/libvpx
+cba149c  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+7e49387  DO NOT MERGE | libvpx: cherry pick fix to OOB of mv_cost index.  [Jerome Jiang]
+
+ * external/sonivox
+9c800bb  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+d09bcdb  sonivox: fix hang caused by bad meta-event  [akirilov]
+
+ * frameworks/av
+b511459  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+402ffe4  Fix possible out of bounds read  [Marco Nelissen]
+7178d4d  OMXNodeInstance: Allow dynamic native handle mode for input buffers  [Sanjay Singh]
+4065c52  Speed up id3v2 unsynchronization  [Robert Shih]
+5b2bbbf  Fix security vulnerability in CryptoHal  [Jeff Tinker]
+ec427fc  omx: restrict useBuffer according to buffer type and port mode  [Wonsik Kim]
+534a1aa  aaudio: use weak pointer to prevent UAF  [Phil Burk]
+dde0d76  Add minimum size check for ImageGrid atom  [Chong Zhang]
+e4950ed  Sanitize effect descriptors for AudioPolicyService binder calls.  [Andy Hung]
+a7e4d22  Add check preventing div0 issue  [Ryszard Grzesica]
+42dc855  Init gain config to prevent uninit leak.  [jiabin]
+
+ * frameworks/base
+9522ef3  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+3c0f405  Fix DynamicRefTable::load security bug  [Ryan Mitchell]
+8f63958  ResStringPool: Prevenet boot loop from se fix  [Ryan Mitchell]
+b3d874c  Make safe label more safe  [Todd Kennedy]
+196e5cf  WM: Prevent secondary display focus while keyguard is up  [Adrian Roos]
+b4c5afe  DO NOT MERGE: Add unit tests to ensure VPN meteredness  [Benedict Wong]
+dcdeaf8  DO NOT MERGE: Fix ConnectivityController meteredness checks  [Benedict Wong]
+f10472c  clearCallingIdentity before calling into getPackageUidAsUser  [Tony Mak]
+65e567a  Nullcheck to fix Autofill CTS  [Eugene Susla]
+c459269  Osu: fixed Mismatch between createFromParcel and writeToParcel  [Ecco Park]
+d60d186  DO NOT MERGE Truncate newline and tab characters in BluetoothDevice name  [Hansong Zhang]
+e1c5b94  Fix broken check for TelephonyManager#getForbiddenPlmns  [sqian]
+0c9517a  DO NOT MERGE (O) Revoke permision when group changed  [Philip P. Moltmann]
+458134f  ResStringPool: Fix security vulnerability  [y]
+774d6ea  RESTRICT AUTOMERGE: Prevent reporting fake package name - framework (backport to oc-mr1-dev)  [akirilov]
+133ec0e  Use concrete CREATOR instance for parceling lists  [Fyodor Kupolov]
+49690f8  Rework thumbnail cleanup  [Marco Nelissen]
+14029e4  DO NOT MERGE - fix AFM.getComponentNameFromContext()  [Felipe Leme]
+21765ed  Proper autofill fix to let phone process autofill Settings activity.  [Felipe Leme]
+3f89a39  Make sure apps cannot forge package name on AssistStructure used for Autofill.  [Felipe Leme]
+
+ * frameworks/minikin
+78d267a  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+01d8916  Fix fvar table size validation logic - DO NOT MERGE  [Seigo Nonaka]
+
+ * frameworks/native
+4d79731  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+51208e7  Don't pad before calling writeInPlace().  [Martijn Coenen]
+d99db43  Increment when attempting to read protected Parcel Data  [Michael Wachenschwanz]
+9abaea4  Disallow reading object data from Parcels with non-object reads  [Michael Wachenschwanz]
+
+ * frameworks/opt/telephony
+0230f2f  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+9b9e465  DO NOT MERGE: Update ConnectivityServiceMock for VPN meteredness bug  [Benedict Wong]
+5a18857  Fixed invalid pdu issue  [Pengquan Meng]
+
+ * hardware/interfaces
+d571a72  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+af40004  cas: do not use hidl_memory if size is > SIZE_MAX  [Chong Zhang]
+6cdb8e4  cas: fix UAF in descrambler -- DO NOT MERGE  [Chong Zhang]
+
+ * kernel/huawei/angler
+f0593e4  Merge branch 'o2-upstream' of https://github.com/ezio84/abc_kernel_huawei_angler into o2  [spezi77]
+
+ * packages/apps/Bluetooth
+3e3cc4e  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+7e8d867  Make sure server response doesn't exceed maximum allowable length  [Jakub Pawlowski]
+
+ * packages/apps/Messaging
+966ce87  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+6d624e6  Messaging ignores file URIs shared via intent  [David Smith]
+
+ * packages/apps/PackageInstaller
+8e8d77e  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+967a3ac  RESTRICT AUTOMERGE: Always use safe labels  [Todd Kennedy]
+
+ * packages/apps/Settings
+a4461cb  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+9e36bb7  Import translations. DO NOT MERGE  [Bill Yi]
+e4f3c6f  DO NOT MERGE Give PBAP permission only after user confirms  [Hansong Zhang]
+
+ * packages/apps/UnifiedEmail
+0c29ebc  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+f4a0125  Filter Attachment file name of forward slashes for .eml attachments.  [Ekin Oguz]
+
+ * packages/providers/DownloadProvider
+971bdbf  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+33c105b  DO NOT MERGE: Update DownloadProvider for correct meteredness  [Benedict Wong]
+
+ * packages/providers/UserDictionaryProvider
+be0234e  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+9bd8298  Check caller before accessing database  [Fyodor Kupolov]
+
+ * packages/services/Telephony
+36c4666  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+6313e37  DO NOT MERGE Revise security requirements for TelephonyManager#endCall.  [Tyler Gunn]
+f416096  Fix potential NPE in EmergencyCallbackModeExitDialog.  [Tyler Gunn]
+70aa4a8  DO NOT MERGE Add Safety Net Log for getForbiddenPlmns security hole  [sqian]
+98e97ea  Fix broken permission check for TelephonyManager#getForbiddenPlmns  [sqian]
+
+ * system/bt
+5ad6b0c  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+62a2cdf  DO NOT MERGE: Don't reuse buffer when building response  [Ajay Panicker]
+ca25313  Add BT_HDR length check for received AVCTP packets  [Pavlin Radoslavov]
+8639385  Add packet length check for received AVCTP packets  [Pavlin Radoslavov]
+8332668  Add checks whether the AVDTP element data length is valid  [Pavlin Radoslavov]
+036ec33  BNEP: Fix OOB access in bnep_data_ind  [Jack He]
+927155a  RESTRICT AUTOMERGE: Fixes two bluetooth causing remote overreads (2/2)  [akirilov]
+ea7f83d  RESTRICT AUTOMERGE: Fixes two bluetooth bugs causing remote overreads (1/2)  [akirilov]
+279341b  DO NOT MERGE: SDP: Recalculate param_len after max_list_len  [Myles Watson]
+c9ce1d4  Decrease length after reading from array in process_service_attr_req  [Jakub Pawlowski]
+2f30092  DO NOT MERGE SMP: Check p_cb->role in smp_br_state_machine_event  [Hansong Zhang]
+3efa01c  GATT: Handle too short Error Response PDU  [Jakub Pawlowski]
+bba59ce  Add PDU size checks in process_service_search_attr_rsp  [Jakub Pawlowski]
+ef079db  Add bounds check to l2cble_process_sig_cmd L2CAP_CMD_DISC_REQ  [Ajay Panicker]
+8841857  DO NOT MERGE: Check number of attributes before writing to a buffer  [Ajay Panicker]
+accfb61  DO NOT MERGE AVRC: Add bound check for AVRC_EVT_APP_SETTING_CHANGE  [Hansong Zhang]
+03a0b87  DO NOT MERGE Prevent stack overflow in btif_storage  [Hansong Zhang]
+c7b1b34  DO NOT MERGE SMP: Validate remote elliptic curve points  [Andre Eisenbach]
+b2ef317  DO NOT MERGE Add bounds check for BNEP_Write  [Hansong Zhang]
+6bee194  DO NOT MERGE Initialize local variable in gatts_process_read_by_type_req  [Hansong Zhang]
+a787467  DO NOT MERGE Fix OOB read in process_l2cap_cmd  [Hansong Zhang]
+9610a23  PAN: Always allocate in bta_pan_data_buf_ind_cback  [Myles Watson]
+df48002  DO NOT MERGE Handle bad packet length in gatts_process_read_req  [Stanley Tng]
+ac71500  DO NOT MERGE Drop LE CoC fragments when frame size is too big  [Stanley Tng]
+5635aa7  DO NOT MERGE Fix unexpected behavior in bta_dm_sdp_result  [Hansong Zhang]
+2e04897  DO NOT MERGE Fix unexpected behavior in smp_sm_event  [Hansong Zhang]
+
+ * system/libhidl
+c3a0353  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+40503e1  mapMemory: Do not map if size is > SIZE_MAX  [Yifan Hong]
+
+ * system/media
+298032a  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+2e61820  Merge commit 'f9e3022c474619c69a46ae7dbe11b5b531dbad57' into am-0d58d39a-0539-474e-b9c8-36cc976d15e8  [Emilian Peev]
+
+ * system/vold
+11dc897  Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903  [android-build-team Robot]
+9b04987  Merge commit '635193ab36302e5f65e99c7df2f256cfd37068c7' into am-b7f1a67b-2024-4274-aa7d-e88e8cceb407  [Jeff Sharkey]
+
+
+ 2018-07-19:
 
  * device/google/marlin
 884e415  Revert "marlin/sailfish: Enable HBM tile."  [spezi77]
@@ -35,6 +585,12 @@ dcb19b6  Fix playing screenshot's sound when camera's sounds off  [xyyx]
  * packages/apps/PixelDustSettings
 3543ba6  QS panel columns: Set default to 4 (portrait mode) [2/2].  [spezi77]
 
+ * vendor/googleapps
+211b65e  Googleapps: 8.1 Gapps from July (marlin-opm4.171019.021.p1).  [spezi77]
+
+
+ 2018-07-18:
+
 
  2018-07-17:
 
@@ -52,11 +608,11 @@ f3a5200  Prevent sending intent while orientation change.  [Hu Wang]
 eb6f103  Fix crash issue when user uses multi-window mode on WifiCallingSettings  [Libo Jin]
 dff1810  Settings is crashed high probability when doing follow steps  [edgar.huang]
 
+ * vendor/pixeldust
+d5f16af  Remove overlay for statusbar round corners  [Alex Cruz]
+
 
  2018-07-16:
-
-
- 2018-07-15:
  * art
 10a8235  ARM64: Add crc32 instruction feature support  [TatWai Chong]
 
@@ -64,11 +620,14 @@ dff1810  Settings is crashed high probability when doing follow steps  [edgar.hu
 5395c32  NotificationLight: default notification_light_pulse to off.  [spezi77]
 5d012be  Fix Phone Info FC  [camcory]
 
+ * vendor/pixeldust
+2d309f7  Taimen: Update Fingerprint to OPM2.171026.006.H1  [nitin1438]
+
+
+ 2018-07-15:
+
 
  2018-07-14:
-
-
- 2018-07-13:
 
  * libcore
 e7f4101  Add android.system.Os.realpath()  [Tobias Thierer]
@@ -78,7 +637,7 @@ e7f4101  Add android.system.Os.realpath()  [Tobias Thierer]
 393a9b1  Give public access to LogLine.  [spezi77]
 
 
- 2018-07-12:
+ 2018-07-13:
 
  * build/make
 7352bb9  Merge tag 'android-8.1.0_r38' of https://android.googlesource.com/platform/build into o2-rebase  [spezi77]
@@ -104,6 +663,26 @@ f38d05f  kernel: Add MAKE_FLAGS to kernel header generation  [Brandon McAnsh]
 3b82b8d  build: Inline kernel building as a buildtime task  [Ricardo Cerqueira]
 a87bc43  Drop current kernel.mk  [spezi77]
 533db7a  build: envsetup: Add back schedtool for mka  [mydongistiny]
+
+
+ 2018-07-12:
+
+ * external/libjpeg-turbo
+8b9eb25  rdbmp.c: Fix FPE triggered by malformed BMP  [DRC]
+077f1ed  Fix CVE-2018-11813  [DRC]
+16b7f95  Travis: Use SKS keyserver pool  [DRC]
+e8ea65a  Additional code formatting tweaks  [DRC]
+4d54afa  Java: Further style refinements  [DRC]
+63fee4e  Java: Reformat code per checkstyle recommendations  [DRC]
+12b0657  TurboJPEG: Handle CMYK JPEGs w/ subsampled M, Y  [DRC]
+7db12d9  Bump revision to 1.5.91 for post-beta fixes  [DRC]
+38326c1  Additional code formatting tweaks  [DRC]
+bcaa796  libjpeg-turbo: add config to disable merged upsample  [Mort (Tianqi) Guo]
+04d53f0  Handle corner case where merged_upsampler is used for regional decoding  [Mort (Tianqi) Guo]
+2418107  [SQUASHED] Update to 1.5.90 (2.0 beta1).  [spezi77]
+
+ * frameworks/av
+bf09f5f  Merge tag 'android-8.1.0_r38' of https://android.googlesource.com/platform/frameworks/av into o2  [spezi77]
 
  * frameworks/base
 64a7eaa  Add a ripple effect to the power menu items  [Alex]
@@ -482,30 +1061,52 @@ fcf9a32  hwui: Fix Native Crash of EGL_BAD_ALLOC  [liuweiquan]
 0f3d33a  Accounts: Fix TokenCache maps access  [Andreas Gampe]
 9023a6c  PackageManager: Avoid null access  [Andreas Gampe]
 
+ * frameworks/native
+e339d86  Merge tag 'android-8.1.0_r38' of https://android.googlesource.com/platform/frameworks/native into o2-sdc  [spezi77]
+
+ * hardware/interfaces
+39266cf  Interfaces: Add bcm2709x changes to Nfc impl  [jrior001]
+
+ * kernel/google/marlin
+08862b9  usb: hub: fix a typo in hub_port_init() leading to wrong logic  [Oliver Neukum]
+ed21d11  usb: retry reset if a device times out  [Oliver Neukum]
+0b4e8ab  Merge tag 'android-8.1.0_r0.75' of https://android.googlesource.com/kernel/msm into HS-X-3.00  [spezi77]
+
+ * kernel/huawei/angler
+6e2e590  Merge tag 'android-8.1.0_r0.80' into o2-upstream  [ezio84]
+
  * libcore
 edc8c4e  Libcore: Remove jack-related workaround  [Neil Fuller]
 10ed125  Fix clang static analyzer warning in libcore  [Zhizhou Yang]
 3989f25  Fix aliasing rules violations  [Bernhard Rosenkränzer]
+60ac7cd  Change Math method from @FastNative to @CriticalNative.  [Vladimir Marko]
+cd75cde  Libcore: Disable IsInstanceOfClass warning.  [Andreas Gampe]
+4628c80  Avoid duplicate free in CharsetXcoderICU on OOME  [Hans Boehm]
+72caedc  Work around 32 bit glibc bug.  [Narayan Kamath]
+c958cb4  XML Pull Parser optimizations  [Kevin Hart]
+
+ * packages/apps/Bluetooth
+9943754  Merge tag 'android-8.1.0_r38' of https://android.googlesource.com/platform/packages/apps/Bluetooth into o2  [spezi77]
+
+ * packages/apps/Settings
+bcbbf12  FeaturePreferences: Introduce settings reset [Updated for oreo]  [Evan Anderson]
+cb28685  Actually fix crash when getting unavailable service  [Fan Zhang]
+
+ * system/bt
+a4d0df0  Merge tag 'android-8.1.0_r38' of https://android.googlesource.com/platform/system/bt into o2  [spezi77]
+
+ * vendor/huawei
+52d7a27  Update angler blobs to OPM6.171019.030.E1 4805388  [ezio84]
+
+ * vendor/pixeldust
+51c2440  dialer_default_class: Update to new package/activity name.  [spezi77]
+e9be36b  products: Update marlin/sailfish build desc for OPM4.171019.021.P1  [spezi77]
+61da856  Update version string for r7.  [spezi77]
+d48ee06  Dex pre-opt: Remove all the crap.  [spezi77]
+6318e97  Revert "Include dexopt profiles if vendor exists"  [spezi77]
 
 
  2018-07-11:
-
- * external/libjpeg-turbo
-8b9eb25  rdbmp.c: Fix FPE triggered by malformed BMP  [DRC]
-077f1ed  Fix CVE-2018-11813  [DRC]
-16b7f95  Travis: Use SKS keyserver pool  [DRC]
-e8ea65a  Additional code formatting tweaks  [DRC]
-4d54afa  Java: Further style refinements  [DRC]
-63fee4e  Java: Reformat code per checkstyle recommendations  [DRC]
-12b0657  TurboJPEG: Handle CMYK JPEGs w/ subsampled M, Y  [DRC]
-7db12d9  Bump revision to 1.5.91 for post-beta fixes  [DRC]
-38326c1  Additional code formatting tweaks  [DRC]
-bcaa796  libjpeg-turbo: add config to disable merged upsample  [Mort (Tianqi) Guo]
-04d53f0  Handle corner case where merged_upsampler is used for regional decoding  [Mort (Tianqi) Guo]
-2418107  [SQUASHED] Update to 1.5.90 (2.0 beta1).  [spezi77]
-
- * frameworks/av
-bf09f5f  Merge tag 'android-8.1.0_r38' of https://android.googlesource.com/platform/frameworks/av into o2  [spezi77]
 
  * frameworks/base
 77bd61d  services: Fix starting window not removing issue  [zhenjun.zhang]
@@ -1054,386 +1655,4 @@ dc04a27  SettingsProvider: Add missing INTERACT_ACROSS_USERS_FULL permission  [A
 38b234a  Allow chromium to sign in  [spaceman860]
 0fd8198  etc: Add GApp default permissions  [Joe Maples]
 1f60f54  Add PixelDust custom metrics.  [spezi77]
-
- * frameworks/native
-e339d86  Merge tag 'android-8.1.0_r38' of https://android.googlesource.com/platform/frameworks/native into o2-sdc  [spezi77]
-
- * hardware/interfaces
-39266cf  Interfaces: Add bcm2709x changes to Nfc impl  [jrior001]
-
- * kernel/google/marlin
-0b4e8ab  Merge tag 'android-8.1.0_r0.75' of https://android.googlesource.com/kernel/msm into HS-X-3.00  [spezi77]
-
- * libcore
-60ac7cd  Change Math method from @FastNative to @CriticalNative.  [Vladimir Marko]
-cd75cde  Libcore: Disable IsInstanceOfClass warning.  [Andreas Gampe]
-4628c80  Avoid duplicate free in CharsetXcoderICU on OOME  [Hans Boehm]
-72caedc  Work around 32 bit glibc bug.  [Narayan Kamath]
-c958cb4  XML Pull Parser optimizations  [Kevin Hart]
-
- * packages/apps/Bluetooth
-9943754  Merge tag 'android-8.1.0_r38' of https://android.googlesource.com/platform/packages/apps/Bluetooth into o2  [spezi77]
-
- * packages/apps/CarrierConfig
-0807a3f  Merge tag 'android-8.1.0_r38' of https://android.googlesource.com/platform/packages/apps/CarrierConfig into o2  [spezi77]
-
- * packages/apps/Settings
-bcbbf12  FeaturePreferences: Introduce settings reset [Updated for oreo]  [Evan Anderson]
-cb28685  Actually fix crash when getting unavailable service  [Fan Zhang]
-
- * packages/providers/MediaProvider
-16950d9  Merge tag 'android-8.1.0_r38' of https://android.googlesource.com/platform/packages/providers/MediaProvider into o2  [spezi77]
-
- * packages/services/Telephony
-7c80bce  Merge tag 'android-8.1.0_r38' of https://android.googlesource.com/platform/packages/services/Telephony into o2  [spezi77]
-
- * system/bt
-a4d0df0  Merge tag 'android-8.1.0_r38' of https://android.googlesource.com/platform/system/bt into o2  [spezi77]
-
-
- 2018-07-10:
-
-
- 2018-07-09:
-
-
- 2018-07-08:
-
-
- 2018-07-07:
-
-
- 2018-07-06:
-
-
- 2018-07-05:
-
-
- 2018-07-04:
-
-
- 2018-07-03:
-
- * external/libmpeg2
-f04ac5b  Merge tag 'android-8.1.0_r38'  [mydongistiny]
-
-
- 2018-07-02:
-
-
- 2018-07-01:
-
-
- 2018-06-30:
-
-
- 2018-06-29:
-
- * device/google/marlin
-3f1bb67  marlin: Reorder tetherable connection types  [Paul Keith]
-3400f29  Disable Hearing Aid Profile for all platforms except Pixel  [Stanley Tng]
-cf0e003  priv_app: remove redundant rule.  [Tri Vo]
-83a062a  Remove obsolete tcp buffer size system properties.  [Tom Cherry]
-
- * packages/apps/PixelDustSettings
-5cdd94c  MiscSettings: Disable/Enable screenshot sound [2/2].  [spezi77]
-
- * packages/services/Telephony
-ec785f0  Merge tag 'android-8.1.0_r28' of https://android.googlesource.com/platform/packages/services/Telephony into o2  [spezi77]
-
-
- 2018-06-28:
-
- * hardware/qcom/display
-9bfbf1f  Revert "display: msm8994: replace %zd with %ld for ssize_t argument"  [spezi77]
-
-
- 2018-06-27:
-
- * device/huawei/angler
-04e35a6  Kernel: use pixeldust_defconfig.  [spezi77]
-
- * external/speex
-0a481d9  Fix distortion in fractional resampling ratios  [Misael Lopez Cruz]
-4cc5faf  speex: Update to libspeexdsp 1.2rc3  [Elliott Hughes]
-
- * frameworks/opt/telephony
-6bc62ab  Fix Acess modifiers as part of extending ServicestateTracker.  [Ruthwar Kumar Ambeer]
-d0684b2  IMS: Use proper phone to route emergency calls  [Suresh Koleti]
-3916fbf  Fix a cherrypick mistake  [dianlujitao]
-8bde172  PhoneFactory: fix creating a cdma phone type  [Dan Pasanen]
-2c5ba14  Telephony: Enable NV based CDMA data call.  [Yashdev Singh]
-0c05f00  MMS: Update apnProfileID for MMS only apn.  [Patrick Lower]
-f460ecf  Telephony: Fix loading of older QTI blobs  [maxwen]
-c85c9ec  Telephony: dont scare AOSP people  [maxwen]
-237fade  SimPhoneBook: Add ANR/EMAIL support for USIM phonebook.  [Yujing Gu]
-b680cfa  MSIM: Fix to set Mcc & Mnc with correct subId  [Sridhar Kasukurthi]
-6ab75d7  Telephony: Enable data call on CSIM.  [Yashdev Singh]
-f878986  MSIM: Use sub id based network mode  [Sandeep Gutta]
-f8f348d  MSIM: Dummy subId related changes  [Sandeep Gutta]
-660fb82  MSIM: Changes for dds flex map property control  [Sandeep Gutta]
-472794a  Add support for data+Mms  [Susheel nyamala]
-0e6e2bb  Telephony: Send INITIAL_ATTACH only when it is applicable.  [Yashdev Singh]
-1ed1cae  Modify access specifiers to enable OMH  [Susheel Nyamala]
-3856751  MSIM: Add support for Manual Provisioning  [Sooraj Sasindran]
-3daeca7  Initial implementation of QtiTelephonyComponentFactory  [Sandeep Kunta]
-d94babf  Use subscription info for ImsManager queries.  [Dheeraj Shetty]
-7579baa  Revert "telephony: Fixed signal strength issue"  [spezi77]
-
- * kernel/google/marlin
-eddd242  net: wireless: remove WARN_ON since it clutter kmsg logs  [Francisco Franco]
-a108f35  power: kill all teh prints, they clog dmesg  [Francisco Franco]
-cba4959  proc: much faster /proc/vmstat  [Francisco Franco]
-d45acda  writeback: increase bdi_min_ratio to 5 in light of the latest writeback commit.  [Francisco Franco]
-3ec99cf  writeback: fix writeback cache thrashing  [Namjae Jeon]
-14f5d29  int_sqrt: Improve 3x faster integer sqrt.  [FlyFrog]
-2680843  int_sqrt.c: Correction square root algo with naming  [ramgear]
-8db36a3  msm: vidc: disable CPU L2 cache PC during video sessions  [Manikanta Sivapala]
-25dc69a  fs: Workaround the compiler's bad optimization  [Nikhilesh Reddy]
-4c6df92  iosched_switcher: add delay before sleeping as well  [Dorimanx]
-840dbb4  iosched_switcher: Remove unneeded code in change_elevator()  [Sultanxda]
-fb21c44  iosched_switcher: Ensure the previous elevator is always present  [Sultanxda]
-6a232c6  iosched_switcher: Allow multiple block devices to be used  [Sultanxda]
-54e195b  block: Switch to noop I/O scheduler when the screen turns off  [Sultanxda]
-a22ec2f  getrandom: make blocking until init configurable  [Daniel Micay]
-e26900f  UPSTREAM: replace incorrect strscpy use in FORTIFY_SOURCE  [Daniel Micay]
-2db8843  BACKPORT: include/linux/string.h: add the option of fortified string.h functions  [Daniel Micay]
-7bf2b2a  enable protected_{symlinks,hardlinks} by default  [Daniel Micay]
-fa8c97b  fix qcacld-2.0 buffer overflows  [Daniel Micay]
-cca051e  randomize lower bits of the argument block  [Daniel Micay]
-4c91dc7  arm64: move ET_DYN base lower in the address space  [Daniel Micay]
-a1afee0  arm64: determine stack entropy based on mmap entropy  [Daniel Micay]
-71c80c8  arm64: properly account for stack rnd in mmap base  [Daniel Micay]
-99078c5  mark protection_map as __ro_after_init  [Daniel Micay]
-c2a61a3  add vmalloc alloc_size attributes  [Daniel Micay]
-a1658e6  add kmalloc alloc_size attributes  [Daniel Micay]
-69d36fd  panic on !PageSlab && !PageCompound in ksize  [Daniel Micay]
-51222053  panic on kmem_cache_free with the wrong cache  [Daniel Micay]
-84f2b68  always perform cache_from_obj sanity checks  [Daniel Micay]
-690ec19  real slab_equal_or_root check for !MEMCG_KMEM  [Daniel Micay]
-45d8b6f  add missing cache_from_obj !PageSlab check  [Daniel Micay]
-6850aef  slub: check cookies in __check_heap_object  [Daniel Micay]
-0271c60  slub: add multi-purpose random cookies  [Daniel Micay]
-ff50213  add slub free list XOR encryption  [Daniel Micay]
-4cbf8da5  disable slab merging  [Daniel Micay]
-268519a  slub: add check for write-after-free  [Daniel Micay]
-5f58b90  add slub sanitization  [Daniel Micay]
-a9315d0  add page sanitization / verification  [Daniel Micay]
-c8c0964  disable ptrace_scope by default  [Daniel Micay]
-4ef4c07  use kernel command-line for early entropy  [Daniel Micay]
-5e2401c  gather extra early boot entropy like PaX  [Daniel Micay]
-16d6025  init: Pin init task to the boot CPU, initially  [Thomas Gleixner]
-2fd0738  defconfig: Set default io scheduler to BFQ.  [spezi77]
-73371a5  block: maple-iosched: Convert to use fb_notifier  [flar2]
-6129ff9  block: maple: Improve coding style  [Nathan Chancellor]
-d9b46b8  block: Add Maple I/O Scheduler  [Joe Maples]
-
- * kernel/huawei/angler
-e874595  Regenerate pixeldust_defconfig.  [spezi77]
-
- * packages/apps/PixelDustSettings
-e852ec3  Revert "SystemUI: add quick settings pull down with one finger [2/2]"  [spezi77]
-46ab0bd  Improve Ambient music ticker strings  [ezio84]
-342f7a5  Fling reset button: more fixes  [qjohn]
-f54f554  DUI: Update reset smartbar/fling options  [qjohn]
-782d172  DUI: Add double tap to sleep to smartbar settings too.  [spezi77]
-
- * packages/services/Telephony
-f402a11  Fix theming  [xyyx]
-2345216  Telephony: use SettingsLib styles  [maxwen]
-
-
- 2018-06-26:
-
- * frameworks/av
-67f0a5f  Camera: Add support for preview frame fd  [Susmitha Gummalla]
-a17c853  libstagefright: encoder must exist when source starting  [Cong Jiajia]
-0c26dac  media: fix infinite wait at source for HAL1 based recording  [Uma Mehta]
-baa2fac  stagefright: ACodec: Resolve empty vendor parameters usage  [Adrian DC]
-540b729  Camera: fix use after disconnect error  [Yin-Chia Yeh]
-5618bb5  libstagefright: Free buffers on observer died  [Manikanta Kanamarlapudi]
-2a35f92  Camera: check metadata type before releasing frame  [Milos Ratkovic]
-ea9e282  camera/media: Support legacy HALv1 camera in mediaserver  [Simon Shields]
-
-
- 2018-06-25:
-
-
- 2018-06-24:
-
- * device/google/marlin
-d49ec51  Revert "init.common.rc: Add schedutil settings."  [spezi77]
-902417c  init.common.rc: Add schedutil settings.  [spezi77]
-
- * kernel/google/marlin
-6e04aa5  defconfig: Set version to 1.0  [spezi77]
-6447ba4  drivers: Fix warnings  [AndroPlus]
-
- * packages/apps/DUI
-f618706  Smartbar: new button vectors  [westcripp]
-093a133  Smartbar: keep pressing on ime arrows to move kb cursor  [ezio84]
-3dba89f  DUI: fix button custom image icon not being loaded on encrypted device  [Ezio Lacandia Bijelkic]
-1acb3bc  Vectorize and improve Fling icon  [ezio84]
-
- * packages/apps/PixelDustSettings
-0d33ea1  Custom seekbar pref: allow to refresh values  [ezio84]
-85cdc9c  Cleanup Ambient music ticker [2/2]  [ezio84]
-e539eea  Settings: HeadsUp snooze function [2/2]  [Lokesh Chamane]
-611dd07  HeadsUp: add timeout option (2/2)  [Lars Greiss]
-
-
- 2018-06-23:
-
-
- 2018-06-22:
-
- * bionic
-f877998  Add -ffp-contract=fast for libm  [Adhemerval Zanella]
-2786ffe  Add Optimized sinf/cosf/sincosf  [Adhemerval Zanella]
-bc96198  libm: Add optimized powf  [Adhemerval Zanella]
-841e4c8  libm: Add optimized log2f  [Adhemerval Zanella]
-1ef9347  libm: Add optimized logf  [Adhemerval Zanella]
-34a5d1e  libm: Add optimized expf2  [Adhemerval Zanella]
-9c98c08  libm: Add optimized expf  [Adhemerval Zanella]
-b6bca5d  Switch to FreeBSD's actual sincos  [Elliott Hughes]
-d7588b6  Switch to FreeBSD catrigl.c for complex arc trig functions  [Elliott Hughes]
-
- * frameworks/opt/telephony
-2bf0024  telephony: Fixed signal strength issue  [Pengquan Meng]
-
- * packages/providers/MediaProvider
-6fc3fd3  Merge tag 'android-8.1.0_r32' of https://android.googlesource.com/platform/packages/providers/MediaProvider into o2  [spezi77]
-
-
- 2018-06-21:
-
- * build/soong
-d066b3f  env: Stop complaing about changed env vars  [mydongistiny]
-
- * frameworks/av
-c4b2be5  Merge tag 'android-8.1.0_r32' of https://android.googlesource.com/platform/frameworks/av into o2  [spezi77]
-
- * prebuilts/build-tools
-bbeebea  build-tools: Rebuild using latest sources  [mydongistiny]
-
-
- 2018-06-20:
-
-
- 2018-06-19:
-
- * device/google/marlin
-07ca673  marlin/sailfish: Build kernel with GCC8 while switching to SDCLANG.  [spezi77]
-e85888e  BoardConfigPixelDust: moved SDCLANG flag to vendor/pixeldust/products/..  [spezi77]
-3567ced  marlin/sailfish: Set fastcharge per default.  [spezi77]
-63df365  init.common.rc: Set kernel tunables.  [spezi77]
-
- * external/libavc
-67c09e8  Enable 32-bit armv8 NEON for libavc  [Isaac Chen]
-
- * external/libhevc
-b9eadad  Enable 32-bit armv8 NEON for libhevc  [Isaac Chen]
-
- * external/libopus
-575e2af  Enable 32-bit armv8 NEON for libmopus  [Isaac Chen]
-
- * kernel/google/marlin
-bfa00a9  adreno_tz: Correct tz_buf pointer type to correct pointer arithmetic  [Deepak Kumar]
-b52aa0a  adreno_tz: Fix divide by zero problem in gpu_load_show()  [Sudeep Yedalapure]
-5ad4491  cpufreq_conservative: use values from -ck patchset  [F4uzan]
-b5d1687  Update Chill to 2.10  [AyushR1]
-a3381fb  chill: Fix down_threshold_suspended sysfs input  [Joe Maples]
-cf9fce5  chill: Fix logic for reducing boost count with freq  [Joe Maples]
-8737276  chill: Allow any number >= 1 for boost count  [Joe Maples]
-9014235  chill: Reset boost count on policy->min  [Joe Maples]
-be04dbd  chill: Decrease boost count alongside frequency  [Joe Maples]
-e2ca3b3  chill: Simplify boost increment logic  [Joe Maples]
-dc393d0  chill: I'm secretly retarded  [Joe Maples]
-636c1e7  chill: Reset boost count at max regardless of whether we've boosted  [Joe Maples]
-fc8b224  cpufreq: chill: Use native display_state instead of PowerSuspend  [Joe Maples]
-2265073  cpufreq: chill: Version 2.0  [Joe Maples]
-550fede  cpufreq: chill: Impliment down_threshold_suspended  [Joe Maples]
-f8ff0df  cpufreq: chill: Replace sleep_depth with true load ignorance  [Joe Maples]
-56c3536  cpufreq: chill: Guard against 0 sleep depth and optimize defaults  [Joe Maples]
-3358ed7  cpufreq: chill: Go back to using Conservative's tunables  [Joe Maples]
-5184676  cpufreq: chill: use GOV_CHILL macro  [Joe Maples]
-8fd6648  cpufreq: chill: Don't check for target frequency when boosting  [Joe Maples]
-623d31f  cpufreq: chill: Major cleanup, move changes from governor.h to chill.h  [Joe Maples]
-0a6f42e  cpufreq: chill: Add boost option  [Joe Maples]
-899ed45  cpufreq: chill: Add verion macros  [Joe Maples]
-cdcfd78  cpufreq: Add Chill cpu gov  [Joe Maples]
-907a496  cpufreq/zzmoove: updated to bLE develop version as of 11.07.17  [ZaneZam]
-831c8b9  cpufreq: add ZZMoove big.LITTLE Edition (bLE) development version as of 09.01.2016  [andip71]
-b6aa191d  lpm-levels: Disable sleep by default to speed up boot  [Sultanxda]
-f2ecb88  Optimized Console FrameBuffer for upto 70% increase in Performance  [gustavoss]
-422e2d8  adreno_idler: Declare display_on correctly  [Joe Maples]
-956ea6d  adreno_idler: Add display state awareness  [Joe Maples]
-3cf8584  display: add a simple api to query the display state  [franciscofranco]
-7400c53  adrenoboost: finetuning algorithm - scale it a bit down  [tbalden]
-ab77969  msm_adreno_tz: add adrenoboost parameter  [flar2]
-71db5a2  tcp_westwood: use tcp_jiffies32 instead of tcp_time_stamp  [Eric Dumazet]
-bbad58a  tcp: introduce tcp_jiffies32  [Eric Dumazet]
-460855f  lib/win_minmax: windowed min or max estimator  [Neal Cardwell]
-34d8747  tcp_westwood : Bump minimum RTT and lower initial RTT duration  [Harsh Shandilya]
-c069723  diag: Fix reference count mismatch  [Roopesh Rajashekharaiah Nataraja]
-6b684cd9  soc: q6dspv2: add api to vote for upgrading thread priority  [Banajit Goswami]
-5b50c64  sched: cpufreq: fix extra semi collon  [Francisco Franco]
-5da716e  arm64: lib: memory utilities optimization  [Francisco Franco]
-ea0bd4c  Unsetting DEVPORT.  [Max Bires]
-b00466c  adreno_tz: Remove unnecessary devfreq NULL check in tz_handler()  [Hareesh Gundu]
-9ffa817  Update Adreno Idler to v1.1  [harise100]
-b483b7e  add Adreno Idler  [GhaithCraft]
-f21d59a  msm: qdsp6v2: Allow 320K AAC encoding  [Steve Kondik]
-551140a  tcp_output: set initial TCP window size to 64K (speed improvement)  [andip71]
-3919fa9  crypto: crc32 - Add ARM64 CRC32 hw accelerated module  [Yazen Ghannam]
-38e2415  arm64: Implement optimised IP checksum helpers * AArch64 is capable of 128-bit memory accesses without alignment * restrictions, which makes it both possible and highly practical to slurp * up a typical 20-byte IP header in just 2 loads. Implement our own * version of ip_fast_checksum() to take advantage of that, resulting in * considerably fewer instructions and memory accesses than the generic * version. We can also get more optimal code generation for csum_fold() by * defining it a slightly different way round from the generic version, so * throw that into the mix too.  [Eliminater74]
-75ffb419  Makefile: add optimization flags for marlin/sailfish.  [spezi77]
-9ab33ba  lib/memcopy: use glibc version  [Miao Xie]
-2bb59f9  arm64: lib: rewrite and optimize memcmp  [Wilco Dijkstra]
-79cb51e9  cpu: Silence log spam when a CPU is brought up  [Sultanxda]
-ef42397  zen-tune: Implement zen-tune v4.12  [Steven Barrett]
-027ae08  msm: msm_bus: Don't enable QoS clocks when none are present  [Sultanxda]
-45aa21f  msm8996: Remove redundant CPU bandwidth devfreq devices  [Sultanxda]
-b3a25e2  msm8996: dtsi: Disable thermal core_control for marlin  [mydongistiny]
-81c36e3  power: msm-core: Add missing NULL pointer check in msm_core_ioctl()  [Sultanxda]
-276adcf  power: msm-core: Compile out temperature polling  [Sultanxda]
-bfd7a65  power: qcom: Fix issue with power table notifications  [Maulik Shah]
-3b187ad  power: qcom: ea: Fix uninitialized temperature and cpu variable  [Archana Sathyakumar]
-3ea92f3  pm: supsend: read suspend time from timekeeping  [Lianwei Wang]
-9007527  clockevents: Provide explicit broadcast oneshot control functions  [Thomas Gleixner]
-1bae591  sched, tracing: Stop/start critical timings around the idle=poll idle loop  [Daniel Bristot de Oliveira]
-dd06112  sched/idle: Move latency tracing stop/start calls deeper inside the idle loop  [Lucas Stach]
-e5d74c1  sched / idle: Call default_idle_call() from cpuidle_enter_state()  [Rafael J. Wysocki]
-82632ea  sched / idle: Eliminate the "reflect" check from cpuidle_idle_call()  [Rafael J. Wysocki]
-46c65e3  sched / idle: Move the default idle call code to a separate function  [Rafael J. Wysocki]
-c1d504a  cpuidle: Run tick_broadcast_exit() with disabled interrupts  [Rafael J. Wysocki]
-747ca6f  sched/idle: Use explicit broadcast oneshot control function  [Thomas Gleixner]
-fd94139  cpuidle / sleep: Use broadcast timer for states that stop local timer  [Rafael J. Wysocki]
-8976af3  cpuidle / sleep: Do sanity checks in cpuidle_enter_freeze() too  [Rafael J. Wysocki]
-ac15ec2  idle / sleep: Avoid excessive disabling and enabling interrupts  [Rafael J. Wysocki]
-56d50c3  sched/idle: Add missing checks to the exit condition of cpu_idle_poll()  [Preeti U Murthy]
-80922da  PM / sleep: Make it possible to quiesce timers during suspend-to-idle  [Rafael J. Wysocki]
-d7af490  cpuidle: Do not select menu and ladder governors  [Maulik Shah]
-64896b4  cpuidle: lpm-levels: Check for negative sleep times  [Naresh Malladi]
-c69f19c  cpuidle: Minimize round off errors in wake up time  [Maulik Shah]
-d93d1b2  cpuidle: lpm-levels: Fix untrusted pointer dereference.  [Mahesh Sivasubramanian]
-f8ebb14  cpuidle: lpm-levels: Fix snprintf string format  [Archana Sathyakumar]
-4bc00d1  cpuidle: lpm-levels: Update suspend wake time  [Maulik Shah]
-47c8da4  cpuidle: lpm-levels: Fix div by zero bug  [Hong-Mei Li]
-231d135  lpm-levels: Enter shallowest state if predicted sleep length is less  [Srinivas Rao L]
-12fd36a  cpuidle: lpm-levels: Enable Sleep prediction  [Mahesh Sivasubramanian]
-bbe85aa  lpm-levels: Consider cluster history for LPM selection  [Srinivas Rao L]
-3ab0ee8  lpm-levels: Consider history during LPM selection  [Srinivas Rao L]
-f769f90  lpm-levels: Fix round off error in calculation  [Maulik Shah]
-3e5e620  lpm-levels: Compute minimum residencies for LPM levels  [Raju P.L.S.S.S.N]
-c3b49b6  lpm-levels: Allow rpm handshake only with cluster LPM  [Maulik Shah]
-69ce14b  lpm-levels: Do not consider cluster residency in suspend  [Srinivas Rao L]
-0c83dca  lpm-levels: Add traces for logging cpu freq  [Anil Kumar Mamidala]
-c879483  lpm-levels: Fix cpu idle trace and stats event  [Archana Sathyakumar]
-bf27af1  lpm-levels: Fix low power mode selection  [Raju P.L.S.S.S.N]
-aa3f081  arch: Unbreak mrproper/clean  [Steve Kondik]
-52b17e2  gitignore: add build and clean scripts.  [spezi77]
-
-
- 2018-06-18:
 
