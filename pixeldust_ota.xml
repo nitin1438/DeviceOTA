@@ -19,8 +19,8 @@
     </taimen>
 
     <sailfish>
-      <Filename>pixeldust_sailfish-pie-release-two-20181117-0811.zip</Filename>
-      <RomUrl id="rom" title="rom" description="Download The Latest Build">https://sourceforge.net/projects/pixeldustproject/files/sailfish/pixeldust_sailfish-pie-release-two-20181117-0811.zip</RomUrl>
+      <Filename>pixeldust_sailfish-pie-release-two-20181117-1934.zip</Filename>
+      <RomUrl id="rom" title="rom" description="Download The Latest Build">https://sourceforge.net/projects/pixeldustproject/files/sailfish/pixeldust_sailfish-pie-release-two-20181117-1934.zip</RomUrl>
       <RomMirrorUrl id="romirror" title="XDA Thread" description="Visit The XDA Thread">https://forum.xda-developers.com/pixel/development/rom-pixel-dust-sailfish-t3585007/</RomMirrorUrl>
       <ChangelogUrl id="changelogs" title="Changelogs" description="Check Out The Latest Changes">https://github.com/pixeldustproject-p/DeviceOTA/raw/p/Changelogs/Changelog_marlin.txt</ChangelogUrl>
       <PaypalUrl id="donation" title="Donation" description="Donate To The Developer">https://tinyurl.com/yawypkah</PaypalUrl>
