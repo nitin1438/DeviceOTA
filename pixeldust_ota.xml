@@ -3,8 +3,8 @@
   <Stable>
 
     <marlin>
-      <Filename>pixeldust_marlin-pie-release-two-20181117-0023.zip</Filename>
-      <RomUrl id="rom" title="rom" description="Download The Latest Build">https://sourceforge.net/projects/pixeldustproject/files/marlin/pixeldust_marlin-pie-release-two-20181117-0023.zip</RomUrl>
+      <Filename>pixeldust_marlin-pie-release-two-20181117-1750.zip</Filename>
+      <RomUrl id="rom" title="rom" description="Download The Latest Build">https://sourceforge.net/projects/pixeldustproject/files/marlin/pixeldust_marlin-pie-release-two-20181117-1750.zip</RomUrl>
       <RomMirrorUrl id="romirror" title="XDA Thread" description="Visit The XDA Thread">https://forum.xda-developers.com/pixel-xl/development/rom-pixeldust-marlin-t3581750/</RomMirrorUrl>
       <ChangelogUrl id="changelogs" title="Changelogs" description="Check Out The Latest Changes">https://github.com/pixeldustproject-p/DeviceOTA/raw/p/Changelogs/Changelog_marlin.txt</ChangelogUrl>
       <PaypalUrl id="donation" title="Donation" description="Donate To The Developer">https://tinyurl.com/yawypkah</PaypalUrl>
