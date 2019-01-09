@@ -1,22 +1,279 @@
 
+ 2019-01-09:
+
+ * frameworks/base
+4ca76e6  Revert "WeatherClient: Improvements".  [spezi77]
+c2f338c  WindowOrientationListener: Check if proposed rotation is in range  [Luca Stefani]
+86f998d  Fix NPE when creates wifi tracker  [mandy]
+b5c778c  WeatherClient: Add back isAvailable method  [Henrique Silva]
+03e6aa2  WeatherClient: Improve client initiation after boot  [ezio84]
+
+ * packages/providers/WeatherProvider
+08010ca  Revert "WeatherProvider: Improve provider initiation after boot"  [spezi77]
+c1fe265  WeatherProvider: Improve provider initiation after boot  [ezio84]
+
+
+ 2019-01-08:
+
+ * build/make
+2158fe2  Merge tag 'android-9.0.0_r30' of https://android.googlesource.com/platform/build into p  [spezi77]
+
+ * frameworks/av
+9483053  Merge tag 'android-9.0.0_r30' of https://android.googlesource.com/platform/frameworks/av into p  [spezi77]
+
+ * frameworks/base
+bc5125f  Merge tag 'android-9.0.0_r30' of https://android.googlesource.com/platform/frameworks/base into p  [spezi77]
+
+ * packages/apps/Launcher3
+b3996b8  Change search provider option (Google, Bing, DuckDuckGo). Use alternate search engine provider also if the Google App is available  [spezi77]
+
+ * system/core
+6c0c643  Merge tag 'android-9.0.0_r30' of https://android.googlesource.com/platform/system/core into p  [spezi77]
+
+ * vendor/google_devices
+4d28bf4  marlin/sailfish: PQ1A.190105.004  [mydongistiny]
+
+ * vendor/pixeldust
+271c068  version: Bump up to release four (Jan update).  [spezi77]
+f48e4bd  marlin/sailfish: Update build desc for PQ1A.190105.004  [spezi77]
+
+
+ 2019-01-07:
+
+ * frameworks/base
+1aa088d  Full gesture navbar: fix swipe to back glitches  [ezio84]
+a1d0b2e  Revert "Weather client: fix refresh at boot and improve/cleanup code [1/2]"  [spezi77]
+
+ * packages/apps/Launcher3
+34229b4  Change to our app icon.  [spezi77]
+f6e930b  Add "de" translations.  [spezi77]
+92aed9e  Home screen preferences: Clean up and categorize things.  [spezi77]
+6ec47e6  Change app name to PixelDust Launcher.  [spezi77]
+638e714  Launcher: Fix hotseat Qsb layout. This will align the hotseat layout and search bar position while the search bar is set to visible  [spezi77]
+297c8be  Luna: Add support for app predictions  [Chris]
+7a30525  try to catch another NPE  [ElDainosor]
+5c54c5c  Launcher3: add custom rounded corners  [ElDainosor]
+5c70ff1  Launcher3: Disable top/hotseat gradient  [ElDainosor]
+
+
+ 2019-01-06:
+
+ * frameworks/base
+ed4e746  Battery: Show percentage in QSHeader after unplugging from charger.  [spezi77]
+9c128e0  Keyguard Clock Widget Font: Change it back to font family "light". Let's make it look like in pixels again  [spezi77]
+
+
+ 2019-01-05:
+
+
+ 2019-01-04:
+
+ * frameworks/base
+8a7618a  Clock: DateFormat: Add missing bits to allow user defined settings.  [spezi77]
+
+ * packages/apps/Launcher3
+648e2bf  Luna: Switch to Gsa receiver for search availabilty  [Chris]
+67ae2bf  Luna: Disable assistant icon when Google app isn't installed  [Chris]
+f7df8cc  Launcher3: Let's set spacing  [ElDainosor]
+b194b2d  Launcher3: Allow At a glance to be full uppercase  [ElDainosor]
+8b43ff3  QuickSpaceView: Set dynamic font provided by FontService.  [spezi77]
+132738f  Launcher3: Add more dates  [ElDainosor]
+4401a8d  add option to change date format for QuickSpace  [hundeva]
+296a968  add search provider option (Google, Bing, DuckDuckGo)  [hundeva]
+e94d523  Option to hide/show quicksearchbar  [Gábor Vass]
+880ed44  launcher3: Try to fix NPE when trying to use search without feed integration  [ElDainosor]
+cb15b09  QSB: Accent the icons  [ElDainosor]
+4ab46c8  QSB: inherit all apps background on Google search bar  [ElDainosor]
+7094c01  Luna: Cleanup hotseat Qsb dimensions  [Chris]
+1afc904  [temp] Don't add Hotseat into all apps  [ElDainosor]
+01a9d2b  Luna: Add Qsb to hotseat and all apps view  [Chris]
+fa6c9c8  Luna: Add Quick events support in Quickspace  [Chris]
+
+ * packages/apps/Settings
+23ec6c2  Ambient Play scan interval: Improve labels and remove the 20sec option. Furthermore set the default to 2 minutes.  [spezi77]
+de4f9f6  Disable the night mode preference in development settings. We're ignoring it anyways in favor of the SystemUI/accent themes  [spezi77]
+04cb7ec  Settings: Fix FC in search caused by LinkedVolumesPreferenceController.  [spezi77]
+
+
+ 2019-01-03:
+
+ * frameworks/base
+dca925a  Revert "Disable now playing feature for now."  [spezi77]
+aa0ae8b  AmbientIndicationManager: Fix settings callback  [Henrique Silva]
+66e29fe  Ambient Play: Introduce saving options [1/2]  [Henrique Silva]
+af40221  Ambient Play: Introduce our custom provider  [Henrique Silva]
+56fa4fe  bootanimations: update random bootanimation support  [shagbag913]
+b3b10a1  [1/2] bootanimation: randomly pick bootanimation  [shagbag913]
+468534e  FontService: Disable logspam  [Akianonymus]
+12d0486  fonts: Build different fonts.xml if EXCLUDE_SERIF_FONTS is true  [Akianonymus]
+04fe574  Systemui restart timeout causes black screen  [pengzhicai]
+e27b0f4  Weather client: switch to vector drawables  [allstargaurav]
+c742618  Weather client: fix refresh at boot and improve/cleanup code [1/2]  [ezio84]
+2708f23  WeatherClient: don't check package availability on each location query  [ezio84]
+2dfce0b  Weather client check: set interval to 20 minutes  [ezio84]
+bf3eaa7  Network traffic: fix indicator not hiding on lost connection  [SpiritCroc]
+e21ba03  Statusbar Clock Font styles [1/2]  [SuperDroidBond]
+9422c88  Fix "Clock appears despite that it has been set to hidden". and make it play nice with collapsed/expanded statusbar  [spezi77]
+2696678  Status bar clock customizations [1/2]  [Lars Greiss]
+
+ * packages/apps/PixelDustSettings
+9b8b05d  Slim recents: Drop App Sidebar. In times of Pie I don't think that this will be missed, if it had ever been a much requested feature.  [spezi77]
+cbed651  LS Settings: Remove obsolete check for weather client package.  [spezi77]
+657146b  Update "DE" translations.  [spezi77]
+
+
+ 2019-01-02:
+
+ * packages/apps/Settings
+ddd0835  Ambient Play: Introduce saving options [2/2]  [Henrique Silva]
+
+ * packages/providers/WeatherProvider
+5264620  Add gzip support  [jhenrique09]
+
+ * vendor/pixeldust
+109cbee  vendor: build version: dont force utc timezone in build date  [Soubhik_sk83]
+
+
+ 2019-01-01:
+
+ * packages/apps/Launcher3
+b8c5ab1  Quickspace: Create action receivers for date/weather view  [Chris]
+4ff76a6  Luna: Introduce Quickspace  [Chris]
+606858b  Cleanup the default workspace. Let's begin the whole story with a clean look: - No bottom row with default app shortcuts - Move Playstore shortcut to the middle position in the hotseat  [spezi77]
+
+ * packages/apps/PixelDustSettings
+3fdc8f1  Statusbar Clock: Cleanup & fix un-/locking of date preferences.  [spezi77]
+
+ * packages/apps/Settings
+3a57c02  Ambient Play: Add summary to some settings  [Henrique Silva]
+
+ * packages/providers/WeatherProvider
+db5a96d  Weather api: a few improvements  [ezio84]
+fb94923  WeatherProvider: Declare playstore version in main /res Shuts up a compiler error: WeatherProvider_intermediates/AndroidManifest.xml:36: error: resource integer/google_play_services_version (aka com.android.providers.weather:integer/google_play_services_version) not found.  [spezi77]
+
+ * vendor/pixeldust
+b58c798  Introduce our custom provider for Ambient Play  [Henrique Silva]
+
+
+ 2018-12-31:
+
+ * device/google/marlin
+68afcf9  carrierconfig: enable VoWiFi && VoLTE for Vodafone  [shagbag913]
+9a0c508  Enable VoLTE and VoWiFi on TELUS  [Christian Oder]
+1d66d5b  Enable Telus configs for VV  [calebcabob]
+76655f0  Enable VoLTE on Cricket (AT&T)  [Christian Oder]
+ff6e400  Enable VoWiFi for Telstra Australia  [Christian Oder]
+14bbb9a  Enable VoLTE and VoWiFi on Vodafone DE  [Christian Oder]
+f7fcd4b  Enable VoLTE and VoWiFi on AT&T  [Christian Oder]
+a355d65  Kernel tweaks: Deactivate dynamic stune boost for now. Let's see if this will increase battery life  [spezi77]
+
+
+ 2018-12-30:
+
+
+ 2018-12-29:
+
+
+ 2018-12-28:
+
+ * packages/apps/PixelDustSettings
+7b6a2c0  StatusBarSettings: Clean up and fixes. -Battery percent on QSB: Remove bogus dependency on status_bar_clock -StatusBarClock: Using SystemSettingSwitchPreference already takes care of persistence  [spezi77]
+1a7dc9f  Mobile type icon style: Initiate SystemUI restart upon pref change. This will prevent the SystemUI Restart (previously triggered from fwb) when entering the StatusBar Settings for the first time (after a clean installation).  [spezi77]
+9065ac5  Input: Port IME selector notification toggle (1/2)  [Takazumi Matsumoto]
+58f240b  Input: add back all keyboard IME features back (2/2)  [Lars Greiss]
+2a4e7b6  PixelDustSettings: Add a Keyboard IME category.  [spezi77]
+815287f  StockNavBarSettings: Un-/lock link to Gesture Settings in dependence of the current recents type.  [spezi77]
+
+
+ 2018-12-27:
+
+ * frameworks/base
+1921c94  Revert "Statusbar clock customization".  [spezi77]
+4ccb704  Less aggressive way of updating mobile type icon.  [spezi77]
+0874a2e  base: SystemUI: fix visibility of mobile type icon  [maxwen]
+a381a20  Revert "SystemUI: fix visibility of mobile type icon"  [spezi77]
+48c6a1f  base: SystemUI: delete deprecated status bar view  [maxwen]
+ee0d212  BatteryMeterDrawableBase: Refresh only when value changed  [Pranav Vashi]
+
+ * packages/apps/PixelDustSettings
+93a64a1  Statusbar: Set clock date enabled/disabled when opened  [mydongistiny]
+ec4ea67  Burn-InProtection: Add enable and interval switches [2/2]  [mydongistiny]
+adfea1f  Option to use accent color for pulse [3/3]  [Shubham Singh]
+80831ff  Smartbar pixel animation: Ability to customize the dots [3/3]  [varund7726]
+
+ * vendor/googleapps
+05e2e04  Revert "Add GoogleTTS"  [spezi77]
+1b208e4  Remove talkback in order to free up some space.  [spezi77]
+b7f0ece  Add GoogleTTS and talkback.  [spezi77]
+
+
+ 2018-12-26:
+
+
+ 2018-12-25:
+
+ * vendor/pixeldust
+918bdd4  Add taimen in the OTA list  [nitin1438]
+
+
+ 2018-12-24:
+
+ * frameworks/base
+ec05c07  Smartbar pixel animation: Ability to customize the dots [1/3]  [varund7726]
+e540104  Smarbar Pixel Navbar Animation Duration Settings [1/3]  [varund7726]
+c4d72ff  Pulse: allow setting fading blocks opacity [1/3]  [varund7726]
+608fa5b  Pulse: Add bar animation smoothing [1/3]  [Ritayan Chakraborty]
+4e6ba88  Add Pulse Lava Lamp start and end colors (1/3)  [out386]
+89953cc  Option to use accent color for pulse [2/3]  [Shubham Singh]
+745bf58  Adapate Burn-In Controllers for SmartNavBar.  [spezi77]
+c7cdcc2  BurnInProtection: Fix null object reference with timer  [mydongistiny]
+f108563  Burn-InProtection: Add enable and interval switches [1/2]  [mydongistiny]
+98ac5dd  SystemUI: Implement burn-in protection for status/navbar  [Park Ju Hyung]
+1839a04  FontService: Add "de" strings.  [spezi77]
+d2f287c  base: FontService: Add a error for non-supported font packages  [ElDainosor]
+c1cc494  FontService: Support fonts from Substratum theme packages  [bigrushdog]
+7c03138  FontService: Don't copy resources from /system/etc/fonts  [bigrushdog]
+408136b  Fix no default ringtone for slot2  [Pranav Vashi]
+2734667  BatteryMeterView: Fix logspam with battery percent view while charging  [Pranav Vashi]
+3dbac9b  KeyguardHostView: Auto face unlock v2 for pie  [jhenrique09]
+a361eaf  Add config to enable face auto unlock by default [1/2]  [Pranav Vashi]
+435eb5a  SlimRecents: Prevent double instantiation of RecentsPanel.  [spezi77]
+615bbfe  SlimRecents: Add helpers.  [spezi77]
+c14ac5e  Slim Recents 3.0 [1/3]  [ezio84]
+
+ * packages/apps/PixelDustSettings
+3144911  Settings: Make Smartbar Pixel Animation Durations Customizable [3/3]  [varund7726]
+f09b283  Pulse: allow setting fading blocks opacity [3/3]  [varund7726]
+61c053f  Pulse: Add bar animation smoothing [3/3]  [Ritayan Chakraborty]
+77ba402  Add Pulse Lava lamp start and end colors (3/3)  [out386]
+420a24b  Add config to enable face auto unlock by default [2/2]  [Pranav Vashi]
+6e05158  Add SlimRecents [3/3].  [spezi77]
+
+ * packages/apps/SmartNav
+435220a  Navigator: Add Burn-In Controls Shift to public methods  [SuperDroidBond]
+611486f  Smartbar pixel animation: Ability to customize the dots [2/3]  [Varun Date]
+6f1c248  Make Smartbar Pixel Animation Durations Customizable [2/3]  [Varun Date]
+6c60762  SmartNav: Let's use System colors  [ElDainosor]
+fb689ed  DUI: Fix pulse opacity on CoverArtColor and Accent  [Shubham Singh]
+a541172  Option to use accent color for pulse [1/3]  [Shubham Singh]
+3412aeb  Smartbar: Code smart  [Pranav Vashi]
+99a444a  Pulse: allow setting fading blocks opacity [2/3]  [varund7726]
+7a62a60  Pulse: Add bar animation smoothing [2/3]  [Ritayan Chakraborty]
+3ff6105  Add Pulse Lava Lamp start and end colors (2/3)  [out386]
+4a6305a  Fling: Reapply dark intensity when toggling logo  [Pranav Vashi]
+4050e5e  Add delay while applying dark intensity  [Pranav Vashi]
+
+
+ 2018-12-23:
+
+ * frameworks/base
+8a9c999  Disable now playing feature for now.  [spezi77]
+8c36f5d  AmbientPlay: Enable debug messages.  [spezi77]
+
+
  2018-12-22:
 
  * frameworks/base
-b7e402f  Disable now playing feature for now.  [spezi77]
-c774be1  AmbientPlay: Enable debug messages.  [spezi77]
-113fa7df  Revert "AmbientPlay: Animate ambient indication into view"  [spezi77]
-
- * packages/apps/Launcher3
-8e2f629  Revert package naming to restore Pie recents style.  [spezi77]
-d039272  QuickspaceController: Set default temperature unit to C°  [spezi77]
-
-
- 2018-12-21:
-
- * frameworks/base
-52e3bf3  SlimRecents: Prevent double instantiation of RecentsPanel.  [spezi77]
-9291258  SlimRecents: Add helpers.  [spezi77]
-d04e9fd  Slim Recents 3.0 [1/3]  [ezio84]
 72a8a84  AmbientPlay: Animate ambient indication into view  [Chris]
 fc551c1  Add pixeldust-support-lottie.  [spezi77]
 1c75a4d  Cleanup AndroidManifest to prevent a SystemUI crash. SmartPixels were moved out of SystemUI in this commit: https://github.com/pixeldust *-p/android_frameworks_base/commit/15243772b72e77758f79328acc6bc2e3d6a50ce2 But the reference to the old package name was not removed.  [spezi77]
@@ -25,18 +282,14 @@ fc551c1  Add pixeldust-support-lottie.  [spezi77]
  * frameworks/pixeldust
 3fe5237  PD'ify.  [spezi77]
 
- * packages/apps/Launcher3
-63a677e  Cleanup the default workspace. Let's begin the whole story with a clean look: - No bottom row with default app shortcuts - Move Playstore shortcut to the middle position in the hotseat  [spezi77]
+
+ 2018-12-21:
+
+ * vendor/pixeldust
+9b024fc  soong_config: Allow process-specific override of target SDK version  [Danny Baumann]
 
 
  2018-12-20:
-
- * packages/apps/Launcher3
-882d4ca  Hide toggle to show Search bar on first screen for now. Reason: not working  [spezi77]
-6f3063b  Add DE translations.  [spezi77]
-a0fc802  Add Quick events support in Quickspace  [Chris]
-e915a02  Quickspace: Create action receivers for date/weather view  [Chris]
-5cd97bd  Introduce Quickspace  [Chris]
 
  * packages/apps/Settings
 f8a9521  QS tiles style: Bring the style options into the correct sequence.  [spezi77]
@@ -45,7 +298,6 @@ f8a9521  QS tiles style: Bring the style options into the correct sequence.  [sp
  2018-12-19:
 
  * packages/apps/Launcher3
-8e3751e  Create PixelDust Launcher  [Chris]
 0ad961d  AllAppsSearchBox: use rounded corners  [Giuseppe Maggio]
 b50e24d  Add Google ActionServices (MatchmakerPrebuilt) to blacklisted apps  [ezio84]
 8028f9d  proguard: Also keep FixedScaleDrawable  [Diogo Ferreira]
@@ -55,19 +307,6 @@ dfc8888  Update resources for Pixel Dust.  [spezi77]
 
 
  2018-12-18:
-
- * packages/apps/PixelDustSettings
-4376f64  Add SlimRecents [3/3].  [spezi77]
-16678da  Fix typos  [governmentissuejoe]
-af01f9c  StockNavBarSettings: Disable gesture settings if recents type is different from Pie.  [spezi77]
-a4414ae  Stock Navbar: Add longpress back to kill app with configurable delay.  [spezi77]
-342a039  Refactor the Navbar Settings (introduce Stock Settings). -Move all stock navbar preferences into a separate fragment -Deactivate System Gestures if SmartBar or FlingBar becomes the current bar mode -Move "One handed mode" from SmartBar Settings to general section -Rework some strings  [spezi77]
-822686b  NavigationBarSettings: Fix NavBar visible preference.  [spezi77]
-05a2563  Add Pulse blacklist option  [ezio84]
-9a6f84c  Initial checkin on Pie for SmartNav navigation suite [3/4].  [spezi77]
-
-
- 2018-12-17:
 
  * frameworks/base
 1eb08bb  base: fix mediascanner access permissions to external storage  [Ali B]
@@ -642,11 +881,20 @@ ef6f22f  PackageManager: Don't dereference mPlatfromPackage until available  [Et
 7640739  SystemUI: add more notification snooze times  [Chris]
 9baab6e  Allow adjusting screen density to smaller sizes.  [Danny Baumann]
 
- * packages/providers/AmbientPlayHistoryProvider
-c5a1a26  Automatic translation import  [Henrique Silva]
+ * hardware/libhardware_legacy
+7525928  Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal  [Purushottam Kushwaha]
+
+ * packages/apps/PixelDustSettings
+16678da  Fix typos  [governmentissuejoe]
+af01f9c  StockNavBarSettings: Disable gesture settings if recents type is different from Pie.  [spezi77]
+a4414ae  Stock Navbar: Add longpress back to kill app with configurable delay.  [spezi77]
+342a039  Refactor the Navbar Settings (introduce Stock Settings). -Move all stock navbar preferences into a separate fragment -Deactivate System Gestures if SmartBar or FlingBar becomes the current bar mode -Move "One handed mode" from SmartBar Settings to general section -Rework some strings  [spezi77]
+822686b  NavigationBarSettings: Fix NavBar visible preference.  [spezi77]
+05a2563  Add Pulse blacklist option  [ezio84]
+9a6f84c  Initial checkin on Pie for SmartNav navigation suite [3/4].  [spezi77]
 
 
- 2018-12-16:
+ 2018-12-17:
 
  * kernel/google/marlin
 3412778b  defonfig: Update some configs and bump up to R04. - Enable walt default - Increase log buffer size contribution to 18 => 256kb - Enable LZ4 algorithm support - Enable GCM/GMAC support - Enable GHASH digest algorithm - Enable crc64  [spezi77]
@@ -1260,22 +1508,38 @@ c3c545c  Create my own defconfig based on the one by flar2.  [spezi77]
 2d4fc81  gitignore: add build and clean scripts.  [spezi77]
 141c1db  Squashed update from Linux 3.18.100 -> 3.18.129  [spezi77]
 
+ * packages/providers/AmbientPlayHistoryProvider
+c5a1a26  Automatic translation import  [Henrique Silva]
+
  * vendor/codeaurora/telephony
 90261a6  IMS-VT: Low battery handling for Video calls  [Ravi Paluri]
 
 
- 2018-12-15:
-
- * packages/providers/MediaProvider
-9d1cb03  Add READ_EXTERNAL_STORAGE permission Logcat shows the following error,  [zephiK]
-
- * vendor/googleapps
-ee739a9  Add Pixel Soundpicker 2.0_(223598125)-20001403_minAPI28  [spezi77]
+ 2018-12-16:
 
  * vendor/pixeldust
 e35f953  shamu: include minimal set of gapps  [nitin1438]
 8a0f9a4  taimen: update fingerprint PQ1A.181205.002  [nitin1438]
 2adb02e  Build caf telephony for all devices.  [spezi77]
+
+
+ 2018-12-15:
+
+ * device/google/wahoo
+173c602  Use clang version 6.0.2  [nitin1438]
+92b8735  Merge branch 'p9x' of https://github.com/DirtyUnicorns/android_device_google_wahoo into HEAD  [nitin1438]
+
+ * kernel/google/wahoo
+a4b5332  Merge branch 'p9x' of https://github.com/DirtyUnicorns/android_kernel_google_wahoo into HEAD  [nitin1438]
+
+ * packages/providers/MediaProvider
+9d1cb03  Add READ_EXTERNAL_STORAGE permission Logcat shows the following error,  [zephiK]
+
+ * vendor/google
+5a1194f  taimen: update blobs to PQ1A.181205.002  [spaceman860]
+
+ * vendor/googleapps
+ee739a9  Add Pixel Soundpicker 2.0_(223598125)-20001403_minAPI28  [spezi77]
 
 
  2018-12-14:
@@ -1321,12 +1585,30 @@ ef8641f  version: Bump up to release three (Dec update).  [spezi77]
 
  2018-12-10:
 
-
- 2018-12-09:
+ * frameworks/opt/telephony
+d888771  Add ims-ext-common to static java libraries  [Vol Zhdanov]
+a32add9  PhoneFactory: make old qti telephony optional [1/2]  [Vol Zhdanov]
+9f437cf  TelephonyComponentFactory: Overload makeSubscriptionInfoUpdater  [TheScarastic]
+fb687d4  Introduce TelephonyExtUtils  [Michael W]
+ea23291  Support Fetching IMSI MCC and MNC for RuimRecords.  [Venkat Ram Prakash Kotni]
+685c452  SimPhoneBook: Add ANR/EMAIL support for USIM phonebook.  [Yujing Gu]
+015e67f  DcTracker: Change access modifier of isNvSubscription to protected  [Bruno Martins]
+4e8e053  PhoneFactory: fix creating a cdma phone type  [Dan Pasanen]
+1fcd5cd  Telephony: Enable NV based CDMA data call.  [Yashdev Singh]
+42a144a  MSIM: Fix to refresh active subscription info cache.  [Umashankar Godachi]
+ba80ef5  MSIM: Fix to set Mcc & Mnc with correct subId  [Sridhar Kasukurthi]
+fb28ef6  Telephony: Enable data call on CSIM.  [Sneh Bansal]
+bf7ea2b  telephony: Fix loading of non Oreo-MR1 QTI blobs  [maxwen]
+bd5288c  MSIM:Fix iccid issue during android upgrade.  [Vidyalakshmi Badiger]
+433101f  Fix iccid issue during android upgrade.  [Vidyalakshmi Badiger]
+4e4116f  DCTracker: fix loading of Oreo qti-telephony-common blob  [DennySPB]
+0c48a89  Telephony: Send INITIAL_ATTACH only when it is applicable.  [Sneh Bansal]
+92ba2b8  Enable vendor Telephony plugin: MSIM Changes  [Sneh Bansal]
+4ef5d9b  Enable vendor Telephony plugin  [Sneh Bansal]
+90de61c  LocaleTracker: Try to fix NPE during boot with FDE  [xyyx]
 
  * packages/apps/Settings
 ac6731b  SmartNav: Remove unresolved reference to SmartNavSettings. We have undauntedly merged those stuff into PixelDustSettings ¯\_(ツ)_/¯  [spezi77]
-148f4ed  Initial checkin on Pie for SmartNav navigation suite [2/4]  [bigrushdog]
 
  * vendor/codeaurora/telephony
 81ce9a6  telepony-ext: Move to Android.bp  [Rashed Abdel-Tawab]
@@ -1337,359 +1619,4 @@ d47c08b  IMS-VT: Add config to control holding a video call  [Ravi Paluri]
 425354b  Reload carrier config when SUB record changed  [Mengjun Leng]
 b3c974a  IMS: Implement isConnected and isOpened API.  [Suchand Ghosh]
 6452d4b  Revert "IMS-VT: Low battery handling for Video calls"  [maxwen]
-
- * vendor/pixeldust
-b3bd9d6  Revert "Add 'GoogleSans' font family"  [spezi77]
-
-
- 2018-12-08:
-
- * bionic
-1bcb517  Merge tag 'android-9.0.0_r20' of https://android.googlesource.com/platform/bionic into p  [spezi77]
-
- * build/make
-3f0cb67  Merge branch 'p' of https://github.com/pixeldust *-p/android_build_make into 9.0.0_r20  [spezi77]
-c2a54f8  Merge tag 'android-9.0.0_r20' of https://android.googlesource.com/platform/build into 9.0.0_r20  [spezi77]
-
- * device/google/marlin
-38fad60  marlin/sepolicy: Try to silence some denials from logcat  [mydongistiny]
-
- * frameworks/base
-6d83ec6  Fix empty recents view in multi window mode  [Leif Martensson]
-81d7a95  Add support for extended formats  [Mingming Yin]
-252c15a  connectivity: Configure additional TCP parameters  [Steve Kondik]
-4809a28  aapt: Fix compiler warning (clobbered by longjmp)  [Christopher R. Palmer]
-5ade8c3  aapt: Use a std::map instead of a SortedVector  [Christopher R. Palmer]
-439745a  Guard in short-circuit evaluations for stringSplit methods.  [Mohammed Irfan]
-00b662f  fwb: disable Aggressive trim settings by default  [maxwen]
-d6269f9  fwb: Performance: Memory Optimizations  [Shashi Shekar Shankar]
-19fe924  Add support for page theme color to WebView and WebChromeClient.  [Danny Baumann]
-d21dd71  webview_packages: fix incorrect signatures  [Alex Naidis]
-16e24bc  webview_packages: correct signature definition for Chrome Stable  [Alex Naidis]
-ec6d685  webview_packages: prefer the more powerful webview packages  [mfonville]
-00f6fa3  audio: Don't play sound effects if stream is muted  [Steve Kondik]
-00ad8cf  hwui: Disable fine-grained logging  [Joe Maples]
-e08d612  keyguard: Actually kill Fancy Colon  [Joe Maples]
-41a3ead  PixeldustUtils: Add isAppInstalled  [maxwen]
-a4b872c  FATAL EXCEPTION IN SYSTEM PROCESS: android.ui  [yangbingqian]
-6fe6852  Revert "Check VintfObject compatibility on boot"  [Christian Oder]
-b0ce7cc  SysUI tuner activities: fix SysUI fc on rotation  [ezio84]
-fa715dc  PixeldustUtils: Add isPackageInstalled boolean  [Roman Birg]
-30a8ed2  PixeldustUtils: Add isAvailableApp method  [maxwen]
-0fc8d20  PixeldustUtils: Add isChinese Language  [beanstown106]
-97ede88  PixeldustUtils: Add isWiFi only Method  [Alex Cruz]
-cfb3972  Re-add in our device utils  [Alex]
-38fc57a  Suppress FingerprintManager logspam  [Harsh Shandilya]
-49c29ed   Kill off provider info logspam  [Harsh Shandilya]
-7ca5e46  Settings:Bugfix for NPE, Only valid screen power consumption need to smear  [Libo Jin]
-5bc91ef  aapt: Speed up the style pruning  [Christopher R. Palmer]
-9e371ea  Fix to avoid UI freeze issue  [Praveena Pachipulusu]
-d9a4ecc  Disable statusbar time refresh when screen off  [Jun Su]
-b232aad  fingerprint: Speed up wake-and-unlock scenario  [Sultanxda]
-4ef0401  SystemUI: fix the monkey crash issue  [huiwan]
-2b1b846  SystemUI: Fix SystemUI Crash  [mqi]
-249a741  display: Don't animate screen brightness when turning the screen on  [Sultanxda]
-2124828  Telephony: Don't crash for too long baseband version  [Michael W]
-b83bfbd  Let's cut Max Excape Animation in Half  [Chet Kener]
-21e1cfa  Factor out preference-in-storage check to overridable method.  [Danny Baumann]
-dea9119  utils: Introduce FileUtils class  [Michael Bestas]
-0472065  Camera: Expose Aux camera to apps present in the whitelist  [Sauhard Pande]
-ce781036  hwui: Fix HWUI_COMPILE_FOR_PERF for non-arm  [Joe Maples]
-5d7c3f0  frameworks/base: media: Add support for extended file types  [Manikanta Kanamarlapudi]
-d28315e  audio: add support for extended formats  [Mingming Yin]
-8929d2c  MountService: ensure VolumeRecord with UUID exists before modifying  [Scott Mertz]
-9fcb2b2  fwb: DialogPreference: Split showDialog in two parts  [Christian Oder]
-f24256e  SystemSensorManager: sensor block per-package  [Simao Gomes Viana]
-5557bfd  Optimize IncallUI delay for voice calls  [Sandeep Kunta]
-33eeca9  Improve scrolling cache  [Pawit Pornkitprasan]
-f8e430e  aapt: add check for untranslatable "string-array"s  [Chirayu Desai]
-ee0c05b  BluetoothAdapter: disable logspew  [Alexander Martinz]
-e70749b  MiniThumbFile: Fix image/bitmap retrieval  [Ricardo Cerqueira]
-41a7b71  Rework thumbnail handling  [fun]
-4615aec  SystemUI needs the SET_WALLPAPER permission  [Samuel Asteberg]
-55f51ad  Properly handle null URIs.  [Danny Baumann]
-a786fe2  Kill off the spam......  [Steve Kondik]
-3803bfa  SystemUI: Kill off mipmap  [Chet Kener]
-8a477e5  Change dividers from Holo Blue to Material Teal  [Chet Kener]
-56c26d7  Purge Videos we don't need  [Chet Kener]
-d542fe1  core: Remove moreoverflow drawables  [Chet Kener]
-90e8803  core: Remove More Network icons  [Chet Kener]
-787f8e2  core: Remove residual signal icons  [Chet Kener]
-78d6523  core: Remove Residual Dropdown Drawables  [Chet Kener]
-569ad3f  core: Remove Residual arrows/checks  [Chet Kener]
-bfa6bdc  Remove Battery Charge Background  [Chet Kener]
-26540f2  Remove Residual charging animations  [Chet Kener]
-5e28666  core: Remove residual battery icons  [Chet Kener]
-ca572ad  Remove Residual (and Ugly) signal icons  [Chet Kener]
-04a8a1a  core: Remove textfield bg drawables of bygone days  [Chet Kener]
-d81368a  core: Remove btn_keyboard_key_ics  [Chet Kener]
-5dafd8b  core: Remove Residual ic_jog_dial icons  [Chet Kener]
-30f1139  appt: Fix Compile  [Chet Kener]
-6fb2b35  Fix Def App Icon for ldpi  [Chet Kener]
-68d4798  SystemUI: Remove tests  [Chet Kener]
-e9cde6d  Speed up StatusBar  [Chet Kener]
-952ae6a  Speed up Orientation Listener  [Chet Kener]
-9771dbd  core: Update GPS Icons to be more Material  [Chet Kener]
-25f777c  Status bar notification: Use Material icons for missed calls  [XXMrHyde]
-c2f5755  Reduce log verbosity: Don't spam logcat  [fusionjack]
-c3a7304  Avoid needless Integer.valueOf() object allocation.  [Tobias Thierer]
-145529f  DEBUG: Turn off some debugging we don't need.  [mydongistiny]
-8433d1a  Disable More Debugging  [Chet Kener]
-1f55388  Delete Media Tests  [Chet Kener]
-5a70ed7  Enable non-market apps install by default, disable verifier  [Chet Kener]
-e487a71  Fix notification shows wrong question  [pengzhicai]
-c3eb875  base: Speed a couple more things up  [mydongistiny]
-337ab8b  Add make_unique function for jni  [Nathan Chancellor]
-bfc1b50  SystemUI: QS: keep emergency call only text consistent  [Simao Gomes Viana]
-c8fec5e  ViewConfiguration: misc changes (rev)  [Simao Gomes Viana]
-3bee78d  MTU should be 1358 as per 3GPP standards, especially for LTE radio interfaces.  [Stacy Devino]
-bd72cd5  config: longer wifi scan interval  [Simao Gomes Viana]
-6ddba00  base: kill some log spam  [maxwen]
-75a5f6b  Make the spinners faster  [Simao Gomes Viana]
-650a5c4  jni: FingerprintService: use fastJni for nativeAuthenticate  [Simao Gomes Viana]
-50b29ff  core: jni: AudioTrack: enable fastJni for some methods  [Simao Gomes Viana]
-240072a  Make dem animations faster  [Simao Gomes Viana]
-c71f65a  ActivityManagerService: dont be so hectic on cpu battery stats  [Simao Gomes Viana]
-cf0a2e5  Turn off some debugs  [AndroidRul3z]
-72ff765  Disable overall debugging  [Simao Gomes Viana]
-d4cd005  android.view: Speed things up!!  [Mazda]
-eaf5b58  aapt: Default to 0 compression ratio  [arter97]
-e3ff0f2  SystemUI: remove unnecessary recent apps transition  [Jake Weinstein]
-40d902d  base: set scrolling to 0.006f  [Jake Weinstein]
-309fe36  Allow faster app switching  [Chet Kener]
-46254a1  Enable NSRM (Network Socket Request Manager).  [Devi Sandeep Endluri V V]
-acc8476  Camera: Don't throw exceptions when value pairs have spaces in them  [Ricardo Cerqueira]
-7b40318  SystemUI: fix MediaProjection cast crash  [Pawit Pornkitprasan]
-8d6f1bc  NotificationManagerService: Disable channel warning toast by default  [jhenrique09]
-32ba47f  SystemUpdateService: enable service but lock its receivers [1/2]  [Gianmarco Reverberi]
-88cde4f  Switch to Pixel2XL 8.1 sounds [1/2]  [ezio84]
-0c08a5c  Add all Pixel sounds  [ezio84]
-46c99e9  Build custom audio files [2/2]  [BeansTown106]
-08a66f8  Show a more descriptive message when vendor.img is out of date  [beanstown106]
-1863808  base: rescuce party: check isDisabled on all public API  [maxwen]
-ff6dd17  qs: Hide tuner icon  [Joe Maples]
-dc88a18  base: Show SystemUI Tuner by default  [Christian Oder]
-dc45c9d  Tuner: Don't clear out prefs, it's not disabled  [Joe Maples]
-a9d5f0e  SystemUI: re-enable Tuner  [Joe Maples]
-673d8a1  NightLight: Allow lower temperatures  [Joe Maples]
-b79b323  SettingsLib: Allow Skia Vulkan to be used as HW renderer  [Joe Maples]
-0e43cf3  Revert "Revert "Add developer setting to set the default GPU renderer.""  [Joe Maples]
-bd3fcec  Allow sending vendor- or device-specific commands to the camera HAL.  [Danny Baumann]
-d2b6224  Camera: Longshot with Burst Functionality.  [Vijay Kumar Tumati]
-8fbaf79  CamcorderProfiles: Add new profiles for recorder  [Praveen Chavan]
-fdb4fb8  Camera: Add feature extensions  [Shuzhen Wang]
-a639f53  Add support for page theme color to WebView and WebChromeClient.  [Danny Baumann]
-4d1aff0  PackageManager: allow build-time disabling of components  [Pawit Pornkitprasan]
-51e5c55  Hide Build.DATE custom api  [ezio84]
-7742da1  Core: Use ro.build.date to signal mIsUpgrade  [dhacker29]
-3e4d4a3  Fix NPE when AOSP ambient display preference is removed  [Alex Cruz]
-12f11f2  MountService: Prevent NPE with DropBoxManager  [AdrianDC]
-a4a5f41  SettingsProvider: Add missing INTERACT_ACROSS_USERS_FULL permission  [AdrianDC]
-3f9ab5e  Make Build.TYPE and Build.FINGERPRINT consistent for apps  [Danny Baumann]
-08361d2  Add missing STORAGE_INTERNAL permission for BackupRestoreConfirmation  [c_jyuan]
-3872b05  Add PixelDust MetricsEvent and Category key.  [spezi77]
-
- * frameworks/native
-1a465dd  Merge branch 'p' of https://github.com/pixeldust *-p/android_frameworks_native into 9.0.0_r20  [spezi77]
-f6b220b  Merge tag 'android-9.0.0_r20' of https://android.googlesource.com/platform/frameworks/native into p  [spezi77]
-
- * packages/apps/Bluetooth
-035a6ed  Merge tag 'android-9.0.0_r20' of https://android.googlesource.com/platform/packages/apps/Bluetooth into p  [spezi77]
-
- * packages/apps/PixelDustSettings
-c519475  Revert "Add Pulse blacklist option"  [spezi77]
-29827e5  Revert "Longpress back to kill app [2/2]"  [spezi77]
-8796998  Revert "allow to configure the long press back kill delay (2/2)"  [spezi77]
-9caafa9  Changes for NavigationBar visible from DUI.  [spezi77]
-b4823e4  Revert "Navbar Pulse (with stock P navbar)."  [spezi77]
-c3e2139  Revert "Show battery percent on qsb: Set to off by default [2/2]."  [spezi77]
-eee360d  Brightness slider: Adapt strings for the current implementation.  [spezi77]
-d43f8c2  Integrate Weather client [2/2]  [Henrique Silva]
-4ff6521  Revert Weather Parts.  [spezi77]
-5bae42f  Less boring heads up option [2/2]  [ezio84]
-03a3ef0  Settings: add prefs for qs brightness slider position (2/2)  [xyyx]
-
- * packages/apps/Settings
-0c7f1fa  Phone ringtone setting for Multi SIM device  [Ting Yu]
-e23ae13  Add "de" strings for prevent ringing setting.  [spezi77]
-d7c017d  Add device introduction activity  [Chris]
-cb434cf  Bring back selinux version  [Stephen Smalley]
-45a3f8e  Revert Weather Parts.  [spezi77]
-453d7d1  Remove ambient play from ambient display settings. It is included in PD Settings > Misc.  [spezi77]
-20f8d26  Cleanup Android.mk  [Anushek Prasal]
-056ca50  Themes: Settings: Fix theming zoom preview timestamp text color  [Adarsh-MR]
-ee40227  Themes: Settings: expose msim color picker text colors  [Adarsh-MR]
-
- * packages/apps/SmartNav
-b65ca8d  Adapt for our HW-Keys Utils  [SuperDroidBond]
-3cf835d  Initial checkin on Pie for SmartNav navigation suite  [bigrushdog]
-
- * vendor/pixeldust
-ee5934b  marlin/sailfish: Update build desc for PQ1A.181205.002.A1  [spezi77]
-
-
- 2018-12-07:
-
-
- 2018-12-06:
-
- * build/make
-3c0a6bb  qcom_target: Add wlan-caf to CFI paths  [Ethan Chen]
-
- * frameworks/av
-e668e5c  Revert "stagefright: Move QCOM_BSP_LEGACY flag to correct blueprint file"  [Mrinal Ghosh]
-bba35ef  Explicitly initialise base class in copy constructor  [Harry Youd]
-0870ccf  Camera: CameraHardwareInterface: Releasing mHIDLMemoryMapLock in QdataCallback  [Abhinav Sohane]
-28931cd  Camera:CameraService: Added lock on mHIDLMemPoolId in QDataCallback..  [Abhinav Sohane]
-2306c92  libstagefright: Add more sample rates for FLAC  [OrdenKrieger]
-1f0c4fa  Camera: Add support for preview frame fd  [Susmitha Gummalla]
-132db9b  libstagefright: encoder must exist when source starting  [Cong Jiajia]
-68d14e1  camera: Workaround for GCC-compiled HAL3 drivers  [Steve Kondik]
-535afb1  Revert "libcameraservice: Disable external provider for legacy HAL1"  [Adrian DC]
-12df172  stagefright: Move QCOM_BSP_LEGACY flag to correct blueprint file  [Arne Coucheron]
-66f8bdb  libcameraservice: Disable external provider for legacy HAL1  [Adrian DC]
-
- * frameworks/native
-4f344eb  sensorservice: Register orientation sensor if HAL doesn't provide it  [Arne Coucheron]
-f9fe9c3  sensorservice: customize sensor fusion mag filter via prop  [Khalid Zubair]
-
-
- 2018-12-05:
-
- * kernel/google/marlin
-283caeb  update defconfig  [flar2]
-1607ca7  Merge remote-tracking branch 'googlesource/android-msm-marlin-3.18-pie-qpr1-s2' into ElementalX-4.00  [flar2]
-
- * vendor/google_devices
-cce4b82  marlin/sailfish: PQ1A.181205.002.A1  [mydongistiny]
-
-
- 2018-12-04:
-
-
- 2018-12-03:
-
- * hardware/qcom/display
-b9ab084  msm8084: Include string.h where it is necessary  [Artem Borisov]
-dfbf1b3  msm8084: Use generated kernel headers  [Arne Coucheron]
-1cd440b  msm8084: display: Don't use gnu-oldstyle field designators  [Elektroschmock]
-52c3d23  msm8084: Add additional build flags to avoid errors  [gabrielgagz]
-1772527  msm8084: Use libhwui.so instead of libskia.so  [Alexey Polyudov]
-1b0c9c0  msm8084: Include what we use.  [Dan Albert]
-d4d8729  hwc: msm8084: Set ioprio for vsync thread  [Steve Kondik]
-de09957  msm8996: gralloc1: Allow sign conversion errors for kernel headers  [Ethan Chen]
-a20a178  display: Use  * pathmap  [Ethan Chen]
-
-
- 2018-12-02:
-
-
- 2018-12-01:
-
- * hardware/qcom/media
-e3a7f4f  media: Use generated kernel headers  [razorloves]
-58c4081  Revert "media: Use kernel headers"  [spezi77]
-
- * hardware/qcom/sdm845/display
-805bb14  display: add CAF vs. AOSP hal separation ifdef  [maxwen]
-44eca4c  Revert "Revert "Add soong_namespace to Android.bp""  [Vol Zhdanov]
-
-
- 2018-11-30:
-
-
- 2018-11-29:
-
-
- 2018-11-28:
-
- * hardware/qcom/audio
-9ebf62f  Merge branch 'p' of https://github.com/pixeldust *-p/android_hardware_qcom_audio into p  [spezi77]
-f57c63c  audio: replace %zd with %jd for ssize_t argument  [Andreas Schneider]
-
-
- 2018-11-27:
-
- * device/moto/shamu
-38c155e  Fix for Pie recents to work & some other additions  [nitin1438]
-
- * packages/services/Telecomm
-665a81f  Merge pull request #1 from PD-CAF-TEST/p  [Mrinal Ghosh]
-10ff44b  Telecomm: Squashed phone_type switch support  [Bruno Martins]
-
-
- 2018-11-26:
-
- * frameworks/native
-ddc1420  sf: Add support for multiple displays  [Pullakavi Srinivas]
-8207ebf  Remove a no-longer-needed workaround from eglMakeCurrent  [Ian Elliott]
-09729aa  libui: Allow extension of valid gralloc 1.0 buffer usage bits  [Kevin F. Haggerty]
-2afa714  Add vendor version for libgui  [Vinay Verma]
-8a2ff4e  AppOpsManager: Update with the new ops  [Bruno Martins]
-43b6df7  binder: Don't initialize ProcessState unless we need to  [Martijn Coenen]
-
-
- 2018-11-25:
-
- * build/make
-12d38ea  Merge remote-tracking branch 'aosp/pie-gsi' into HEAD  [spezi77]
-62fc59c  Revert "Generate extra userdata partition if needed"  [spezi77]
-
- * device/google/marlin
-2083e43  CarrierConfigs: Enable VoWiFi on Rogers and Fido  [Christian Oder]
-
- * vendor/googleapps
-2e93d0f  Don't build LatinIMEGooglePrebuilt.  [spezi77]
-219f82d  Don't build Pixel Launcher. Also remove as RecentsActivity.  [spezi77]
-
- * vendor/pixeldust
-d3d5ee4  Remove unused extra fonts.  [spezi77]
-d07ec40  marlin/sailfish: Use the correct fp/build desc (PPR2.1005.003.A1).  [spezi77]
-
-
- 2018-11-24:
-
- * packages/apps/Launcher3
-7c5087a  Switch over to using PD Utils.  [spezi77]
-185cc87  Add support for black theme(s). In case of ShishuNights or Chocolate theme just pick "black theme".  [spezi77]
-
-
- 2018-11-23:
-
- * packages/inputmethods/LatinIME
-70c09a7  LatinIME: Fix dicttool build  [Tadashi G. Takaoka]
-b7836c3  LatinIME: Make Material dark theme match the Pixels  [mydongistiny]
-c39ee90  LatinIME: sync and rebuild emojis  [Joey]
-8b89eb5  LainIME: add unicode 9.0 chars  [Joey Rizzoli]
-37a62c6  LatinIME: Add shortcuts support  [Janet Sun]
-4afd99c  LatinIME: disable sound on keypress on all devices by default  [Dan Pasanen]
-51b207d  InputMethods: set the default value for preference  [Ankit Gupta]
-ce62f99  LatinIME: support for incognito mode  [Joey]
-48b6fba  make default overlay for "show correction suggestion"  [Edward Wang]
-12a144b  Latin IME bug with deleted text will reappear after screen orientation changes  [suyan yang]
-779fc9d  Don't crash when displaying the " key  [Bernhard Rosenkränzer]
-47689e0  Fix send button not being centered for non-standard densities.  [Danny Baumann]
-0ee27d4  LatinIME: Turn off block potentially offensive words  [mydongistiny]
-60bbcd1  Rearrange Morekey Options to follow numbers/symbols menu  [Chet Kener]
-b761c3a  Add Moar Key Options  [Chet Kener]
-c4c87aa  Don't interrupt active gesture input by modifier key presses.  [Danny Baumann]
-df00bac  LatinIME: Add "more" keys to ALL the keys  [Steve Kondik]
-ffdc6a3  Fixing layouts and adding 5th row to QWERTZ.  [Shaun Eaton]
-78afb26  Add 5th number row to keyboard.  [Shaun Eaton]
-8d8bea3  LatinIME: Fix to English dictionary can be added after deleting  [wangjing]
-966c618  LatinIME: correctly handle jni fallbacks  [Lars Greiss]
-2fe76d6  Update JNI fallback lib name  [Ricardo Cerqueira]
-cd0640c  LatinIME: Only enable gesture mode if gesture lib is available  [Tom Marshall]
-42944e7  LatinIME: Add fallback loader for JNI lib  [Steve Kondik]
-5f16b46  LatinIME: Add "more" keys to ALL the keys in Greek layouts  [Michael Bestas]
-ed02eea  Added smiles without noise to AOSP keyboard  [Stefano]
-b701aed  LatinIME: Bring back ALL the keys for QWERTZ  [elektroschmock]
-c433bb8  LatinIME: Apply "Enable more keys for top row on tablets" (f6620308ba) and "Add "more" keys to ALL the keys" (c561f31af9) to slavik layouts.  [Kiril Mikos]
-6d863e9  LatinIME: enable gesture input via config  [Lars Greiss]
-
-
- 2018-11-22:
-
- * device/google/marlin
-3a70638  Tweaks: Update kernel options.  [spezi77]
 
