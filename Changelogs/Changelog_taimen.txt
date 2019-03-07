@@ -1,49 +1,227 @@
 
- 2019-02-26:
+ 2019-03-07:
+
+ * device/google/wahoo
+8d7b60d  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/device/google/wahoo into HEAD  [spaceman860]
+
+ * kernel/google/wahoo
+5058163  Merge branch 'p9x' of https://github.com/DirtyUnicorns/android_kernel_google_wahoo into HEAD  [nitin1438]
+
+ * vendor/pixeldust
+7f5d7e5  taimen: use DU gapps  [nitin1438]
+6431ae9  Revert "Add AmbientSensePrebuilt: it's used also by Google app/SoundSearch tile"  [nitin1438]
+f448bfc  Fix build number by moving ota.mk behind version.mk  [spezi77]
+
+
+ 2019-03-06:
+
+ * bionic
+2d8003e  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/bionic into p  [spezi77]
+
+ * build/make
+fdda344  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/build into HEAD  [spezi77]
+
+ * build/soong
+741b0e3  dumpvars: Show the sign key information.  [spezi77]
+
+ * frameworks/av
+120a4ff  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/frameworks/av into p  [spezi77]
 
  * frameworks/base
-d590393  Disable edge gesture service by default  [Pranav Vashi]
-75fdfd9  base: disable warning in StaticLayout  [maxwen]
-1b2664b  Update the screenState for keyguard while screen turning on  [Joseph Cheng]
-f38201b  SystemUI: Animate the keyguard when charging  [Chris]
-20563b0  ExifInterface: Avoid infinite loop on stream seeking failed  [hovanchen]
-60b9dfb  Prevent NFE in SystemUI when parsing invalid int  [Edward Savage-Jones]
-4e5a645  am: Add new flag to detect activity "launching" state  [Shashi Shekar Shankar]
-37e301a  SystemUI: Keyguard: Check for a null errString  [Scott Warner]
-5c94c4c  Delay blanking of displays to improve performance  [Hampus Wessman]
-0c0ea59  Revert "Wifidisplay: Fix green display issue."  [spezi77]
-fffac46  PhoneWindowManager: Do not panic if immersive mode active  [Pranav Vashi]
-be97830  Network Traffic: Add more customizations and improvement [2/2]  [Pranav Vashi]
-eabbff7  Telephony: Add DisconnectCause values for clear code  [Qiang Chen]
-bddaef7a  Do not apply date customization to QS clock  [Pranav Vashi]
-1903b13  SystemUI: Always show date in QS header  [Anushek Prasal]
-4794265  base: Supress telephony crashing platform  [Pranav Vashi]
-97a3b11  WeatherClient: Fix horrible allocation abuse  [Harsh Shandilya]
-7dd0a38  PixeldustUtils: cleanup screen On action code  [ezio84]
-a03603b  PixeldustUtils: Add screen on action  [Alex]
-502ac62  CustomActions: Use settings provider to store value [2/3]  [Alex]
-e9d6046  PixeldustUtils: Improve ringer modes  [Alex]
-1e39422  PixeldustUtils: Ringer modes  [Alex]
-b729133  Only inherit Elmyra for Pixel devices  [Nick Doherty]
-bd2cf97  Utils: cleanup screen On action code  [ezio84]
-54efbca  ActionHandler: Add screen on action  [Mazda--]
-e57e793  Make some methods public  [pimpmaneaton]
-c612add  Active edge settings 1/?  [Mazda--]
-3ad8390  Elmyra: Move to external repo  [Mazda--]
-7b07868  PWM: Fix navbar key event source.  [spezi77]
-7c9a437  Don't report existing menu key if it was remapped. [2/3]  [Kyrylo Mikos]
-c403fb0  Update screenshot intents to match with HWkeys handler  [Shubham Singh]
-da404c4a  HWKeys: Fix haptic feedback on navbar when hwkeys is disabled  [xyyx]
-6302a5d  HWKeys: Return unpinning action  [xyyx]
-9f5ba7b  AmbientDisplay: Disable hw keys Prevent stop dozing after hw keys tapping  [xyyx]
-1ba0b1b  HW Keys: Update defaults  [SKULSHADY]
-17268a2  HWKeys: Disable haptic on keyguard  [xyyx]
-c965b9d  hw-keys: enable powermenu on hwkeys actions  [bigrushdog]
-cd05feb  SmartNav: Bring back Kill App action  [bigrushdog]
-e47e532  Hardware key disable support  [Randall Rushing]
-37c94b1  Bring up hardware key action binding framework  [Randall Rushing]
-a3e6eb1  Stock AOSP Navbar Pulse bringup  [bigrushdog]
-bb5eda1  Initial checkin on Pie for SmartNav navigation suite [1/4]  [bigrushdog]
+6f740e4  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/frameworks/base into p  [spezi77]
+
+ * frameworks/native
+ee0bf22  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/frameworks/native into p  [spezi77]
+
+ * kernel/google/marlin
+63f924e  Merge branch 'ElementalX-4.00' of https://github.com/flar2/marlin into p  [spezi77]
+
+ * system/core
+950282d  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/system/core into p  [spezi77]
+
+ * vendor/google
+6bd0882  Taimen: Update blobs to Android 9.0 (PQ2A.190305.002)  [Josh Chasky]
+
+ * vendor/google_devices
+90a304a  Fix double foreslash.  [spezi77]
+4e104ce  marlin/sailfish: PQ2A.190305.002  [spezi77]
+
+ * vendor/pixeldust
+4bb3f95  version: Bump up to release six. Clean up while I'm at it -> move build props to ota.mk  [spezi77]
+010de60  products: Update pixels build desc for PQ2A.190305.002  [spezi77]
+
+
+ 2019-03-05:
+
+ * external/libjpeg-turbo
+eb67293  libjpeg-turbo: update to 2.0.2  [mydongistiny]
+bfdd36e  libjpeg-turbo: update to 2.0.1  [mydongistiny]
+0dd57cc  libjpeg-turbo: update to 2.0.0  [mydongistiny]
+f30f3d2  libjpeg-turbo: add config to disable merged upsample  [Mort (Tianqi) Guo]
+fe1e8f3  Handle corner case where merged_upsampler is used for regional decoding  [Mort (Tianqi) Guo]
+
+ * external/libpng
+d722b8b  libpng: Suppress sign compare warning  [Pranav Vashi]
+47f3548  libpng: Update to version 1.6.36  [mydongistiny]
+908cd75  libpng: Optimize png_do_expand_palette with NEON  [Richard Townsend]
+134675e  libpng: Update to version 1.6.35  [mydongistiny]
+
+ * external/skia
+c05d9af  ARGB Blitter:  Remove unused variable  [Joe Maples]
+d345a0a  Revert "Avoid coverage bleed for AA arcs with tiny sweep angles"  [spezi77]
+b84a5a7  Revert "Move fragCoord workaround declaration"  [spezi77]
+b5653451  Revert "Add rect-parameter to makeImageSnapshot and stop using chromium config options"  [spezi77]
+4f379a1  Revert "Fix ABI Compliance Issue for JPEG Merged Upsample"  [spezi77]
+
+ * frameworks/base
+7574d2f  Revert "Improve performance of unclipped save layers"  [spezi77]
+
+ * kernel/google/marlin
+4c9f84b  update defconfig  [flar2]
+f2c2f57  Merge remote-tracking branch 'googlesource/android-msm-marlin-3.18-pie-qpr2' into ElementalX-4.00  [flar2]
+
+ * kernel/google/wahoo
+580f3f2  Merge branch 'android-msm-wahoo-4.4' of https://github.com/android-linux-stable/wahoo into HEAD  [spaceman860]
+cccfd26  Merge tag 'android-9.0.0_r0.65' into android-msm-wahoo-4.4  [Nathan Chancellor]
+
+ * vendor/google
+d523715  Bluecross: Update blobs to Android 9.0 (PQ2A.190305.002)  [Josh Chasky]
+
+
+ 2019-03-04:
+
+ * external/google
+0c93269  Fallback to "no action" when an application gets removed [1/2]  [Giuseppe Maggio]
+a34b417  Active Edge: allow to choose a specific app activity [1/4]  [ezio84]
+7139077  Introduce long squeeze action [1/3]  [Giuseppe Maggio]
+
+ * frameworks/base
+b32e7c5  Revert "Wifidisplay: Fix green display issue."  [spezi77]
+13a097a  microG: Fix signature spoofing  [bdashore3]
+099c055  ActionUtils: Reverse actions for QS and notification panel  [ezio84]
+b96404c  Ambient: do not extend pulse notification when not needed  [Giuseppe Maggio]
+47f0bc2  Active Edge: allow to choose a specific app activity [4/4]  [ezio84]
+8dd7666  Introduce long squeeze action [3/3]  [Alex]
+7c81d98  base: Wakeup when plugged or unplugged [2/2]  [Juan Ezquerro LLanes]
+9a5ac62  BrightnessDialog: dismiss on focus lost  [Giuseppe Maggio]
+70f739d  Avoid Ambient indicator overlap with multiple keyguard notifications Basically match Pixel's configuration.  [Giuseppe Maggio]
+c62e16f  Fix the behavior of keyguard bouncer in a corner case  [Wang, ArvinX]
+9a9ecd6  Fix action bar font family on material themes  [Henrique Silva]
+4e70aeb  Volume panel: Do the same with less  [Alex Cruz]
+3eca016  Keyboard arrows: Ensure they're not visible while using full gesture mode  [Alex Cruz]
+7fd5f49  Keyboard arrows don't interfere with full gesture mode  [Alex Cruz]
+1cdaf20  base: Add toggle to turn off "Secure tiles require unlocking before being accessible" [1/2].  [spezi77]
+e47f5b4  Disable edge gesture service by default  [Pranav Vashi]
+69ae0de  base: disable warning in StaticLayout  [maxwen]
+109072a  Update the screenState for keyguard while screen turning on  [Joseph Cheng]
+9feda73  SystemUI: Animate the keyguard when charging  [Chris]
+e3c8982  ExifInterface: Avoid infinite loop on stream seeking failed  [hovanchen]
+772a146  Prevent NFE in SystemUI when parsing invalid int  [Edward Savage-Jones]
+79a8ebd  am: Add new flag to detect activity "launching" state  [Shashi Shekar Shankar]
+bc91e29  SystemUI: Keyguard: Check for a null errString  [Scott Warner]
+a00ddf7  PhoneWindowManager: Do not panic if immersive mode active  [Pranav Vashi]
+782ad51  Network Traffic: Add more customizations and improvement [2/2]  [Pranav Vashi]
+5988a40  Telephony: Add DisconnectCause values for clear code  [Qiang Chen]
+2bf8cec  Do not apply date customization to QS clock  [Pranav Vashi]
+d3d07a4  SystemUI: Always show date in QS header  [Anushek Prasal]
+90391a9  base: Supress telephony crashing platform  [Pranav Vashi]
+533778b  WeatherClient: Fix horrible allocation abuse  [Harsh Shandilya]
+78525fc  PixeldustUtils: cleanup screen On action code  [ezio84]
+fb5a6c7  PixeldustUtils: Add screen on action  [Alex]
+c05a2cb  CustomActions: Use settings provider to store value [2/3]  [Alex]
+6685f09  PixeldustUtils: Improve ringer modes  [Alex]
+e729ec4  PixeldustUtils: Ringer modes  [Alex]
+e3480a9  Only inherit Elmyra for Pixel devices  [Nick Doherty]
+fbe5aac  Utils: cleanup screen On action code  [ezio84]
+7d06849  ActionHandler: Add screen on action  [Mazda--]
+650557a  Make some methods public  [pimpmaneaton]
+18f41be  Active edge settings 1/?  [Mazda--]
+05f4712  Elmyra: Move to external repo  [Mazda--]
+c70ef4a  PWM: Fix navbar key event source.  [spezi77]
+fbdeb10  Don't report existing menu key if it was remapped. [2/3]  [Kyrylo Mikos]
+cdf5e72  Update screenshot intents to match with HWkeys handler  [Shubham Singh]
+f020c9b  HWKeys: Fix haptic feedback on navbar when hwkeys is disabled  [xyyx]
+9f34162  HWKeys: Return unpinning action  [xyyx]
+623007c  AmbientDisplay: Disable hw keys Prevent stop dozing after hw keys tapping  [xyyx]
+e5f0304  HW Keys: Update defaults  [SKULSHADY]
+ff1c289  HWKeys: Disable haptic on keyguard  [xyyx]
+b1b329b  hw-keys: enable powermenu on hwkeys actions  [bigrushdog]
+5fa5689  SmartNav: Bring back Kill App action  [bigrushdog]
+c9ca206  Hardware key disable support  [Randall Rushing]
+df4f913  Bring up hardware key action binding framework  [Randall Rushing]
+32e2a3c  Initial checkin on Pie for SmartNav navigation suite [1/4]  [bigrushdog]
+
+ * packages/apps/PixelDustSettings
+fac9edc  New active edge icon. Thanks @ROGERdotT  [spezi77]
+87082fa  Fallback to "no action" when an application gets removed [2/2]  [Giuseppe Maggio]
+e3cec85  Active Edge: allow to choose a specific app activity [3/4]  [Ezio Lacandia Bijelkic]
+83cb0a6  Introduce long squeeze action [2/3]  [Alex]
+
+ * packages/providers/WeatherProvider
+f9da4c3  WeatherChannelApi: Fix allocation abuse  [Harsh Shandilya]
+
+ * vendor/support
+40edfe7  Active Edge: allow to choose a specific app activity [2/4]  [Ezio Lacandia Bijelkic]
+
+
+ 2019-03-03:
+
+ * frameworks/base
+8cf4375  Revert current "SmartNav / HWKeys action binding" implementation.  [spezi77]
+
+ * packages/apps/PixelDustSettings
+84561f1  MiscSettings: Wakeup when plugged or unplugged [1/2]  [Jon Evans]
+adc3a10  QuickSettings: Add toggle to turn off "Secure tiles require unlocking before being accessible" [2/2].  [spezi77]
+
+
+ 2019-03-02:
+
+
+ 2019-03-01:
+
+
+ 2019-02-28:
+
+ * external/skia
+d69d22d  Add rect-parameter to makeImageSnapshot and stop using chromium config options  [Derek Sollenberger]
+8b04682  Fix ABI Compliance Issue for JPEG Merged Upsample  [Mort (Tianqi) Guo]
+7481568  Avoid coverage bleed for AA arcs with tiny sweep angles  [Brian Osman]
+7b64f64  Move fragCoord workaround declaration  [Brian Osman]
+6bec2b4  skia: Clean up -Wextra-semi-stmt warnings  [mydongistiny]
+fdabdec  fGpu is null when GrGpuResource::release  [zhang defang]
+e61ef9f  skia: Use std::move() to prevent unnecessary copying  [mydongistiny]
+5b824a7  Optimize the for loop in onGetYUV8Planes  [nagarajan.n]
+06377a9  Skia performance optimize for bitmap  [Libo Jin]
+6876920  external/skia: Take Fast Jpeg Decoding Path  [Mort (Tianqi) Guo]
+f4915f5  Merge tag 'android-9.0.0_r33' into p  [spezi77]
+
+ * frameworks/opt/net/wifi
+ac65c0d  wifi: Not reset country code for Dual SIM if any slot is active  [Hu Wang]
+18b2b02  wifi: don't check if WIFI_DRIVER_STATE_CTRL_PARAM is readable  [codeworkx]
+49522b0  wifi: Check whether dev node is accessible or not before opening  [Yuanyuan Liu]
+b2d7978  libwifi-hal: add flag to wait for kernel driver to get ready  [codeworkx]
+
+ * frameworks/opt/telephony
+5aed28a  LocaleTracker: Add null check before accessing WifiManager  [dianlujitao]
+e564290  RIL: Allow overriding RadioResponse and RadioIndication  [Paul Keith]
+231aaec  IMS: RTT feature changes  [Ashit Sood]
+427694d  Avoid showing stack trace without QTI telephony extension  [maxwen]
+3fba5a9  telephony: Squashed support for simactivation feature  [Bruno Martins]
+
+ * kernel/google/wahoo
+0a6de708  staging: qcacld-3.0: Incorrect usage of QDF_ARRAY_SIZE macro  [Dundi Raviteja]
+
+ * packages/services/Telephony
+64ede0d  Fix carrier config option not hidden on a CDMA phone  [dianlujitao]
+be9dddb  Don't start SIP service before decrypted  [dianlujitao]
+eb318d4  Fix non-protected broadcasts sent from phone process.  [Umashankar Godachi]
+ddb464f  Telephony: Support muting by RIL command  [Artem Borisov]
+
+
+ 2019-02-27:
+
+
+ 2019-02-26:
 
 
  2019-02-25:
@@ -51,14 +229,35 @@ bb5eda1  Initial checkin on Pie for SmartNav navigation suite [1/4]  [bigrushdog
  * external/google
 38e2813  SmartNav: Fix NPE when navbar is not set to stock mode  [calebcabob]
 
- * frameworks/base
-7e9257a  Revert current "SmartNav / HWKeys action binding" implementation.  [spezi77]
-
  * packages/apps/PixelDustSettings
 647f7db  Network Traffic: Add more customizations and improvement [1/2]  [Pranav Vashi]
 
 
  2019-02-24:
+
+ * kernel/google/wahoo
+857f66e  Merge 4.4.176 into android-msm-wahoo-4.4  [Nathan Chancellor]
+af13f43  Linux 4.4.176  [Greg Kroah-Hartman]
+49e1a9d  KVM: VMX: Fix x2apic check in vmx_msr_bitmap_mode()  [Joerg Roedel]
+94801fd  ax25: fix possible use-after-free  [Eric Dumazet]
+c532eb1  mISDN: fix a race in dev_expire_timer()  [Eric Dumazet]
+82379cf  net/x25: do not hold the cpu too long in x25_new_lci()  [Eric Dumazet]
+c78c9f5  mfd: as3722: Mark PM functions as __maybe_unused  [Arnd Bergmann]
+e7dff89  mfd: as3722: Handle interrupts on suspend  [Jon Hunter]
+bc4db52  kvm: fix kvm_ioctl_create_device() reference counting (CVE-2019-6974)  [Jann Horn]
+f5aebe7  x86: livepatch: Treat R_X86_64_PLT32 as R_X86_64_PC32  [chenzefeng (A)]
+01fb360  net: ipv4: use a dedicated counter for icmp_v4 redirect packets  [Lorenzo Bianconi]
+3fa6a28  net: stmmac: Fix a race in EEE enable callback  [Jose Abreu]
+ffed570  vxlan: test dev->flags & IFF_UP before calling netif_rx()  [Eric Dumazet]
+a466589  tcp: clear icsk_backoff in tcp_write_queue_purge()  [Eric Dumazet]
+2e7b872  net: Do not allocate page fragments that are not skb aligned  [Alexander Duyck]
+122e4a3  tcp: tcp_v4_err() should be more careful  [Eric Dumazet]
+817d4a42  net: Add header for usage of fls64()  [David S. Miller]
+7fecacc  sky2: Increase D3 delay again  [Kai-Heng Feng]
+1815d11  net: Fix for_each_netdev_feature on Big endian  [Hauke Mehrtens]
+27763b0  hwmon: (lm80) Fix missing unlock on error in set_fan_div()  [Wei Yongjun]
+9d6ca4d  vsock: cope with memory allocation failure at socket creation time  [Paolo Abeni]
+9467d98  net: fix IPv6 prefix route residue  [Zhiqiang Liu]
 
  * packages/apps/SmartNav
 a19c8e7  Navigator: Add isFullGestureMode method  [Harsh Shandilya]
@@ -68,20 +267,18 @@ a19c8e7  Navigator: Add isFullGestureMode method  [Harsh Shandilya]
 
  * external/google
 134afb5  CustomActions: Switch to PixeldustUtils.  [spezi77]
+d279ab6  Elmyra: cleanup here and there  [Giuseppe Maggio]
+7438ef4  CustomActions: Use settings provider to store value [1/3]  [Alex]
+
+ * packages/apps/SmartNav
+e6e3479  Switch to new ActionUtils.  [spezi77]
 
 
  2019-02-22:
 
- * external/google
-d279ab6  Elmyra: cleanup here and there  [Giuseppe Maggio]
-7438ef4  CustomActions: Use settings provider to store value [1/3]  [Alex]
-
  * packages/apps/PixelDustSettings
 feefbbc  Switch over to latest hw-key action utils.  [spezi77]
 5aeb594  CustomActions: Use settings provider to store value [3/3]  [Alex]
-
- * packages/apps/SmartNav
-e6e3479  Switch to new ActionUtils.  [spezi77]
 
  * vendor/support
 ee74574  AppPicker: Import from external/google for other uses  [Alex]
@@ -94,6 +291,153 @@ ee74574  AppPicker: Import from external/google for other uses  [Alex]
 c2a36d5  SquishyNavbar: If power saver is on, don't allow feedback  [Alex]
 6b78650  CustomActions: Add support to launch applications [1/2]  [Alex]
 dc9b4ff  CustomActions: Screen off availability  [Alex]
+
+ * kernel/google/wahoo
+b4daa97  Merge 4.4.175 into android-msm-wahoo-4.4  [Nathan Chancellor]
+332deb1  Linux 4.4.175  [Greg Kroah-Hartman]
+cb4f43b  uapi/if_ether.h: move __UAPI_DEF_ETHHDR libc define  [Hauke Mehrtens]
+d5800cf  pinctrl: msm: fix gpio-hog related boot issues  [Christian Lamparter]
+a4af225  usb: dwc2: Remove unnecessary kfree  [John Youn]
+49cf68d  kaweth: use skb_cow_head() to deal with cloned skbs  [Eric Dumazet]
+4307a87  ch9200: use skb_cow_head() to deal with cloned skbs  [Eric Dumazet]
+f8e3d1b  smsc95xx: Use skb_cow_head to deal with cloned skbs  [James Hughes]
+27a7077  dm thin: fix bug where bio that overwrites thin block ignores FUA  [Nikos Tsironis]
+5079b1d  x86/a.out: Clear the dump structure initially  [Borislav Petkov]
+492647b  signal: Restore the stop PTRACE_EVENT_EXIT  [Eric W. Biederman]
+7212e37  x86/platform/UV: Use efi_runtime_lock to serialise BIOS calls  [Hedi Berriche]
+137f4db1  tracing/uprobes: Fix output for multiple string arguments  [Andreas Ziegler]
+5fc9518  alpha: Fix Eiger NR_IRQS to 128  [Meelis Roos]
+1d8b203  alpha: fix page fault handling for r16-r18 targets  [Sergei Trofimovich]
+fd08513  Input: elantech - enable 3rd button support on Fujitsu CELSIUS H780  [Matti Kurkela]
+6d6d625  Input: bma150 - register input device after setting private data  [Jonathan Bakker]
+05268b5  ALSA: usb-audio: Fix implicit fb endpoint setup by quirk  [Manuel Reinhardt]
+422e1ad  ALSA: hda - Add quirk for HP EliteBook 840 G5  [Jurica Vukadin]
+222b22e  perf/core: Fix impossible ring-buffer sizes warning  [Ingo Molnar]
+b7febf3  Input: elan_i2c - add ACPI ID for touchpad in Lenovo V330-15ISK  [Mauro Ciancio]
+d347a89  Revert "Input: elan_i2c - add ACPI ID for touchpad in ASUS Aspire F5-573G"  [Dmitry Torokhov]
+29c84aa  Documentation/network: reword kernel version reference  [Mark Rustad]
+1f39e51  cifs: Limit memory used by lock request calls to a page  [Ross Lagerwall]
+8347670  gpio: pl061: handle failed allocations  [Nicholas Mc Guire]
+32f0471  ARM: dts: kirkwood: Fix polarity of GPIO fan lines  [Linus Walleij]
+20ad504  ARM: dts: da850-evm: Correct the sound card name  [Peter Ujfalusi]
+28b5d0b  uapi/if_ether.h: prevent redefinition of struct ethhdr  [Hauke Mehrtens]
+7cbbbf7  Revert "exec: load_script: don't blindly truncate shebang string"  [Linus Torvalds]
+b2942d5  batman-adv: Force mac header to start of data on xmit  [Sven Eckelmann]
+8fe1614  batman-adv: Avoid WARN on net_device without parent in netns  [Sven Eckelmann]
+ca6fd8d  xfrm: refine validation of template and selector families  [Florian Westphal]
+2e9e4e1  libceph: avoid KEEPALIVE_PENDING races in ceph_con_keepalive()  [Ilya Dryomov]
+1793dc6  Revert "cifs: In Kconfig CONFIG_CIFS_POSIX needs depends on legacy (insecure cifs)"  [Greg Kroah-Hartman]
+2a41ed3  NFC: nxp-nci: Include unaligned.h instead of access_ok.h  [Guenter Roeck]
+b661fff  HID: debug: fix the ring buffer implementation  [Vladis Dronov]
+697c6f7  drm/vmwgfx: Return error code from vmw_execbuf_copy_fence_user  [Thomas Hellstrom]
+6bcca0b  drm/vmwgfx: Fix setting of dma masks  [Thomas Hellstrom]
+f1cd557  drm/modes: Prevent division by zero htotal  [Tina Zhang]
+06288a8  mac80211: ensure that mgmt tx skbs have tailroom for encryption  [Felix Fietkau]
+fd9d055  ARM: iop32x/n2100: fix PCI IRQ mapping  [Russell King]
+dfb3536  MIPS: VDSO: Include $(ccflags-vdso) in o32,n32 .lds builds  [Paul Burton]
+91aaa0d  MIPS: OCTEON: don't set octeon_dma_bar_type if PCI is disabled  [Aaro Koskinen]
+d93fdf4  mips: cm: reprime error cause  [Vladimir Kondratiev]
+2b46cd1  debugfs: fix debugfs_rename parameter checking  [Greg Kroah-Hartman]
+99b23b0  misc: vexpress: Off by one in vexpress_syscfg_exec()  [Dan Carpenter]
+60de9ff  signal: Better detection of synchronous signals  [Eric W. Biederman]
+381fc50  signal: Always notice exiting tasks  [Eric W. Biederman]
+6f17dfe  mtd: rawnand: gpmi: fix MX28 bus master lockup problem  [Martin Kepplinger]
+cb7c96e  perf tests evsel-tp-sched: Fix bitwise operator  [Gustavo A. R. Silva]
+06bbc48  perf/core: Don't WARN() for impossible ring-buffer sizes  [Mark Rutland]
+122c014  x86/MCE: Initialize mce.bank in the case of a fatal error in mce_no_way_out()  [Tony Luck]
+0002515  perf/x86/intel/uncore: Add Node ID mask  [Kan Liang]
+9872dda  KVM: nVMX: unconditionally cancel preemption timer in free_nested (CVE-2019-7221)  [Peter Shier]
+1b5fd91  KVM: x86: work around leak of uninitialized stack contents (CVE-2019-7222)  [Paolo Bonzini]
+b0f59c3  usb: gadget: udc: net2272: Fix bitwise and boolean operations  [Gustavo A. R. Silva]
+ff8c182  usb: phy: am335x: fix race condition in _probe  [Bin Liu]
+b191f19  dmaengine: imx-dma: fix wrong callback invoke  [Leonid Iziumtsev]
+c5cf17c  fuse: handle zero sized retrieve correctly  [Miklos Szeredi]
+bade8e5  fuse: decrement NR_WRITEBACK_TEMP on the right page  [Miklos Szeredi]
+a7dfde0  fuse: call pipe_buf_release() under pipe lock  [Jann Horn]
+71ce2e8  ALSA: hda - Serialize codec registrations  [Takashi Iwai]
+d7204d3  ALSA: compress: Fix stop handling on compressed capture streams  [Charles Keepax]
+b1746f9f  net: dsa: slave: Don't propagate flag changes on down slave interfaces  [Rundong Ge]
+8d8aafc  net: systemport: Fix WoL with password after deep sleep  [Florian Fainelli]
+5296ebc  skge: potential memory corruption in skge_get_regs()  [Dan Carpenter]
+b1a5e14  net: dp83640: expire old TX-skb  [Sebastian Andrzej Siewior]
+16570a4  enic: fix checksum validation for IPv6  [Govindarajulu Varadarajan]
+ff0a4fa  dccp: fool proof ccid_hc_[rt]x_parse_options()  [Eric Dumazet]
+a7ea4de  string: drop __must_check from strscpy() and restore strscpy() usages in cgroup  [Tejun Heo]
+ae46de2  tipc: use destination length for copy string  [Guoqing Jiang]
+5ef0ebd  test_hexdump: use memcpy instead of strncpy  [Linus Torvalds]
+93af75d  thermal: hwmon: inline helpers when CONFIG_THERMAL_HWMON is not set  [Eduardo Valentin]
+9a37610  exec: load_script: don't blindly truncate shebang string  [Oleg Nesterov]
+e1d575b  fs/epoll: drop ovflist branch prediction  [Davidlohr Bueso]
+25768bb  kernel/hung_task.c: break RCU locks based on jiffies  [Tetsuo Handa]
+3f516da  HID: lenovo: Add checks to fix of_led_classdev_register  [Aditya Pakki]
+a711dcb  block/swim3: Fix -EBUSY error when re-opening device after unmount  [Finn Thain]
+4c54949  gdrom: fix a memory leak bug  [Wenwen Wang]
+cab4f01  isdn: hisax: hfc_pci: Fix a possible concurrency use-after-free bug in HFCPCI_l1hw()  [Jia-Ju Bai]
+80f8149  ocfs2: don't clear bh uptodate for block read  [Junxiao Bi]
+bc5abb8  scripts/decode_stacktrace: only strip base path when a prefix of the path  [Marc Zyngier]
+1f8aea0  niu: fix missing checks of niu_pci_eeprom_read  [Kangjie Lu]
+ccc9ed2  um: Avoid marking pages with "changed protection"  [Anton Ivanov]
+7d1cfc10  cifs: check ntwrk_buf_start for NULL before dereferencing it  [Ronnie Sahlberg]
+b49344a  crypto: ux500 - Use proper enum in hash_set_dma_transfer  [Nathan Chancellor]
+846aa25  crypto: ux500 - Use proper enum in cryp_set_dma_transfer  [Nathan Chancellor]
+cc98085  seq_buf: Make seq_buf_puts() null-terminate the buffer  [Michael Ellerman]
+90beb6b  hwmon: (lm80) fix a missing check of bus read in lm80 probe  [Kangjie Lu]
+259c502  hwmon: (lm80) fix a missing check of the status of SMBus read  [Kangjie Lu]
+8ba3a4e  NFS: nfs_compare_mount_options always compare auth flavors.  [Chris Perl]
+a8014f2  KVM: x86: svm: report MSR_IA32_MCG_EXT_CTL as unsupported  [Vitaly Kuznetsov]
+2e7c1f0  fbdev: fbcon: Fix unregister crash when more than one framebuffer  [Noralf Trønnes]
+03c5ed7  igb: Fix an issue that PME is not enabled during runtime suspend  [Kai-Heng Feng]
+472f3f0  fbdev: fbmem: behave better with small rotated displays and many CPUs  [Peter Rosin]
+da079f87  video: clps711x-fb: release disp device node in probe()  [Alexey Khoroshilov]
+1fbbe0c  drbd: Avoid Clang warning about pointless switch statment  [Nathan Chancellor]
+eb15351  drbd: skip spurious timeout (ping-timeo) when failing promote  [Lars Ellenberg]
+5c857f0  drbd: disconnect, if the wrong UUIDs are attached on a connected peer  [Lars Ellenberg]
+3b5d412  drbd: narrow rcu_read_lock in drbd_sync_handshake  [Roland Kammerer]
+8b79471  cw1200: Fix concurrency use-after-free bugs in cw1200_hw_scan()  [Jia-Ju Bai]
+a664909  Bluetooth: Fix unnecessary error message for HCI request completion  [Johan Hedberg]
+f74e04a  xfrm6_tunnel: Fix spi check in __xfrm6_tunnel_alloc_spi  [YueHaibing]
+b489ed3  mac80211: fix radiotap vendor presence bitmap handling  [Johannes Berg]
+3df04b5  powerpc/uaccess: fix warning/error with access_ok()  [Christophe Leroy]
+fac39ee  arm64: KVM: Skip MMIO insn after emulation  [Mark Rutland]
+9f01d0d  tty: serial: samsung: Properly set flags in autoCTS mode  [Beomho Seo]
+98920f4  memstick: Prevent memstick host from getting runtime suspended during card detection  [Kai-Heng Feng]
+fff375e  ASoC: fsl: Fix SND_SOC_EUKREA_TLV320 build error on i.MX8M  [Fabio Estevam]
+b903740  ARM: pxa: avoid section mismatch warning  [Arnd Bergmann]
+ea59fcf  udf: Fix BUG on corrupted inode  [Jan Kara]
+0d997e1  i2c-axxia: check for error conditions first  [Adamski, Krzysztof (Nokia - PL/Wroclaw)]
+c4d10ce  cpuidle: big.LITTLE: fix refcount leak  [Yangtao Li]
+e21e67e  clk: imx6sl: ensure MMDC CH0 handshake is bypassed  [Anson Huang]
+c90636f  sata_rcar: fix deferred probing  [Sergei Shtylyov]
+771727c  iommu/arm-smmu-v3: Use explicit mb() when moving cons pointer  [Will Deacon]
+cab345f  mips: bpf: fix encoding bug for mm_srlv32_op  [Jiong Wang]
+54b53c5  ARM: dts: Fix OMAP4430 SDP Ethernet startup  [Russell King - ARM Linux]
+eb9c64e  timekeeping: Use proper seqcount initializer  [Bart Van Assche]
+235f1e5  usb: hub: delay hub autosuspend if USB3 port is still link training  [Mathias Nyman]
+7518fa7  smack: fix access permissions for keyring  [Zoran Markovic]
+da32723  media: DaVinci-VPBE: fix error handling in vpbe_initialize()  [Alexey Khoroshilov]
+028f17e  x86/fpu: Add might_fault() to user_insn()  [Sebastian Andrzej Siewior]
+7508610  ARM: dts: mmp2: fix TWSI2  [Lubomir Rintel]
+2d6f9a8  arm64: ftrace: don't adjust the LR value  [Mark Rutland]
+ef9cc1e  nfsd4: fix crash on writing v4_end_grace before nfsd startup  [J. Bruce Fields]
+627e656  sunvdc: Do not spin in an infinite loop when vio_ldc_send() returns EAGAIN  [Young Xiao]
+d67dec9  f2fs: fix wrong return value of f2fs_acl_create  [Tiezhu Yang]
+262871e  f2fs: move dir data flush to write checkpoint process  [Yunlei He]
+f936083  soc/tegra: Don't leak device tree node reference  [Yangtao Li]
+1e94c7b  perf tools: Add Hygon Dhyana support  [Pu Wen]
+b02bfd8  modpost: validate symbol names also in find_elf_symbol  [Sami Tolvanen]
+c34330e1  ARM: OMAP2+: hwmod: Fix some section annotations  [Nathan Chancellor]
+eba6d94  staging: iio: ad7780: update voltage on read  [Renato Lui Geh]
+524b2be  staging:iio:ad2s90: Make probe handle spi_setup failure  [Matheus Tavares]
+caf6a81  ptp: check gettime64 return code in PTP_SYS_OFFSET ioctl  [Miroslav Lichvar]
+7c6340d  serial: fsl_lpuart: clear parity enable bit when disable parity  [Andy Duan]
+c9ddfda  powerpc/pseries: add of_node_put() in dlpar_detach_node()  [Frank Rowand]
+2f85daf  x86/PCI: Fix Broadcom CNB20LE unintended sign extension (redux)  [Colin Ian King]
+dd307a8  dlm: Don't swamp the CPU with callbacks queued during recovery  [Bob Peterson]
+aeef84f  ARM: 8808/1: kexec:offline panic_smp_self_stop CPU  [Yufen Wang]
+871243f  scsi: lpfc: Correct LCB RJT handling  [James Smart]
+f9d6798  ASoC: Intel: mrfld: fix uninitialized variable access  [Arnd Bergmann]
+6a7e658  staging: iio: adc: ad7280a: handle error from __ad7280_read32()  [Slawomir Stepien]
+3f95170  drm/bufs: Fix Spectre v1 vulnerability  [Gustavo A. R. Silva]
 
  * packages/apps/PixelDustSettings
 9719f2b  CustomActions: Add ringer modes  [Mazda--]
@@ -113,37 +457,39 @@ a0cf9c2  CustomActions: Add support to launch applications [2/2]  [Mazda--]
 
  2019-02-18:
 
- * vendor/googleapps
-99e8ab3  GoogleDialer: Use version from DU's pixelgapps.  [spezi77]
-
-
- 2019-02-17:
-
  * external/google
 aa02b5d  Adapt to SmartNav.  [spezi77]
 
 
+ 2019-02-17:
+
+
  2019-02-16:
-
-
- 2019-02-15:
-
- * device/google/wahoo
-d12c2a4  Only inherit Elmyra for Pixel devices  [Alex]
 
  * external/google
 e125c29  PD'fy.  [spezi77]
 
  * packages/apps/PixelDustSettings
 ac50526  Active Edge: Add missed out action strings.  [spezi77]
+
+
+ 2019-02-15:
+
+ * build/make
+72e5d11  Fix userdebug builds (allow insecure adb at boot time). Things got messed up when picking this one: https://github.com/pixeldust *-p/android_build_make/commit/c7a13f426f82c192d0e4c9d7284a1ccfbb653adc  [spezi77]
+
+ * device/google/wahoo
+d12c2a4  Only inherit Elmyra for Pixel devices  [Alex]
+
+ * packages/apps/PixelDustSettings
 a1622cf  Only inherit Elmyra for Pixel devices  [Alex]
 c5b269e  Active edge settings 3/? Squashed in: - Add a footer to Active Edge settings  [Alex]
 
  * packages/apps/Settings
 5616397  Active edge settings 6/?  [Alex]
 
- * vendor/google
-78af551  Elmyra: add elmyra lib and permission  [Giuseppe Maggio]
+ * packages/providers/WeatherProvider
+b602e05  Revert "WeatherProvider: Remove permission requirements"  [spezi77]
 
  * vendor/support
 8662bd2  Color Picker: Remove OnClick listener to fix disabling  [xyyx]
@@ -151,26 +497,17 @@ c5b269e  Active edge settings 3/? Squashed in: - Add a footer to Active Edge set
 
  2019-02-14:
 
- * build/make
-72e5d11  Fix userdebug builds (allow insecure adb at boot time). Things got messed up when picking this one: https://github.com/pixeldust *-p/android_build_make/commit/c7a13f426f82c192d0e4c9d7284a1ccfbb653adc  [spezi77]
-
  * external/google
 48994c1  Gestures: Add camera action  [Alex]
 
  * packages/apps/PixelDustSettings
 b672976  Restore old icon pack impl. which is still required by SmartNavSettings. Got removed by this commit: https://github.com/pixeldust *-p/android_packages_apps_PixelDustSettings/commit/146410c01af05681b133e2927cbf2b93eab3c7d7  [spezi77]
 
- * packages/providers/WeatherProvider
-b602e05  Revert "WeatherProvider: Remove permission requirements"  [spezi77]
-
- * vendor/googleapps
-3578051  Update dialer jar file for safety reasons. On taimen GoogleDialer threw an odd error in the log: Dialer  : PixelDeviceCompatibilityChecker.checkCompatibility - pixel system feature is not found!  [spezi77]
+ * vendor/google
+1fa2c9f  Elmyra: add elmyra lib and permission  [Giuseppe Maggio]
 
 
  2019-02-13:
-
- * vendor/googleapps
-1a316d4  Add a shamu compatible version of GoogleDialer. Select the arm64-v8a version for other devices for now -- it can be changed at a later time if required.  [spezi77]
 
 
  2019-02-12:
@@ -185,24 +522,6 @@ d5ce050  Additional cleanup for janky methods  [Giuseppe Maggio]
 
  * external/google
 1388d23  Bypass screen off adjustment and go back to 0-8 for sensitivity  [Giuseppe Maggio]
-
- * vendor/googleapps
-7cfe3dc  Restore full Google Dialer support.  [spezi77]
-
-
- 2019-02-10:
-
- * external/skia
-27cadc7  Add rect-parameter to makeImageSnapshot and stop using chromium config options  [Derek Sollenberger]
-33d511c  Fix ABI Compliance Issue for JPEG Merged Upsample  [Mort (Tianqi) Guo]
-7f68e0b  Avoid coverage bleed for AA arcs with tiny sweep angles  [Brian Osman]
-b9ce939  Move fragCoord workaround declaration  [Brian Osman]
-140b8c7  skia: Clean up -Wextra-semi-stmt warnings  [mydongistiny]
-925ebad  fGpu is null when GrGpuResource::release  [zhang defang]
-e35f167  skia: Use std::move() to prevent unnecessary copying  [mydongistiny]
-c178bf9  Optimize the for loop in onGetYUV8Planes  [nagarajan.n]
-d8dc19b  Skia performance optimize for bitmap  [Libo Jin]
-b99b11f  external/skia: Take Fast Jpeg Decoding Path  [Mort (Tianqi) Guo]
 
  * frameworks/base
 1c50c08  SurfaceControl: Unbreak public API after pie-gsi merge  [Han Wang]
@@ -228,15 +547,11 @@ c390714  Keyguard: Avoid starting FP authentication right after cancelling  [dia
 25dc42f  Quickspace: Fix memory leak in intent receivers  [Chris]
 a7952e0  Lock desktop: Ensure that widgets can't be resized  [Alex]
 
- * packages/providers/WeatherProvider
-ddcd9e5  WeatherProvider: Remove permission requirements  [Chris Crump]
-c776787  WeatherProvider: Update google play services libs  [Chris Crump]
-
- * vendor/pixeldust
-b09ec09  Shishu themes: Remove shishufied settings launcher icon.  [spezi77]
+ * vendor/google
+7b20599  marlin: PQ2A.190205.003  [DeviousFusion]
 
 
- 2019-02-09:
+ 2019-02-10:
 
  * device/google/wahoo
 68a6eea  Merge branch 'p9x' of https://github.com/DirtyUnicorns/android_device_google_wahoo into HEAD  [nitin1438]
@@ -252,6 +567,27 @@ b80dd21  Revert "Add Always On Display"  [nitin1438]
 0a5cc17  Elmyra: Bring in the resources  [Alex]
 2d581d9  Active edge Settings 5/?  [Alex]
 
+ * kernel/google/wahoo
+6d2f77e  Merge branch 'p9x' of https://github.com/DirtyUnicorns/android_kernel_google_wahoo into HEAD  [nitin1438]
+
+ * packages/providers/WeatherProvider
+ddcd9e5  WeatherProvider: Remove permission requirements  [Chris Crump]
+c776787  WeatherProvider: Update google play services libs  [Chris Crump]
+
+ * vendor/pixeldust
+b09ec09  Shishu themes: Remove shishufied settings launcher icon.  [spezi77]
+8cf2891  taimen: update fingerprint PQ2A.190205.002  [nitin1438]
+4532a04  shamu: add basic gapps package  [nitin1438]
+
+
+ 2019-02-09:
+
+ * build/make
+c6ec342  build: Support system-as-root A-only backuptool  [LuK1337]
+a673b67  Default libnfc-nci.conf for GSI  [Justin Yun]
+6165148  Don't build vendor rro  [ezio84]
+7596b72  Don't compile notch emulation overlays  [Alex Cruz]
+
  * frameworks/base
 173d185  Reload more assets on overlay change  [Ivan Iskandar]
 228e7da  Ambient music: show on lockscreen only for Google's Now Playing  [ezio84]
@@ -263,26 +599,51 @@ f9e9874  Statusbar clock: restore qsheader check within a saved instance  [ezio8
 b8f147d  Merge branch 'pie-qpr2-release' of https://github.com/aosp-mirror/platform_frameworks_base into p  [spezi77]
 
  * kernel/google/wahoo
-6d2f77e  Merge branch 'p9x' of https://github.com/DirtyUnicorns/android_kernel_google_wahoo into HEAD  [nitin1438]
+23a2ded  Merge 4.4.174 into android-msm-wahoo-4.4  [Nathan Chancellor]
+dc5e8c9  Linux 4.4.174  [Greg Kroah-Hartman]
+60c7f8f  rcu: Force boolean subscript for expedited stall warnings  [Paul E. McKenney]
+873beab3  net: ipv4: do not handle duplicate fragments as overlapping  [Michal Kubecek]
+0836bdf  net: fix pskb_trim_rcsum_slow() with odd trim offset  [Dimitris Michailidis]
+e92b847  inet: frags: better deal with smp races  [Eric Dumazet]
+acd00a0  ipv4: frags: precedence bug in ip_expire()  [Dan Carpenter]
+cb5fd4a  ip: frags: fix crash in ip_do_fragment()  [Taehee Yoo]
+2822475  ip: process in-order fragments efficiently  [Peter Oskolkov]
+2039bd8  ip: add helpers to process in-order fragments faster.  [Peter Oskolkov]
+3f78a3f  ip: use rb trees for IP frag queue.  [Peter Oskolkov]
+7fab8b2  net: pskb_trim_rcsum() and CHECKSUM_COMPLETE are friends  [Eric Dumazet]
+5f2d68b  ipv6: defrag: drop non-last frags smaller than min mtu  [Florian Westphal]
+26cfea3  net: modify skb_rbtree_purge to return the truesize of all purged skbs.  [Peter Oskolkov]
+ef0f963  ip: discard IPv4 datagrams with overlapping segments.  [Peter Oskolkov]
+bf40801  inet: frags: fix ip6frag_low_thresh boundary  [Eric Dumazet]
+826ff79  inet: frags: get rid of ipfrag_skb_cb/FRAG_CB  [Eric Dumazet]
+29ff723  inet: frags: reorganize struct netns_frags  [Eric Dumazet]
+3399001  rhashtable: reorganize struct rhashtable layout  [Eric Dumazet]
+bf81873  ipv6: frags: rewrite ip6_expire_frag_queue()  [Eric Dumazet]
+f925a29  inet: frags: do not clone skb in ip_expire()  [Eric Dumazet]
+567ef05  inet: frags: break the 2GB limit for frags storage  [Eric Dumazet]
+50fc089  inet: frags: remove inet_frag_maybe_warn_overflow()  [Eric Dumazet]
+b047c79  inet: frags: get rif of inet_frag_evicting()  [Eric Dumazet]
+cf2b9e6  inet: frags: remove some helpers  [Eric Dumazet]
+f67b17c  ipfrag: really prevent allocation on netns exit  [Paolo Abeni]
+24641fb  net: ieee802154: 6lowpan: fix frag reassembly  [Alexander Aring]
+4931071  inet: frags: use rhashtables for reassembly units  [Eric Dumazet]
+bf5ea30  rhashtable: add schedule points  [Eric Dumazet]
+9e5f4d0  rhashtable: Add rhashtable_lookup()  [Ben Hutchings]
+8295999  rhashtable: add rhashtable_lookup_get_insert_key()  [Pablo Neira Ayuso]
+a7fb573  inet: frags: refactor lowpan_net_frag_init()  [Eric Dumazet]
+705e71e  inet: frags: refactor ipv6_frag_init()  [Eric Dumazet]
+8c639ca  inet: frags: refactor ipfrag_init()  [Eric Dumazet]
+9c6727d  inet: frags: add a pointer to struct netns_frags  [Eric Dumazet]
+5eb2471  inet: frags: change inet_frags_init_net() return value  [Eric Dumazet]
 
  * packages/apps/Launcher3
 5d34020  Decompiled feed lib with dark theme support  [Amir Zaidi]
 
- * vendor/google
-b44f448  Taimen: Update blobs to Android 9.0.0 (PQ2A.190205.002)  [Josh Chasky]
-
- * vendor/pixeldust
-8cf2891  taimen: update fingerprint PQ2A.190205.002  [nitin1438]
-4532a04  shamu: add basic gapps package  [nitin1438]
-
 
  2019-02-08:
 
- * build/make
-c6ec342  build: Support system-as-root A-only backuptool  [LuK1337]
-a673b67  Default libnfc-nci.conf for GSI  [Justin Yun]
-6165148  Don't build vendor rro  [ezio84]
-7596b72  Don't compile notch emulation overlays  [Alex Cruz]
+ * device/google/wahoo
+6059a70  Merge tag 'android-9.0.0_r32' of https://android.googlesource.com/device/google/wahoo into HEAD  [spaceman860]
 
  * external/google
 aec691a  Partial removal of weird cycles in ElmyraService  [Giuseppe Maggio]
@@ -294,12 +655,13 @@ c754003  Switch to the assist manager for the Assistant action  [Alex]
 d33c098  Remove various dumps methods, the sensor works just fine  [Giuseppe Maggio]
 d1cf98a  JNIGestureSensor isn't used anymore  [Giuseppe Maggio]
 38bf166  Cleanup UserContentObserver  [Giuseppe Maggio]
+e86e308  Merge branch 'dev'  [Giuseppe Maggio]
+03c608c  Animation and vibration: Ensure it respects 'no action' in multiuser  [Alex]
+066537f  Add more gestures  [Alex]
+a74565b  Disable navbar animation and vibration with no action  [Alex]
 
- * vendor/googleapps
-6a89582  Good bye Pixel Launcher. We'll handle this device-wise in pixeldust/vendor  [spezi77]
-7ba7c18  Add more make files (basic, minimal) to support low-memory devices.  [spezi77]
-42629d6  Update permission whitelist for latest PlayStore update.  [spezi77]
-ea89f2d  Update to latest 9.0 Google Apps (Feb 2019).  [spezi77]
+ * kernel/google/wahoo
+f9e2a612  Merge branch 'android-msm-wahoo-4.4' of https://github.com/android-linux-stable/wahoo into HEAD  [spaceman860]
 
  * vendor/pixeldust
 d591b8b  Theme Now Playing [1/2]  [Alex Cruz]
@@ -308,14 +670,7 @@ d591b8b  Theme Now Playing [1/2]  [Alex Cruz]
 
  2019-02-07:
 
- * device/google/wahoo
-6059a70  Merge tag 'android-9.0.0_r32' of https://android.googlesource.com/device/google/wahoo into HEAD  [spaceman860]
-
  * external/google
-e86e308  Merge branch 'dev'  [Giuseppe Maggio]
-03c608c  Animation and vibration: Ensure it respects 'no action' in multiuser  [Alex]
-066537f  Add more gestures  [Alex]
-a74565b  Disable navbar animation and vibration with no action  [Alex]
 41a9448  Remove useless qualifiers for other classes  [Giuseppe Maggio]
 cc5ad4f  Google's protobuf isn't needed  [Giuseppe Maggio]
 c90ced9  Last synthetic lambda conversions  [Giuseppe Maggio]
@@ -347,7 +702,6 @@ d980e86  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platf
 e1bc2d5  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/hardware/qcom/gps into p  [spezi77]
 
  * kernel/google/wahoo
-f9e2a612  Merge branch 'android-msm-wahoo-4.4' of https://github.com/android-linux-stable/wahoo into HEAD  [spaceman860]
 f011f6b  Merge 4.4.173 into android-msm-wahoo-4.4  [Nathan Chancellor]
 343f981  Linux 4.4.173  [Greg Kroah-Hartman]
 1692595  fs: don't scan the inode cache before SB_BORN is set  [Dave Chinner]
@@ -1040,6 +1394,10 @@ fa2f12e  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platf
  * system/sepolicy
 da9e066  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/system/sepolicy into p  [spezi77]
 
+ * vendor/google
+e69d37b  Taimen: Update blobs to Android 9.0.0 (PQ2A.190205.002)  [Josh Chasky]
+0d7e7ff  Bluecross: Update blobs to Android 9.0.0 (PQ2A.190205.003)  [Josh Chasky]
+
  * vendor/google_devices
 604c5cf  marlin/sailfish: PQ2A.190205.003  [spezi77]
 
@@ -1055,210 +1413,4 @@ f46ac12  Merge remote-tracking branch 'googlesource/android-msm-marlin-3.18-pie-
 
  * kernel/google/wahoo
 f9fddeb  Merge tag 'android-9.0.0_r0.62' into android-msm-wahoo-4.4  [Nathan Chancellor]
-
-
- 2019-02-04:
-
- * frameworks/base
-d709d91  Add wellbeing theme for all system themes  [Alex]
-
- * vendor/pixeldust
-14f263a  Shamu: Correct vendor path and name  [nitin1438]
-ce29cca  Revert "shamu: include minimal set of gapps"  [nitin1438]
-81b3f26  Allow adding Pixel Launcher per device. Let's add it for a few devices which cannot be compiled with launcher3  [spezi77]
-8627a25  Fix light statusbar and navbar on Wellbeing  [Henrique Silva]
-106a6cc  Add wellbeing theme for all system themes Also ensure consistency in package names  [Henrique Silva]
-
-
- 2019-02-03:
-
- * build/make
-ab5a50d  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/build into p  [spezi77]
-
- * device/moto/shamu
-511a858  Changes needed for PixelDust :)  [nitin1438]
-
- * frameworks/av
-863e8f3  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/frameworks/av into p  [spezi77]
-
- * frameworks/base
-24d8b28  Utils: Introduce method to determine countries that use Fahrenheit  [Alex]
-0cef63a  Revert "StatusBarSignalPolicy: Fix missing provisioned in equals and copyTo"  [spezi77]
-91c9eb2  Merge branch 'pie-gsi' of https://android.googlesource.com/platform//frameworks/base into p  [spezi77]
-43b24b1  Weather: Use Fahrenheit on some countries, based on MCC [1/2]  [Henrique Silva]
-e5aa207  Include InCallNotification.ogg in AllAudio.mk file  [Beverly]
-f55d502  Add ChargingStarted + InCallNotif to AudioPackage  [Beverly]
-79dd88b  am: Fix top activity resume with secure keyguard  [Oleksiy Avramchenko]
-00ac69d  Fix disappearing home/recents button  [Tetsutoki Shiozawa]
-6d9741f  Remove the check of mService when BluetoothHidDevice doUnbind  [jiangyou li]
-9ba6312  Update navigation bar upon change of display density  [rleix]
-e486b05  SystemUI: don't add already attached qs tile views  [Roman Birg]
-dff6c70  LatinIME: fix navigation bar for expanded desktop  [mydongistiny]
-702e12d  StatusBarSignalPolicy: Fix missing provisioned in equals and copyTo  [Nico]
-74b5ae2  SystemUI: Check List<CachedBluetoothDevice>.empty() before getting battery level  [LuK1337]
-
- * frameworks/native
-09657f9  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/frameworks/native into p  [spezi77]
-
- * packages/apps/PixelDustSettings
-a313728  Weather: Use Fahrenheit on some countries, based on MCC [2/2]  [Henrique Silva]
-
- * packages/apps/Settings
-7004995  Battery temp: Use MCC to determine the scale type  [Alex]
-50cdc67  Settings: Bring back Uptime  [Stefan Berger]
-
- * packages/apps/SmartNav
-b97b650  Allow home action on keyguard  [SpiritCroc]
-
- * packages/services/Telephony
-7283cd7  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/packages/services/Telephony into p  [spezi77]
-
- * system/core
-5ec4b70  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/core into p  [spezi77]
-
- * system/sepolicy
-ad7a90e  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/sepolicy into p  [spezi77]
-
- * system/vold
-9bd945b  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/vold into HEAD  [spezi77]
-
- * vendor/pixeldust
-a87631e  Fix the legacy color icons  [ElDainosor]
-
-
- 2019-02-02:
- * art
-0f0afce  Pause GC during deoptimization work  [Alex Light]
-ae13402  art: Only allow debugging on Eng builds  [HolyAngel]
-dd5ed6a  build: disable ART debugging  [Miguel Martinez]
-
- * bionic
-3a47501  libc: Optimize ARM memcmp by using NEON  [Kyle Repinski]
-eec367b  bionic: update for using jemalloc 5+  [Christopher Ferris]
-6db9a54  bionic: linker: Fix fd leak  [Vic Yang]
-a0a6394  Revert "linker: Make platform text relocations denial optional"  [Paul Keith]
-f4d0465  bionic: Use legacy pthread_mutex_init() behavior on pre-P API levels  [nx111]
-04d62fb  Implement per-process target SDK version override.  [Danny Baumann]
-
- * build/soong
-0deab76  Stop using GCC in toolchain_library  [Dan Willemsen]
-848894e  config: don't add +2 to NumCPU() for number of jobs  [mydongistiny]
-
- * device/google/wahoo
-b5620f7  Disable CustomDoze options that are in system/gesture settings  [Alex]
-96068c2  Enable ambient brightness changer in CustomDoze package  [Ezio Lacandia Bijelkic]
-
- * frameworks/base
-ebd1e38  Update sim colors [1/4]  [Razziell]
-
- * frameworks/opt/telephony
-3e1df43  Update sim colors [3/4]  [ShevT]
-
- * packages/apps/Launcher3
-10db021  Launcher3: fix getting permission DEVICE_POWER  [maxwen]
-a5cd094  Launcher3: Minor hotseat fix for icons  [Giuseppe Maggio]
-c109f48  Launcher3: Use generic android icon for IconPack chooser  [Giuseppe Maggio]
-0dff857  Lock desktop: Disable folder name edit when locked  [hundeva]
-5ff443a  Lock desktop: Remove widget button when locked  [Alex]
-5b2c2fe  Add option to lock desktop  [hundeva]
-987fcb5  App names with two lines: Deactivate for now. Second line needs a fix (vertical space)  [spezi77]
-aeb926d  Add option to allow app names to be two lines  [hundeva]
-
- * packages/apps/Settings
-544ab8b  Update sim colors [2/4]  [Razziell]
-
- * vendor/pixeldust
-139c529  Update sim colors [4/4]  [ShevT]
-
-
- 2019-02-01:
-
- * bionic
-a0a6394  Revert "linker: Make platform text relocations denial optional"  [Paul Keith]
-f4d0465  bionic: Use legacy pthread_mutex_init() behavior on pre-P API levels  [nx111]
-04d62fb  Implement per-process target SDK version override.  [Danny Baumann]
-
- * frameworks/base
-8d05e46e  base: add Cookie QS style [2/3]  [Anay Wadhera]
-f4f24c8  Ambient brightness values: use a custom system setting [1/2]  [ezio84]
-0e2454f  SystemUI: Fixes context for tiles without longClick  [Fabian Kozynski]
-5cb73a6  RecentsIconPack: Fallback to default icons on icon pack removal  [Giuseppe Maggio]
-1238c10  Screenrecorder: don't show tmp in some apps and improve code  [ezio84]
-c56cc9e  Utils: Add method to determine battery temp  [Alex Cruz]
-4c45a03  Add more action utils  [Alex]
-
- * packages/apps/CustomDoze
-50be3f3  Ambient brightness: Add a better title for this view.  [spezi77]
-f72129c  Ambient brightness values: use a custom system setting [2/2]  [ezio84]
-ad668c4  Allow to change default Ambient brightness values  [ezio84]
-
- * packages/apps/PixelDustSettings
-21d0541  RecentsIconPack: Extend and use IconPackPreference  [Giuseppe Maggio]
-
- * packages/apps/Settings
-7f207ff  Settings: add Cookie QS style [3/3].  [spezi77]
-9827c5d  Utilize our support vendor  [Alex Cruz]
-6fa3c77  Power detail pages: Finish off the rest of the icon tinting  [Alex]
-b7fc598  Settings: fix icon tinting in power detail pages  [maxwen]
-9801640  Battery temp: Ensure preference is updated  [Alex]
-a45e8d9  Battery stats: Display battery temperature  [Alex Cruz]
-
- * vendor/pixeldust
-d03441d  vendor: add Cookie QS style [1/3]  [HrX]
-
- * vendor/support
-e4c8d5c  PD'ify.  [spezi77]
-
-
- 2019-01-31:
-
- * build/make
-c7a13f4  build: Remove some debugging props  [Henrique Silva]
-
- * frameworks/base
-4ae3b69  Dark theme: Fix notification channel info text color  [Alex Cruz]
-
- * packages/apps/PixelDustSettings
-1715709  RecentsIconPack: Improve preference logic  [Giuseppe Maggio]
-
-
- 2019-01-30:
-
-
- 2019-01-29:
-
-
- 2019-01-28:
-
- * build/make
-1b0ebef  Revert "kernel.mk: Support kernels that use LTO"  [spezi77]
-
- * frameworks/base
-63f9b79  Ambient Display battery toggle: Enable by default.  [spezi77]
-
-
- 2019-01-27:
-
- * build/make
-04637f8  Revert "ccache: Use prebuilt by default for system and kernel"  [spezi77]
-
- * device/google/wahoo
-aef83c7  Merge pull request #1 from blueyes27/p  [Nitin1438]
-
- * frameworks/base
-9da754f  Revert "Themes: SystemUI: Expose QS edit item decoration background color"  [spezi77]
-
- * kernel/google/wahoo
-77fffaf  Merge 4.4.172 into android-msm-wahoo-4.4  [Nathan Chancellor]
-
- * packages/apps/PixelDustSettings
-b8241ba  Ambient Music Ticker: Improve wording for "de".  [spezi77]
-e771883  Quick Pulldown QS panel: Change that toggle into a preference. Now, it's much clearer and intuitive for the user. However, that toggle has been a relict and was never designed to work with PA's OnTheSpot-snackbar.  [spezi77]
-
- * vendor/pixeldust
-10a6744  Revert "Use ccache. Why not?"  [spezi77]
-e7bee35  Fix QS edit page background color for Dark theme.  [spezi77]
-
- * vendor/support
-c889cd7  support: Adapt IconPackPreference class from Launcher3  [Giuseppe Maggio]
 
