@@ -1,32 +1,469 @@
 
- 2019-02-23:
+ 2019-03-11:
 
  * hardware/ril
-25e37f8  Merge branch 'p' of https://github.com/camcory/platform_hardware_ril into HEAD  [nitin1438]
+ee6722d  Merge branch 'p' of https://github.com/camcory/platform_hardware_ril into HEAD  [nitin1438]
+
+ * vendor/googleapps
+33bf2bf  Revert "Add a shamu compatible version of GoogleDialer."  [nitin1438]
+
+
+ 2019-03-10:
+
+
+ 2019-03-09:
+
+
+ 2019-03-08:
+
+
+ 2019-03-07:
+
+ * device/google/wahoo
+8d7b60d  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/device/google/wahoo into HEAD  [spaceman860]
+
+ * kernel/google/wahoo
+5058163  Merge branch 'p9x' of https://github.com/DirtyUnicorns/android_kernel_google_wahoo into HEAD  [nitin1438]
 
  * vendor/pixeldust
-ba072c8  Correct Google dialer package name  [nitin1438]
+7f5d7e5  taimen: use DU gapps  [nitin1438]
+6431ae9  Revert "Add AmbientSensePrebuilt: it's used also by Google app/SoundSearch tile"  [nitin1438]
+f448bfc  Fix build number by moving ota.mk behind version.mk  [spezi77]
+
+
+ 2019-03-06:
+
+ * bionic
+2d8003e  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/bionic into p  [spezi77]
+
+ * build/make
+fdda344  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/build into HEAD  [spezi77]
+
+ * build/soong
+741b0e3  dumpvars: Show the sign key information.  [spezi77]
+
+ * frameworks/av
+120a4ff  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/frameworks/av into p  [spezi77]
+
+ * frameworks/base
+6f740e4  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/frameworks/base into p  [spezi77]
+
+ * frameworks/native
+ee0bf22  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/frameworks/native into p  [spezi77]
+
+ * system/core
+950282d  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/system/core into p  [spezi77]
+
+ * vendor/google
+6bd0882  Taimen: Update blobs to Android 9.0 (PQ2A.190305.002)  [Josh Chasky]
+
+ * vendor/google_devices
+90a304a  Fix double foreslash.  [spezi77]
+4e104ce  marlin/sailfish: PQ2A.190305.002  [spezi77]
+
+ * vendor/pixeldust
+4bb3f95  version: Bump up to release six. Clean up while I'm at it -> move build props to ota.mk  [spezi77]
+010de60  products: Update pixels build desc for PQ2A.190305.002  [spezi77]
+
+
+ 2019-03-05:
+
+ * external/libjpeg-turbo
+eb67293  libjpeg-turbo: update to 2.0.2  [mydongistiny]
+bfdd36e  libjpeg-turbo: update to 2.0.1  [mydongistiny]
+0dd57cc  libjpeg-turbo: update to 2.0.0  [mydongistiny]
+f30f3d2  libjpeg-turbo: add config to disable merged upsample  [Mort (Tianqi) Guo]
+fe1e8f3  Handle corner case where merged_upsampler is used for regional decoding  [Mort (Tianqi) Guo]
+
+ * external/libpng
+d722b8b  libpng: Suppress sign compare warning  [Pranav Vashi]
+47f3548  libpng: Update to version 1.6.36  [mydongistiny]
+908cd75  libpng: Optimize png_do_expand_palette with NEON  [Richard Townsend]
+134675e  libpng: Update to version 1.6.35  [mydongistiny]
+
+ * external/skia
+c05d9af  ARGB Blitter:  Remove unused variable  [Joe Maples]
+d345a0a  Revert "Avoid coverage bleed for AA arcs with tiny sweep angles"  [spezi77]
+b84a5a7  Revert "Move fragCoord workaround declaration"  [spezi77]
+b5653451  Revert "Add rect-parameter to makeImageSnapshot and stop using chromium config options"  [spezi77]
+4f379a1  Revert "Fix ABI Compliance Issue for JPEG Merged Upsample"  [spezi77]
+
+ * frameworks/base
+7574d2f  Revert "Improve performance of unclipped save layers"  [spezi77]
+
+ * kernel/google/wahoo
+580f3f2  Merge branch 'android-msm-wahoo-4.4' of https://github.com/android-linux-stable/wahoo into HEAD  [spaceman860]
+cccfd26  Merge tag 'android-9.0.0_r0.65' into android-msm-wahoo-4.4  [Nathan Chancellor]
+
+ * vendor/google
+d523715  Bluecross: Update blobs to Android 9.0 (PQ2A.190305.002)  [Josh Chasky]
+
+
+ 2019-03-04:
+
+ * external/google
+0c93269  Fallback to "no action" when an application gets removed [1/2]  [Giuseppe Maggio]
+a34b417  Active Edge: allow to choose a specific app activity [1/4]  [ezio84]
+7139077  Introduce long squeeze action [1/3]  [Giuseppe Maggio]
+
+ * frameworks/base
+b32e7c5  Revert "Wifidisplay: Fix green display issue."  [spezi77]
+13a097a  microG: Fix signature spoofing  [bdashore3]
+099c055  ActionUtils: Reverse actions for QS and notification panel  [ezio84]
+b96404c  Ambient: do not extend pulse notification when not needed  [Giuseppe Maggio]
+47f0bc2  Active Edge: allow to choose a specific app activity [4/4]  [ezio84]
+8dd7666  Introduce long squeeze action [3/3]  [Alex]
+7c81d98  base: Wakeup when plugged or unplugged [2/2]  [Juan Ezquerro LLanes]
+9a5ac62  BrightnessDialog: dismiss on focus lost  [Giuseppe Maggio]
+70f739d  Avoid Ambient indicator overlap with multiple keyguard notifications Basically match Pixel's configuration.  [Giuseppe Maggio]
+c62e16f  Fix the behavior of keyguard bouncer in a corner case  [Wang, ArvinX]
+9a9ecd6  Fix action bar font family on material themes  [Henrique Silva]
+4e70aeb  Volume panel: Do the same with less  [Alex Cruz]
+3eca016  Keyboard arrows: Ensure they're not visible while using full gesture mode  [Alex Cruz]
+7fd5f49  Keyboard arrows don't interfere with full gesture mode  [Alex Cruz]
+1cdaf20  base: Add toggle to turn off "Secure tiles require unlocking before being accessible" [1/2].  [spezi77]
+e47f5b4  Disable edge gesture service by default  [Pranav Vashi]
+69ae0de  base: disable warning in StaticLayout  [maxwen]
+109072a  Update the screenState for keyguard while screen turning on  [Joseph Cheng]
+9feda73  SystemUI: Animate the keyguard when charging  [Chris]
+e3c8982  ExifInterface: Avoid infinite loop on stream seeking failed  [hovanchen]
+772a146  Prevent NFE in SystemUI when parsing invalid int  [Edward Savage-Jones]
+79a8ebd  am: Add new flag to detect activity "launching" state  [Shashi Shekar Shankar]
+bc91e29  SystemUI: Keyguard: Check for a null errString  [Scott Warner]
+a00ddf7  PhoneWindowManager: Do not panic if immersive mode active  [Pranav Vashi]
+782ad51  Network Traffic: Add more customizations and improvement [2/2]  [Pranav Vashi]
+5988a40  Telephony: Add DisconnectCause values for clear code  [Qiang Chen]
+2bf8cec  Do not apply date customization to QS clock  [Pranav Vashi]
+d3d07a4  SystemUI: Always show date in QS header  [Anushek Prasal]
+90391a9  base: Supress telephony crashing platform  [Pranav Vashi]
+533778b  WeatherClient: Fix horrible allocation abuse  [Harsh Shandilya]
+78525fc  PixeldustUtils: cleanup screen On action code  [ezio84]
+fb5a6c7  PixeldustUtils: Add screen on action  [Alex]
+c05a2cb  CustomActions: Use settings provider to store value [2/3]  [Alex]
+6685f09  PixeldustUtils: Improve ringer modes  [Alex]
+e729ec4  PixeldustUtils: Ringer modes  [Alex]
+e3480a9  Only inherit Elmyra for Pixel devices  [Nick Doherty]
+fbe5aac  Utils: cleanup screen On action code  [ezio84]
+7d06849  ActionHandler: Add screen on action  [Mazda--]
+650557a  Make some methods public  [pimpmaneaton]
+18f41be  Active edge settings 1/?  [Mazda--]
+05f4712  Elmyra: Move to external repo  [Mazda--]
+c70ef4a  PWM: Fix navbar key event source.  [spezi77]
+fbdeb10  Don't report existing menu key if it was remapped. [2/3]  [Kyrylo Mikos]
+cdf5e72  Update screenshot intents to match with HWkeys handler  [Shubham Singh]
+f020c9b  HWKeys: Fix haptic feedback on navbar when hwkeys is disabled  [xyyx]
+9f34162  HWKeys: Return unpinning action  [xyyx]
+623007c  AmbientDisplay: Disable hw keys Prevent stop dozing after hw keys tapping  [xyyx]
+e5f0304  HW Keys: Update defaults  [SKULSHADY]
+ff1c289  HWKeys: Disable haptic on keyguard  [xyyx]
+b1b329b  hw-keys: enable powermenu on hwkeys actions  [bigrushdog]
+5fa5689  SmartNav: Bring back Kill App action  [bigrushdog]
+c9ca206  Hardware key disable support  [Randall Rushing]
+df4f913  Bring up hardware key action binding framework  [Randall Rushing]
+32e2a3c  Initial checkin on Pie for SmartNav navigation suite [1/4]  [bigrushdog]
+
+ * packages/apps/PixelDustSettings
+fac9edc  New active edge icon. Thanks @ROGERdotT  [spezi77]
+87082fa  Fallback to "no action" when an application gets removed [2/2]  [Giuseppe Maggio]
+e3cec85  Active Edge: allow to choose a specific app activity [3/4]  [Ezio Lacandia Bijelkic]
+83cb0a6  Introduce long squeeze action [2/3]  [Alex]
+
+ * packages/providers/WeatherProvider
+f9da4c3  WeatherChannelApi: Fix allocation abuse  [Harsh Shandilya]
+
+ * vendor/support
+40edfe7  Active Edge: allow to choose a specific app activity [2/4]  [Ezio Lacandia Bijelkic]
+
+
+ 2019-03-03:
+
+ * frameworks/base
+8cf4375  Revert current "SmartNav / HWKeys action binding" implementation.  [spezi77]
+
+ * packages/apps/PixelDustSettings
+84561f1  MiscSettings: Wakeup when plugged or unplugged [1/2]  [Jon Evans]
+adc3a10  QuickSettings: Add toggle to turn off "Secure tiles require unlocking before being accessible" [2/2].  [spezi77]
+
+
+ 2019-03-02:
+
+
+ 2019-03-01:
+
+
+ 2019-02-28:
+
+ * external/skia
+d69d22d  Add rect-parameter to makeImageSnapshot and stop using chromium config options  [Derek Sollenberger]
+8b04682  Fix ABI Compliance Issue for JPEG Merged Upsample  [Mort (Tianqi) Guo]
+7481568  Avoid coverage bleed for AA arcs with tiny sweep angles  [Brian Osman]
+7b64f64  Move fragCoord workaround declaration  [Brian Osman]
+6bec2b4  skia: Clean up -Wextra-semi-stmt warnings  [mydongistiny]
+fdabdec  fGpu is null when GrGpuResource::release  [zhang defang]
+e61ef9f  skia: Use std::move() to prevent unnecessary copying  [mydongistiny]
+5b824a7  Optimize the for loop in onGetYUV8Planes  [nagarajan.n]
+06377a9  Skia performance optimize for bitmap  [Libo Jin]
+6876920  external/skia: Take Fast Jpeg Decoding Path  [Mort (Tianqi) Guo]
+f4915f5  Merge tag 'android-9.0.0_r33' into p  [spezi77]
+
+ * frameworks/opt/net/wifi
+ac65c0d  wifi: Not reset country code for Dual SIM if any slot is active  [Hu Wang]
+18b2b02  wifi: don't check if WIFI_DRIVER_STATE_CTRL_PARAM is readable  [codeworkx]
+49522b0  wifi: Check whether dev node is accessible or not before opening  [Yuanyuan Liu]
+b2d7978  libwifi-hal: add flag to wait for kernel driver to get ready  [codeworkx]
+
+ * frameworks/opt/telephony
+5aed28a  LocaleTracker: Add null check before accessing WifiManager  [dianlujitao]
+e564290  RIL: Allow overriding RadioResponse and RadioIndication  [Paul Keith]
+231aaec  IMS: RTT feature changes  [Ashit Sood]
+427694d  Avoid showing stack trace without QTI telephony extension  [maxwen]
+3fba5a9  telephony: Squashed support for simactivation feature  [Bruno Martins]
+
+ * kernel/google/wahoo
+0a6de708  staging: qcacld-3.0: Incorrect usage of QDF_ARRAY_SIZE macro  [Dundi Raviteja]
+
+ * packages/services/Telephony
+64ede0d  Fix carrier config option not hidden on a CDMA phone  [dianlujitao]
+be9dddb  Don't start SIP service before decrypted  [dianlujitao]
+eb318d4  Fix non-protected broadcasts sent from phone process.  [Umashankar Godachi]
+ddb464f  Telephony: Support muting by RIL command  [Artem Borisov]
+
+
+ 2019-02-27:
+
+
+ 2019-02-26:
+
+
+ 2019-02-25:
+
+ * external/google
+38e2813  SmartNav: Fix NPE when navbar is not set to stock mode  [calebcabob]
+
+ * packages/apps/PixelDustSettings
+647f7db  Network Traffic: Add more customizations and improvement [1/2]  [Pranav Vashi]
+
+
+ 2019-02-24:
+
+ * kernel/google/wahoo
+857f66e  Merge 4.4.176 into android-msm-wahoo-4.4  [Nathan Chancellor]
+af13f43  Linux 4.4.176  [Greg Kroah-Hartman]
+49e1a9d  KVM: VMX: Fix x2apic check in vmx_msr_bitmap_mode()  [Joerg Roedel]
+94801fd  ax25: fix possible use-after-free  [Eric Dumazet]
+c532eb1  mISDN: fix a race in dev_expire_timer()  [Eric Dumazet]
+82379cf  net/x25: do not hold the cpu too long in x25_new_lci()  [Eric Dumazet]
+c78c9f5  mfd: as3722: Mark PM functions as __maybe_unused  [Arnd Bergmann]
+e7dff89  mfd: as3722: Handle interrupts on suspend  [Jon Hunter]
+bc4db52  kvm: fix kvm_ioctl_create_device() reference counting (CVE-2019-6974)  [Jann Horn]
+f5aebe7  x86: livepatch: Treat R_X86_64_PLT32 as R_X86_64_PC32  [chenzefeng (A)]
+01fb360  net: ipv4: use a dedicated counter for icmp_v4 redirect packets  [Lorenzo Bianconi]
+3fa6a28  net: stmmac: Fix a race in EEE enable callback  [Jose Abreu]
+ffed570  vxlan: test dev->flags & IFF_UP before calling netif_rx()  [Eric Dumazet]
+a466589  tcp: clear icsk_backoff in tcp_write_queue_purge()  [Eric Dumazet]
+2e7b872  net: Do not allocate page fragments that are not skb aligned  [Alexander Duyck]
+122e4a3  tcp: tcp_v4_err() should be more careful  [Eric Dumazet]
+817d4a42  net: Add header for usage of fls64()  [David S. Miller]
+7fecacc  sky2: Increase D3 delay again  [Kai-Heng Feng]
+1815d11  net: Fix for_each_netdev_feature on Big endian  [Hauke Mehrtens]
+27763b0  hwmon: (lm80) Fix missing unlock on error in set_fan_div()  [Wei Yongjun]
+9d6ca4d  vsock: cope with memory allocation failure at socket creation time  [Paolo Abeni]
+9467d98  net: fix IPv6 prefix route residue  [Zhiqiang Liu]
+
+ * packages/apps/SmartNav
+a19c8e7  Navigator: Add isFullGestureMode method  [Harsh Shandilya]
+
+
+ 2019-02-23:
+
+ * external/google
+134afb5  CustomActions: Switch to PixeldustUtils.  [spezi77]
+d279ab6  Elmyra: cleanup here and there  [Giuseppe Maggio]
+7438ef4  CustomActions: Use settings provider to store value [1/3]  [Alex]
+
+ * packages/apps/SmartNav
+e6e3479  Switch to new ActionUtils.  [spezi77]
 
 
  2019-02-22:
 
+ * packages/apps/PixelDustSettings
+feefbbc  Switch over to latest hw-key action utils.  [spezi77]
+5aeb594  CustomActions: Use settings provider to store value [3/3]  [Alex]
+
+ * vendor/support
+ee74574  AppPicker: Import from external/google for other uses  [Alex]
+
 
  2019-02-21:
+
+ * external/google
+2287c90  Actions: Add ringer modes  [Alex]
+c2a36d5  SquishyNavbar: If power saver is on, don't allow feedback  [Alex]
+6b78650  CustomActions: Add support to launch applications [1/2]  [Alex]
+dc9b4ff  CustomActions: Screen off availability  [Alex]
+
+ * kernel/google/wahoo
+b4daa97  Merge 4.4.175 into android-msm-wahoo-4.4  [Nathan Chancellor]
+332deb1  Linux 4.4.175  [Greg Kroah-Hartman]
+cb4f43b  uapi/if_ether.h: move __UAPI_DEF_ETHHDR libc define  [Hauke Mehrtens]
+d5800cf  pinctrl: msm: fix gpio-hog related boot issues  [Christian Lamparter]
+a4af225  usb: dwc2: Remove unnecessary kfree  [John Youn]
+49cf68d  kaweth: use skb_cow_head() to deal with cloned skbs  [Eric Dumazet]
+4307a87  ch9200: use skb_cow_head() to deal with cloned skbs  [Eric Dumazet]
+f8e3d1b  smsc95xx: Use skb_cow_head to deal with cloned skbs  [James Hughes]
+27a7077  dm thin: fix bug where bio that overwrites thin block ignores FUA  [Nikos Tsironis]
+5079b1d  x86/a.out: Clear the dump structure initially  [Borislav Petkov]
+492647b  signal: Restore the stop PTRACE_EVENT_EXIT  [Eric W. Biederman]
+7212e37  x86/platform/UV: Use efi_runtime_lock to serialise BIOS calls  [Hedi Berriche]
+137f4db1  tracing/uprobes: Fix output for multiple string arguments  [Andreas Ziegler]
+5fc9518  alpha: Fix Eiger NR_IRQS to 128  [Meelis Roos]
+1d8b203  alpha: fix page fault handling for r16-r18 targets  [Sergei Trofimovich]
+fd08513  Input: elantech - enable 3rd button support on Fujitsu CELSIUS H780  [Matti Kurkela]
+6d6d625  Input: bma150 - register input device after setting private data  [Jonathan Bakker]
+05268b5  ALSA: usb-audio: Fix implicit fb endpoint setup by quirk  [Manuel Reinhardt]
+422e1ad  ALSA: hda - Add quirk for HP EliteBook 840 G5  [Jurica Vukadin]
+222b22e  perf/core: Fix impossible ring-buffer sizes warning  [Ingo Molnar]
+b7febf3  Input: elan_i2c - add ACPI ID for touchpad in Lenovo V330-15ISK  [Mauro Ciancio]
+d347a89  Revert "Input: elan_i2c - add ACPI ID for touchpad in ASUS Aspire F5-573G"  [Dmitry Torokhov]
+29c84aa  Documentation/network: reword kernel version reference  [Mark Rustad]
+1f39e51  cifs: Limit memory used by lock request calls to a page  [Ross Lagerwall]
+8347670  gpio: pl061: handle failed allocations  [Nicholas Mc Guire]
+32f0471  ARM: dts: kirkwood: Fix polarity of GPIO fan lines  [Linus Walleij]
+20ad504  ARM: dts: da850-evm: Correct the sound card name  [Peter Ujfalusi]
+28b5d0b  uapi/if_ether.h: prevent redefinition of struct ethhdr  [Hauke Mehrtens]
+7cbbbf7  Revert "exec: load_script: don't blindly truncate shebang string"  [Linus Torvalds]
+b2942d5  batman-adv: Force mac header to start of data on xmit  [Sven Eckelmann]
+8fe1614  batman-adv: Avoid WARN on net_device without parent in netns  [Sven Eckelmann]
+ca6fd8d  xfrm: refine validation of template and selector families  [Florian Westphal]
+2e9e4e1  libceph: avoid KEEPALIVE_PENDING races in ceph_con_keepalive()  [Ilya Dryomov]
+1793dc6  Revert "cifs: In Kconfig CONFIG_CIFS_POSIX needs depends on legacy (insecure cifs)"  [Greg Kroah-Hartman]
+2a41ed3  NFC: nxp-nci: Include unaligned.h instead of access_ok.h  [Guenter Roeck]
+b661fff  HID: debug: fix the ring buffer implementation  [Vladis Dronov]
+697c6f7  drm/vmwgfx: Return error code from vmw_execbuf_copy_fence_user  [Thomas Hellstrom]
+6bcca0b  drm/vmwgfx: Fix setting of dma masks  [Thomas Hellstrom]
+f1cd557  drm/modes: Prevent division by zero htotal  [Tina Zhang]
+06288a8  mac80211: ensure that mgmt tx skbs have tailroom for encryption  [Felix Fietkau]
+fd9d055  ARM: iop32x/n2100: fix PCI IRQ mapping  [Russell King]
+dfb3536  MIPS: VDSO: Include $(ccflags-vdso) in o32,n32 .lds builds  [Paul Burton]
+91aaa0d  MIPS: OCTEON: don't set octeon_dma_bar_type if PCI is disabled  [Aaro Koskinen]
+d93fdf4  mips: cm: reprime error cause  [Vladimir Kondratiev]
+2b46cd1  debugfs: fix debugfs_rename parameter checking  [Greg Kroah-Hartman]
+99b23b0  misc: vexpress: Off by one in vexpress_syscfg_exec()  [Dan Carpenter]
+60de9ff  signal: Better detection of synchronous signals  [Eric W. Biederman]
+381fc50  signal: Always notice exiting tasks  [Eric W. Biederman]
+6f17dfe  mtd: rawnand: gpmi: fix MX28 bus master lockup problem  [Martin Kepplinger]
+cb7c96e  perf tests evsel-tp-sched: Fix bitwise operator  [Gustavo A. R. Silva]
+06bbc48  perf/core: Don't WARN() for impossible ring-buffer sizes  [Mark Rutland]
+122c014  x86/MCE: Initialize mce.bank in the case of a fatal error in mce_no_way_out()  [Tony Luck]
+0002515  perf/x86/intel/uncore: Add Node ID mask  [Kan Liang]
+9872dda  KVM: nVMX: unconditionally cancel preemption timer in free_nested (CVE-2019-7221)  [Peter Shier]
+1b5fd91  KVM: x86: work around leak of uninitialized stack contents (CVE-2019-7222)  [Paolo Bonzini]
+b0f59c3  usb: gadget: udc: net2272: Fix bitwise and boolean operations  [Gustavo A. R. Silva]
+ff8c182  usb: phy: am335x: fix race condition in _probe  [Bin Liu]
+b191f19  dmaengine: imx-dma: fix wrong callback invoke  [Leonid Iziumtsev]
+c5cf17c  fuse: handle zero sized retrieve correctly  [Miklos Szeredi]
+bade8e5  fuse: decrement NR_WRITEBACK_TEMP on the right page  [Miklos Szeredi]
+a7dfde0  fuse: call pipe_buf_release() under pipe lock  [Jann Horn]
+71ce2e8  ALSA: hda - Serialize codec registrations  [Takashi Iwai]
+d7204d3  ALSA: compress: Fix stop handling on compressed capture streams  [Charles Keepax]
+b1746f9f  net: dsa: slave: Don't propagate flag changes on down slave interfaces  [Rundong Ge]
+8d8aafc  net: systemport: Fix WoL with password after deep sleep  [Florian Fainelli]
+5296ebc  skge: potential memory corruption in skge_get_regs()  [Dan Carpenter]
+b1a5e14  net: dp83640: expire old TX-skb  [Sebastian Andrzej Siewior]
+16570a4  enic: fix checksum validation for IPv6  [Govindarajulu Varadarajan]
+ff0a4fa  dccp: fool proof ccid_hc_[rt]x_parse_options()  [Eric Dumazet]
+a7ea4de  string: drop __must_check from strscpy() and restore strscpy() usages in cgroup  [Tejun Heo]
+ae46de2  tipc: use destination length for copy string  [Guoqing Jiang]
+5ef0ebd  test_hexdump: use memcpy instead of strncpy  [Linus Torvalds]
+93af75d  thermal: hwmon: inline helpers when CONFIG_THERMAL_HWMON is not set  [Eduardo Valentin]
+9a37610  exec: load_script: don't blindly truncate shebang string  [Oleg Nesterov]
+e1d575b  fs/epoll: drop ovflist branch prediction  [Davidlohr Bueso]
+25768bb  kernel/hung_task.c: break RCU locks based on jiffies  [Tetsuo Handa]
+3f516da  HID: lenovo: Add checks to fix of_led_classdev_register  [Aditya Pakki]
+a711dcb  block/swim3: Fix -EBUSY error when re-opening device after unmount  [Finn Thain]
+4c54949  gdrom: fix a memory leak bug  [Wenwen Wang]
+cab4f01  isdn: hisax: hfc_pci: Fix a possible concurrency use-after-free bug in HFCPCI_l1hw()  [Jia-Ju Bai]
+80f8149  ocfs2: don't clear bh uptodate for block read  [Junxiao Bi]
+bc5abb8  scripts/decode_stacktrace: only strip base path when a prefix of the path  [Marc Zyngier]
+1f8aea0  niu: fix missing checks of niu_pci_eeprom_read  [Kangjie Lu]
+ccc9ed2  um: Avoid marking pages with "changed protection"  [Anton Ivanov]
+7d1cfc10  cifs: check ntwrk_buf_start for NULL before dereferencing it  [Ronnie Sahlberg]
+b49344a  crypto: ux500 - Use proper enum in hash_set_dma_transfer  [Nathan Chancellor]
+846aa25  crypto: ux500 - Use proper enum in cryp_set_dma_transfer  [Nathan Chancellor]
+cc98085  seq_buf: Make seq_buf_puts() null-terminate the buffer  [Michael Ellerman]
+90beb6b  hwmon: (lm80) fix a missing check of bus read in lm80 probe  [Kangjie Lu]
+259c502  hwmon: (lm80) fix a missing check of the status of SMBus read  [Kangjie Lu]
+8ba3a4e  NFS: nfs_compare_mount_options always compare auth flavors.  [Chris Perl]
+a8014f2  KVM: x86: svm: report MSR_IA32_MCG_EXT_CTL as unsupported  [Vitaly Kuznetsov]
+2e7c1f0  fbdev: fbcon: Fix unregister crash when more than one framebuffer  [Noralf Trønnes]
+03c5ed7  igb: Fix an issue that PME is not enabled during runtime suspend  [Kai-Heng Feng]
+472f3f0  fbdev: fbmem: behave better with small rotated displays and many CPUs  [Peter Rosin]
+da079f87  video: clps711x-fb: release disp device node in probe()  [Alexey Khoroshilov]
+1fbbe0c  drbd: Avoid Clang warning about pointless switch statment  [Nathan Chancellor]
+eb15351  drbd: skip spurious timeout (ping-timeo) when failing promote  [Lars Ellenberg]
+5c857f0  drbd: disconnect, if the wrong UUIDs are attached on a connected peer  [Lars Ellenberg]
+3b5d412  drbd: narrow rcu_read_lock in drbd_sync_handshake  [Roland Kammerer]
+8b79471  cw1200: Fix concurrency use-after-free bugs in cw1200_hw_scan()  [Jia-Ju Bai]
+a664909  Bluetooth: Fix unnecessary error message for HCI request completion  [Johan Hedberg]
+f74e04a  xfrm6_tunnel: Fix spi check in __xfrm6_tunnel_alloc_spi  [YueHaibing]
+b489ed3  mac80211: fix radiotap vendor presence bitmap handling  [Johannes Berg]
+3df04b5  powerpc/uaccess: fix warning/error with access_ok()  [Christophe Leroy]
+fac39ee  arm64: KVM: Skip MMIO insn after emulation  [Mark Rutland]
+9f01d0d  tty: serial: samsung: Properly set flags in autoCTS mode  [Beomho Seo]
+98920f4  memstick: Prevent memstick host from getting runtime suspended during card detection  [Kai-Heng Feng]
+fff375e  ASoC: fsl: Fix SND_SOC_EUKREA_TLV320 build error on i.MX8M  [Fabio Estevam]
+b903740  ARM: pxa: avoid section mismatch warning  [Arnd Bergmann]
+ea59fcf  udf: Fix BUG on corrupted inode  [Jan Kara]
+0d997e1  i2c-axxia: check for error conditions first  [Adamski, Krzysztof (Nokia - PL/Wroclaw)]
+c4d10ce  cpuidle: big.LITTLE: fix refcount leak  [Yangtao Li]
+e21e67e  clk: imx6sl: ensure MMDC CH0 handshake is bypassed  [Anson Huang]
+c90636f  sata_rcar: fix deferred probing  [Sergei Shtylyov]
+771727c  iommu/arm-smmu-v3: Use explicit mb() when moving cons pointer  [Will Deacon]
+cab345f  mips: bpf: fix encoding bug for mm_srlv32_op  [Jiong Wang]
+54b53c5  ARM: dts: Fix OMAP4430 SDP Ethernet startup  [Russell King - ARM Linux]
+eb9c64e  timekeeping: Use proper seqcount initializer  [Bart Van Assche]
+235f1e5  usb: hub: delay hub autosuspend if USB3 port is still link training  [Mathias Nyman]
+7518fa7  smack: fix access permissions for keyring  [Zoran Markovic]
+da32723  media: DaVinci-VPBE: fix error handling in vpbe_initialize()  [Alexey Khoroshilov]
+028f17e  x86/fpu: Add might_fault() to user_insn()  [Sebastian Andrzej Siewior]
+7508610  ARM: dts: mmp2: fix TWSI2  [Lubomir Rintel]
+2d6f9a8  arm64: ftrace: don't adjust the LR value  [Mark Rutland]
+ef9cc1e  nfsd4: fix crash on writing v4_end_grace before nfsd startup  [J. Bruce Fields]
+627e656  sunvdc: Do not spin in an infinite loop when vio_ldc_send() returns EAGAIN  [Young Xiao]
+d67dec9  f2fs: fix wrong return value of f2fs_acl_create  [Tiezhu Yang]
+262871e  f2fs: move dir data flush to write checkpoint process  [Yunlei He]
+f936083  soc/tegra: Don't leak device tree node reference  [Yangtao Li]
+1e94c7b  perf tools: Add Hygon Dhyana support  [Pu Wen]
+b02bfd8  modpost: validate symbol names also in find_elf_symbol  [Sami Tolvanen]
+c34330e1  ARM: OMAP2+: hwmod: Fix some section annotations  [Nathan Chancellor]
+eba6d94  staging: iio: ad7780: update voltage on read  [Renato Lui Geh]
+524b2be  staging:iio:ad2s90: Make probe handle spi_setup failure  [Matheus Tavares]
+caf6a81  ptp: check gettime64 return code in PTP_SYS_OFFSET ioctl  [Miroslav Lichvar]
+7c6340d  serial: fsl_lpuart: clear parity enable bit when disable parity  [Andy Duan]
+c9ddfda  powerpc/pseries: add of_node_put() in dlpar_detach_node()  [Frank Rowand]
+2f85daf  x86/PCI: Fix Broadcom CNB20LE unintended sign extension (redux)  [Colin Ian King]
+dd307a8  dlm: Don't swamp the CPU with callbacks queued during recovery  [Bob Peterson]
+aeef84f  ARM: 8808/1: kexec:offline panic_smp_self_stop CPU  [Yufen Wang]
+871243f  scsi: lpfc: Correct LCB RJT handling  [James Smart]
+f9d6798  ASoC: Intel: mrfld: fix uninitialized variable access  [Arnd Bergmann]
+6a7e658  staging: iio: adc: ad7280a: handle error from __ad7280_read32()  [Slawomir Stepien]
+3f95170  drm/bufs: Fix Spectre v1 vulnerability  [Gustavo A. R. Silva]
+
+ * packages/apps/PixelDustSettings
+9719f2b  CustomActions: Add ringer modes  [Mazda--]
+72e0329  Add in 5 more actions for Active Edge  [pimpmaneaton]
+a0cf9c2  CustomActions: Add support to launch applications [2/2]  [Mazda--]
 
 
  2019-02-20:
 
- * frameworks/base
-a9b9a8e  PWM: Fix SmartNav custom actions.  [spezi77]
-
- * packages/apps/PixelDustSettings
-3998130  QuickSettings: Add toggle to turn off "Secure tiles require unlocking before being accessible" [2/2].  [spezi77]
+ * external/google
+51358c8  Drop unused service  [ezio84]
+37d20c2  NavigationBarEffect code cleanup  [ezio84]
 
 
  2019-02-19:
-
- * vendor/googleapps
-99e8ab3  GoogleDialer: Use version from DU's pixelgapps.  [spezi77]
 
 
  2019-02-18:
@@ -34,8 +471,8 @@ a9b9a8e  PWM: Fix SmartNav custom actions.  [spezi77]
  * external/google
 aa02b5d  Adapt to SmartNav.  [spezi77]
 
- * frameworks/base
-dd6bd97  base: Add toggle to turn off "Secure tiles require unlocking before being accessible" [1/2].  [spezi77]
+ * vendor/googleapps
+99e8ab3  GoogleDialer: Use version from DU's pixelgapps.  [spezi77]
 
 
  2019-02-17:
@@ -43,49 +480,11 @@ dd6bd97  base: Add toggle to turn off "Secure tiles require unlocking before bei
 
  2019-02-16:
 
- * device/google/wahoo
-d12c2a4  Only inherit Elmyra for Pixel devices  [Alex]
-
  * external/google
 e125c29  PD'fy.  [spezi77]
 
- * frameworks/base
-2c19e50  BrightnessDialog: dismiss on focus lost  [Giuseppe Maggio]
-e0adb0a  Avoid Ambient indicator overlap with multiple keyguard notifications Basically match Pixel's configuration.  [Giuseppe Maggio]
-4d85435  Fix the behavior of keyguard bouncer in a corner case  [Wang, ArvinX]
-322a049  Fix action bar font family on material themes  [Henrique Silva]
-701bbed  Keyboard arrows: Ensure they're not visible while using full gesture mode  [Alex Cruz]
-42de53e  Volume panel: Do the same with less  [Alex Cruz]
-1291ab4  Ensure custom longpress actions don't function while in lock mode  [Alex Cruz]
-1794c68  [SQUASHED] Add navbar actions & fixes.  [Alex Cruz]
-c8cf7c2  Out of sight, out of mind  [Alex Cruz]
-33f0f52  Keyboard arrows don't interfere with full gesture mode  [Alex Cruz]
-eacada9  Patch navigation bar to emulate hw keys  [Carlo Savignano]
-fbaf69b  PhoneWindowManager: Fix button menu action  [Anas Karbila]
-d83f8b0  input: Enable custom key event policy  [Carlo Savignano]
-60445f6  input: Introduce custom key event policy  [Carlo Savignano]
-9a8dbf4  Move actions into is own class [1/2]  [Alex Cruz]
-424cae0  Only inherit Elmyra for Pixel devices  [Nick Doherty]
-fd20e09  Active edge settings 1/?  [Alex]
-5168dc5  Elmyra: Move to external repo  [Alex]
-500318a  Elmyra: initial base for the service porting  [Giuseppe Maggio]
-
- * packages/apps/Launcher3
-97c40db  Switch to ActionUtils.  [spezi77]
-
  * packages/apps/PixelDustSettings
 ac50526  Active Edge: Add missed out action strings.  [spezi77]
-a1622cf  Only inherit Elmyra for Pixel devices  [Alex]
-c5b269e  Active edge settings 3/? Squashed in: - Add a footer to Active Edge settings  [Alex]
-
- * packages/apps/Settings
-5616397  Active edge settings 6/?  [Alex]
-
- * vendor/google
-78af551  Elmyra: add elmyra lib and permission  [Giuseppe Maggio]
-
- * vendor/support
-8662bd2  Color Picker: Remove OnClick listener to fix disabling  [xyyx]
 
 
  2019-02-15:
@@ -93,8 +492,15 @@ c5b269e  Active edge settings 3/? Squashed in: - Add a footer to Active Edge set
  * build/make
 72e5d11  Fix userdebug builds (allow insecure adb at boot time). Things got messed up when picking this one: https://github.com/pixeldust *-p/android_build_make/commit/c7a13f426f82c192d0e4c9d7284a1ccfbb653adc  [spezi77]
 
+ * device/google/wahoo
+d12c2a4  Only inherit Elmyra for Pixel devices  [Alex]
+
  * packages/apps/PixelDustSettings
-b672976  Restore old icon pack impl. which is still required by SmartNavSettings. Got removed by this commit: https://github.com/pixeldust *-p/android_packages_apps_PixelDustSettings/commit/146410c01af05681b133e2927cbf2b93eab3c7d7  [spezi77]
+a1622cf  Only inherit Elmyra for Pixel devices  [Alex]
+c5b269e  Active edge settings 3/? Squashed in: - Add a footer to Active Edge settings  [Alex]
+
+ * packages/apps/Settings
+5616397  Active edge settings 6/?  [Alex]
 
  * packages/providers/WeatherProvider
 b602e05  Revert "WeatherProvider: Remove permission requirements"  [spezi77]
@@ -102,11 +508,20 @@ b602e05  Revert "WeatherProvider: Remove permission requirements"  [spezi77]
  * vendor/googleapps
 3578051  Update dialer jar file for safety reasons. On taimen GoogleDialer threw an odd error in the log: Dialer  : PixelDeviceCompatibilityChecker.checkCompatibility - pixel system feature is not found!  [spezi77]
 
+ * vendor/support
+8662bd2  Color Picker: Remove OnClick listener to fix disabling  [xyyx]
+
 
  2019-02-14:
 
  * external/google
 48994c1  Gestures: Add camera action  [Alex]
+
+ * packages/apps/PixelDustSettings
+b672976  Restore old icon pack impl. which is still required by SmartNavSettings. Got removed by this commit: https://github.com/pixeldust *-p/android_packages_apps_PixelDustSettings/commit/146410c01af05681b133e2927cbf2b93eab3c7d7  [spezi77]
+
+ * vendor/google
+1fa2c9f  Elmyra: add elmyra lib and permission  [Giuseppe Maggio]
 
  * vendor/googleapps
 1a316d4  Add a shamu compatible version of GoogleDialer. Select the arm64-v8a version for other devices for now -- it can be changed at a later time if required.  [spezi77]
@@ -114,13 +529,13 @@ b602e05  Revert "WeatherProvider: Remove permission requirements"  [spezi77]
 
  2019-02-13:
 
+
+ 2019-02-12:
+
  * external/google
 75a6e42  Remove more machine like cycles from ElmyraService  [Giuseppe Maggio]
 9cff1c0  Remove more loggers and rename classes as I found them  [Giuseppe Maggio]
 d5ce050  Additional cleanup for janky methods  [Giuseppe Maggio]
-
-
- 2019-02-12:
 
  * vendor/googleapps
 7cfe3dc  Restore full Google Dialer support.  [spezi77]
@@ -130,18 +545,6 @@ d5ce050  Additional cleanup for janky methods  [Giuseppe Maggio]
 
  * external/google
 1388d23  Bypass screen off adjustment and go back to 0-8 for sensitivity  [Giuseppe Maggio]
-
- * external/skia
-27cadc7  Add rect-parameter to makeImageSnapshot and stop using chromium config options  [Derek Sollenberger]
-33d511c  Fix ABI Compliance Issue for JPEG Merged Upsample  [Mort (Tianqi) Guo]
-7f68e0b  Avoid coverage bleed for AA arcs with tiny sweep angles  [Brian Osman]
-b9ce939  Move fragCoord workaround declaration  [Brian Osman]
-140b8c7  skia: Clean up -Wextra-semi-stmt warnings  [mydongistiny]
-925ebad  fGpu is null when GrGpuResource::release  [zhang defang]
-e35f167  skia: Use std::move() to prevent unnecessary copying  [mydongistiny]
-c178bf9  Optimize the for loop in onGetYUV8Planes  [nagarajan.n]
-d8dc19b  Skia performance optimize for bitmap  [Libo Jin]
-b99b11f  external/skia: Take Fast Jpeg Decoding Path  [Mort (Tianqi) Guo]
 
  * frameworks/base
 1c50c08  SurfaceControl: Unbreak public API after pie-gsi merge  [Han Wang]
@@ -163,16 +566,8 @@ c390714  Keyguard: Avoid starting FP authentication right after cancelling  [dia
 6b65aec  Improve performance of unclipped save layers  [Derek Sollenberger]
 3eb1c8c  SystemUI: fix landscape powermenu layout  [DennySPB]
 
- * packages/apps/Launcher3
-25dc42f  Quickspace: Fix memory leak in intent receivers  [Chris]
-a7952e0  Lock desktop: Ensure that widgets can't be resized  [Alex]
-
- * packages/providers/WeatherProvider
-ddcd9e5  WeatherProvider: Remove permission requirements  [Chris Crump]
-c776787  WeatherProvider: Update google play services libs  [Chris Crump]
-
- * vendor/pixeldust
-b09ec09  Shishu themes: Remove shishufied settings launcher icon.  [spezi77]
+ * vendor/google
+7b20599  marlin: PQ2A.190205.003  [DeviousFusion]
 
 
  2019-02-10:
@@ -191,26 +586,15 @@ b80dd21  Revert "Add Always On Display"  [nitin1438]
 0a5cc17  Elmyra: Bring in the resources  [Alex]
 2d581d9  Active edge Settings 5/?  [Alex]
 
- * frameworks/base
-173d185  Reload more assets on overlay change  [Ivan Iskandar]
-228e7da  Ambient music: show on lockscreen only for Google's Now Playing  [ezio84]
-6c59c6d  Theme Now Playing for our dark themes as well.  [spezi77]
-7da347b  Theme Now Playing and Gboard for light theme [2/2]  [Alex Cruz]
-d307fe0  NotificationEntryManager: Fix ClassCastException  [Harsh Shandilya]
-e3fe07b  StatusBar: Silence logspam  [Harsh Shandilya]
-f9e9874  Statusbar clock: restore qsheader check within a saved instance  [ezio84]
-b8f147d  Merge branch 'pie-qpr2-release' of https://github.com/aosp-mirror/platform_frameworks_base into p  [spezi77]
-
  * kernel/google/wahoo
 6d2f77e  Merge branch 'p9x' of https://github.com/DirtyUnicorns/android_kernel_google_wahoo into HEAD  [nitin1438]
 
- * packages/apps/Launcher3
-5d34020  Decompiled feed lib with dark theme support  [Amir Zaidi]
-
- * vendor/google
-b44f448  Taimen: Update blobs to Android 9.0.0 (PQ2A.190205.002)  [Josh Chasky]
+ * packages/providers/WeatherProvider
+ddcd9e5  WeatherProvider: Remove permission requirements  [Chris Crump]
+c776787  WeatherProvider: Update google play services libs  [Chris Crump]
 
  * vendor/pixeldust
+b09ec09  Shishu themes: Remove shishufied settings launcher icon.  [spezi77]
 8cf2891  taimen: update fingerprint PQ2A.190205.002  [nitin1438]
 4532a04  shamu: add basic gapps package  [nitin1438]
 
@@ -223,1147 +607,57 @@ a673b67  Default libnfc-nci.conf for GSI  [Justin Yun]
 6165148  Don't build vendor rro  [ezio84]
 7596b72  Don't compile notch emulation overlays  [Alex Cruz]
 
- * external/google
-aec691a  Partial removal of weird cycles in ElmyraService  [Giuseppe Maggio]
-9588521  Properly cleanup CHREGestureSensor  [Giuseppe Maggio]
-c79ccd6  Merge branch 'dev'  [Giuseppe Maggio]
-be11ed7  Clean up gesture configuration in preparation for user config  [Alex]
-3d633d7  Move calls to System.Secure instead  [Alex]
-c754003  Switch to the assist manager for the Assistant action  [Alex]
+ * frameworks/base
+173d185  Reload more assets on overlay change  [Ivan Iskandar]
+228e7da  Ambient music: show on lockscreen only for Google's Now Playing  [ezio84]
+6c59c6d  Theme Now Playing for our dark themes as well.  [spezi77]
+7da347b  Theme Now Playing and Gboard for light theme [2/2]  [Alex Cruz]
+d307fe0  NotificationEntryManager: Fix ClassCastException  [Harsh Shandilya]
+e3fe07b  StatusBar: Silence logspam  [Harsh Shandilya]
+f9e9874  Statusbar clock: restore qsheader check within a saved instance  [ezio84]
+b8f147d  Merge branch 'pie-qpr2-release' of https://github.com/aosp-mirror/platform_frameworks_base into p  [spezi77]
+
+ * kernel/google/wahoo
+23a2ded  Merge 4.4.174 into android-msm-wahoo-4.4  [Nathan Chancellor]
+dc5e8c9  Linux 4.4.174  [Greg Kroah-Hartman]
+60c7f8f  rcu: Force boolean subscript for expedited stall warnings  [Paul E. McKenney]
+873beab3  net: ipv4: do not handle duplicate fragments as overlapping  [Michal Kubecek]
+0836bdf  net: fix pskb_trim_rcsum_slow() with odd trim offset  [Dimitris Michailidis]
+e92b847  inet: frags: better deal with smp races  [Eric Dumazet]
+acd00a0  ipv4: frags: precedence bug in ip_expire()  [Dan Carpenter]
+cb5fd4a  ip: frags: fix crash in ip_do_fragment()  [Taehee Yoo]
+2822475  ip: process in-order fragments efficiently  [Peter Oskolkov]
+2039bd8  ip: add helpers to process in-order fragments faster.  [Peter Oskolkov]
+3f78a3f  ip: use rb trees for IP frag queue.  [Peter Oskolkov]
+7fab8b2  net: pskb_trim_rcsum() and CHECKSUM_COMPLETE are friends  [Eric Dumazet]
+5f2d68b  ipv6: defrag: drop non-last frags smaller than min mtu  [Florian Westphal]
+26cfea3  net: modify skb_rbtree_purge to return the truesize of all purged skbs.  [Peter Oskolkov]
+ef0f963  ip: discard IPv4 datagrams with overlapping segments.  [Peter Oskolkov]
+bf40801  inet: frags: fix ip6frag_low_thresh boundary  [Eric Dumazet]
+826ff79  inet: frags: get rid of ipfrag_skb_cb/FRAG_CB  [Eric Dumazet]
+29ff723  inet: frags: reorganize struct netns_frags  [Eric Dumazet]
+3399001  rhashtable: reorganize struct rhashtable layout  [Eric Dumazet]
+bf81873  ipv6: frags: rewrite ip6_expire_frag_queue()  [Eric Dumazet]
+f925a29  inet: frags: do not clone skb in ip_expire()  [Eric Dumazet]
+567ef05  inet: frags: break the 2GB limit for frags storage  [Eric Dumazet]
+50fc089  inet: frags: remove inet_frag_maybe_warn_overflow()  [Eric Dumazet]
+b047c79  inet: frags: get rif of inet_frag_evicting()  [Eric Dumazet]
+cf2b9e6  inet: frags: remove some helpers  [Eric Dumazet]
+f67b17c  ipfrag: really prevent allocation on netns exit  [Paolo Abeni]
+24641fb  net: ieee802154: 6lowpan: fix frag reassembly  [Alexander Aring]
+4931071  inet: frags: use rhashtables for reassembly units  [Eric Dumazet]
+bf5ea30  rhashtable: add schedule points  [Eric Dumazet]
+9e5f4d0  rhashtable: Add rhashtable_lookup()  [Ben Hutchings]
+8295999  rhashtable: add rhashtable_lookup_get_insert_key()  [Pablo Neira Ayuso]
+a7fb573  inet: frags: refactor lowpan_net_frag_init()  [Eric Dumazet]
+705e71e  inet: frags: refactor ipv6_frag_init()  [Eric Dumazet]
+8c639ca  inet: frags: refactor ipfrag_init()  [Eric Dumazet]
+9c6727d  inet: frags: add a pointer to struct netns_frags  [Eric Dumazet]
+5eb2471  inet: frags: change inet_frags_init_net() return value  [Eric Dumazet]
 
  * vendor/googleapps
 6a89582  Good bye Pixel Launcher. We'll handle this device-wise in pixeldust/vendor  [spezi77]
 7ba7c18  Add more make files (basic, minimal) to support low-memory devices.  [spezi77]
 42629d6  Update permission whitelist for latest PlayStore update.  [spezi77]
 ea89f2d  Update to latest 9.0 Google Apps (Feb 2019).  [spezi77]
-
- * vendor/pixeldust
-d591b8b  Theme Now Playing [1/2]  [Alex Cruz]
-812d1ec  Fix Gboard overlay for light theme  [Alex Cruz]
-
-
- 2019-02-08:
-
- * device/google/wahoo
-6059a70  Merge tag 'android-9.0.0_r32' of https://android.googlesource.com/device/google/wahoo into HEAD  [spaceman860]
-
- * external/google
-d33c098  Remove various dumps methods, the sensor works just fine  [Giuseppe Maggio]
-d1cf98a  JNIGestureSensor isn't used anymore  [Giuseppe Maggio]
-38bf166  Cleanup UserContentObserver  [Giuseppe Maggio]
-e86e308  Merge branch 'dev'  [Giuseppe Maggio]
-03c608c  Animation and vibration: Ensure it respects 'no action' in multiuser  [Alex]
-066537f  Add more gestures  [Alex]
-a74565b  Disable navbar animation and vibration with no action  [Alex]
-41a9448  Remove useless qualifiers for other classes  [Giuseppe Maggio]
-cc5ad4f  Google's protobuf isn't needed  [Giuseppe Maggio]
-c90ced9  Last synthetic lambda conversions  [Giuseppe Maggio]
-4a66a7c  Oh, our CustomAction class is now alone  [Giuseppe Maggio]
-63723a0  Move and convert "syntethic" lambdas down Action  [Giuseppe Maggio]
-73e5e8c  Remove OPA classes and references  [Giuseppe Maggio]
-409d018  Remove SetupWizard action and gate  [Giuseppe Maggio]
-27f8d44  Delete classes CameraAction and CameraVisibility  [Giuseppe Maggio]
-5aff109  Convert jank lambdas to clean anonymous classes  [Giuseppe Maggio]
-9f16f4b  Finally add Google assistant action  [Alex]
-49491dc  Elmyra: clean-up a bunch of classes with automated tools  [Giuseppe Maggio]
-12fa980  Active edge settings 2/?  [Alex]
-e0a031d  Elmyra: Move to external repo  [Giuseppe Maggio]
-
- * frameworks/opt/slimrecent
-733dbd2  Hide screenshot view if no screenshot is available  [SpiritCroc]
-6796b0c  Enable predictive item animations  [SpiritCroc]
-
- * hardware/interfaces
-32ab837  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/hardware/interfaces into HEAD  [spezi77]
-
- * hardware/qcom/audio
-5fe563d  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/hardware/qcom/audio into p  [spezi77]
-
- * hardware/qcom/bootctrl
-d980e86  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/hardware/qcom/bootctrl into p  [spezi77]
-
- * hardware/qcom/gps
-e1bc2d5  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/hardware/qcom/gps into p  [spezi77]
-
- * kernel/google/wahoo
-f9e2a612  Merge branch 'android-msm-wahoo-4.4' of https://github.com/android-linux-stable/wahoo into HEAD  [spaceman860]
-
- * packages/apps/Bluetooth
-66b934b  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Bluetooth into p  [spezi77]
-
- * packages/apps/Nfc
-a4bae63  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Nfc into p  [spezi77]
-
- * vendor/support
-8fb1881  Add "de" translations.  [spezi77]
-8c1a8b1  Icon pack preference: Reuse existing resources  [Alex]
-
-
- 2019-02-07:
-
- * frameworks/opt/net/wifi
-62b2b7d  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into p  [spezi77]
-
- * frameworks/opt/telephony
-e338609  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/frameworks/opt/telephony into p  [spezi77]
-
- * kernel/google/marlin
-66e4ddd  sched/rt: Fix PI handling vs. sched_setscheduler()  [Peter Zijlstra]
-4465db3  sched/core: Fix task and run queue sched_info::run_delay inconsistencies  [Peter Zijlstra]
-1d44074  sched/core: Fix &rd->cpudl memory leak  [Mathieu Poirier]
-7cc719a  sched/core: Fix &rd->rto_mask memory leak  [Mathieu Poirier]
-00ebafc  hrtimer: Switch hrtimer_callback_running to relaxed  [franciscofranco]
-4ff8253  arm64: atomic: add missing macros  [franciscofranco]
-bac57bb  arm64: defining macros to optimize power usage  [Sumit Singh]
-54d3715  arm64: vdso: Mark vDSO code as read-only  [David Brown]
-3057af9  net: wireless: remove WARN_ON since it clutter kmsg logs  [Francisco Franco]
-2d9802f  power: kill all teh prints, they clog dmesg  [Francisco Franco]
-4b6977e  proc: much faster /proc/vmstat  [Francisco Franco]
-ed6235a  writeback: increase bdi_min_ratio to 5 in light of the latest writeback commit.  [Francisco Franco]
-6daa492  writeback: fix writeback cache thrashing  [Namjae Jeon]
-ccfadc8  config: Update defconfigs to include schedutil governor  [Chris Redpath]
-10e83c3  msm: vidc: disable CPU L2 cache PC during video sessions  [Manikanta Sivapala]
-00b7cfe  fs: Workaround the compiler's bad optimization  [Nikhilesh Reddy]
-3787163  iosched_switcher: add delay before sleeping as well  [Dorimanx]
-eaf6e5e  iosched_switcher: Remove unneeded code in change_elevator()  [Sultanxda]
-6657376  iosched_switcher: Ensure the previous elevator is always present  [Sultanxda]
-b491c50  iosched_switcher: Allow multiple block devices to be used  [Sultanxda]
-2b021e5  block: Switch to noop I/O scheduler when the screen turns off  [Sultanxda]
-dd334d3  getrandom: make blocking until init configurable  [Daniel Micay]
-8861c3b0  UPSTREAM: replace incorrect strscpy use in FORTIFY_SOURCE  [Daniel Micay]
-fba0d61  BACKPORT: include/linux/string.h: add the option of fortified string.h functions  [Daniel Micay]
-fbaf874  enable protected_{symlinks,hardlinks} by default  [Daniel Micay]
-c9caea4  fix qcacld-2.0 buffer overflows  [Daniel Micay]
-0d4f544  randomize lower bits of the argument block  [Daniel Micay]
-4bcdeed  arm64: move ET_DYN base lower in the address space  [Daniel Micay]
-66bdadf  arm64: determine stack entropy based on mmap entropy  [Daniel Micay]
-41a93f6  arm64: properly account for stack rnd in mmap base  [Daniel Micay]
-127c887  mark protection_map as __ro_after_init  [Daniel Micay]
-b356aa1  add vmalloc alloc_size attributes  [Daniel Micay]
-6e5a49c  add kmalloc alloc_size attributes  [Daniel Micay]
-aa9fecb  panic on !PageSlab && !PageCompound in ksize  [Daniel Micay]
-4bd237b  panic on kmem_cache_free with the wrong cache  [Daniel Micay]
-4f20412  always perform cache_from_obj sanity checks  [Daniel Micay]
-0a9f690  real slab_equal_or_root check for !MEMCG_KMEM  [Daniel Micay]
-98ec3ca  add missing cache_from_obj !PageSlab check  [Daniel Micay]
-9b4f8c7  slub: check cookies in __check_heap_object  [Daniel Micay]
-951f3b8  slub: add multi-purpose random cookies  [Daniel Micay]
-82a2b05  add slub free list XOR encryption  [Daniel Micay]
-f0cdb3f  disable slab merging  [Daniel Micay]
-128ab8c  slub: add check for write-after-free  [Daniel Micay]
-a038e4a  add slub sanitization  [Daniel Micay]
-5777f10  add page sanitization / verification  [Daniel Micay]
-3c70a28  disable ptrace_scope by default  [Daniel Micay]
-e81109d  use kernel command-line for early entropy  [Daniel Micay]
-33f07eb  gather extra early boot entropy like PaX  [Daniel Micay]
-25e01a4  init: Pin init task to the boot CPU, initially  [Thomas Gleixner]
-51f4b6f  drivers: Fix warnings  [AndroPlus]
-7e102fd  adreno_tz: Correct tz_buf pointer type to correct pointer arithmetic  [Deepak Kumar]
-3d6122b  adreno_tz: Fix divide by zero problem in gpu_load_show()  [Sudeep Yedalapure]
-7d275dd7  cpufreq_conservative: use values from -ck patchset  [F4uzan]
-afc3f43  Update Chill to 2.10  [AyushR1]
-1d9ce75  chill: Fix down_threshold_suspended sysfs input  [Joe Maples]
-0686541  chill: Fix logic for reducing boost count with freq  [Joe Maples]
-9623d0f  chill: Allow any number >= 1 for boost count  [Joe Maples]
-f90443e  chill: Reset boost count on policy->min  [Joe Maples]
-5422a75  chill: Decrease boost count alongside frequency  [Joe Maples]
-59eb39e  chill: Simplify boost increment logic  [Joe Maples]
-9d1feec  chill: I'm secretly retarded  [Joe Maples]
-edfb0c8  chill: Reset boost count at max regardless of whether we've boosted  [Joe Maples]
-842f28a  cpufreq: chill: Use native display_state instead of PowerSuspend  [Joe Maples]
-0944787  cpufreq: chill: Version 2.0  [Joe Maples]
-372a51e  cpufreq: chill: Impliment down_threshold_suspended  [Joe Maples]
-bfc5e38  cpufreq: chill: Replace sleep_depth with true load ignorance  [Joe Maples]
-d4b8c34  cpufreq: chill: Guard against 0 sleep depth and optimize defaults  [Joe Maples]
-67465f6  cpufreq: chill: Go back to using Conservative's tunables  [Joe Maples]
-f1fb3e0  cpufreq: chill: use GOV_CHILL macro  [Joe Maples]
-1ebff1b  cpufreq: chill: Don't check for target frequency when boosting  [Joe Maples]
-f2dc485  cpufreq: chill: Major cleanup, move changes from governor.h to chill.h  [Joe Maples]
-cb1e959  cpufreq: chill: Add boost option  [Joe Maples]
-9ff6293  cpufreq: chill: Add verion macros  [Joe Maples]
-d370d08  cpufreq: Add Chill cpu gov  [Joe Maples]
-8ee8542  cpufreq/zzmoove: updated to bLE develop version as of 11.07.17  [ZaneZam]
-5edb9dd  cpufreq: add ZZMoove big.LITTLE Edition (bLE) development version as of 09.01.2016  [andip71]
-bfa3ea2  lpm-levels: Disable sleep by default to speed up boot  [Sultanxda]
-3c8442c  Optimized Console FrameBuffer for upto 70% increase in Performance  [gustavoss]
-349e7a0  adreno_idler: Declare display_on correctly  [Joe Maples]
-fa1653b  adreno_idler: Add display state awareness  [Joe Maples]
-62d5086  adrenoboost: finetuning algorithm - scale it a bit down  [tbalden]
-e82fc6e  msm_adreno_tz: add adrenoboost parameter  [flar2]
-6e6807f  tcp_westwood: use tcp_jiffies32 instead of tcp_time_stamp  [Eric Dumazet]
-b8b93db  tcp: introduce tcp_jiffies32  [Eric Dumazet]
-f59f9c2  lib/win_minmax: windowed min or max estimator  [Neal Cardwell]
-58c18fb  tcp_westwood : Bump minimum RTT and lower initial RTT duration  [Harsh Shandilya]
-2e3a151  diag: Fix reference count mismatch  [Roopesh Rajashekharaiah Nataraja]
-ef9cd5b  soc: q6dspv2: add api to vote for upgrading thread priority  [Banajit Goswami]
-d99ddd5  sched: cpufreq: fix extra semi collon  [Francisco Franco]
-91c9b83  Unsetting DEVPORT.  [Max Bires]
-aeb8c88  adreno_tz: Remove unnecessary devfreq NULL check in tz_handler()  [Hareesh Gundu]
-1f54810  Update Adreno Idler to v1.1  [harise100]
-ebc892e  add Adreno Idler  [GhaithCraft]
-8f23cf2  msm: qdsp6v2: Allow 320K AAC encoding  [Steve Kondik]
-7563ec7  tcp_output: set initial TCP window size to 64K (speed improvement)  [andip71]
-41963c0  Regenerate full defconfig.  [spezi77]
-64f18b6  clang: treewide: disable or fix specific compiler warnings  [mydongistiny]
-b85b614  arm64: Build vDSO with -ffixed-x18  [Peter Collingbourne]
-8b5caef  arm64: Add support ARCH_SUPPORTS_INT128  [Kefeng Wang]
-38d566e  arm64: lib: rewrite and optimize memcmp  [Wilco Dijkstra]
-3cecd67  arm64: lib: memory utilities optimization  [Hong-Mei Li]
-9a7429a  arm64: strcmp: align to 64B cache line  [Yuanyuan Zhong]
-736dd44  arm64: fix show_data cannot show pc/lr memory  [Miles Chen]
-c874abc  arm64: fix show_data fallout from KERN_CONT changes  [Ji Zhang]
-c281679  cpufreq: schedutil: Cache tunables on governor exit  [Rohit Gupta]
-454383c  sched: Make iowait_boost optional in schedutil  [Joel Fernandes]
-10b52b4  cpufreq: Make iowait boost a policy option  [Joel Fernandes]
-7c95bf4  schedutil: always consider all CPUs when deciding next freq  [Juri Lelli]
-9dc83e0  schedutil: Don't assume we are likely using PELT  [joshuous]
-dedc426  sched: disable -Wsection for clang >= 6.0  [Sami Tolvanen]
-fe926e8  sched/tune: restrict store of prefer_idle as boolean  [Wei Wang]
-14a9004  sched/fair: fix CPU selection for non latency sensitive tasks  [Pavankumar Kondeti]
-f4fe417  sched/fair: Consider RT/IRQ pressure in capacity_spare_wake  [Joel Fernandes]
-6d30892  sched/fair: prevent possible infinite loop in sched_group_energy  [Chris Redpath]
-3f73f89  sched/fair: fix array out of bounds access in select_energy_cpu_idx()  [Pavankumar Kondeti]
-53783f2  sched/fair: select the most energy-efficient CPU candidate on wake-up  [Quentin Perret]
-76d15be  sched/fair: use min capacity when evaluating active cpus  [Ionela Voinescu]
-9c31c0b  sched/fair: use min capacity when evaluating idle backup cpus  [Ionela Voinescu]
-048078c  sched/fair: use min capacity when evaluating placement energy costs  [Ionela Voinescu]
-87adb34  sched/fair: introduce minimum capacity capping sched feature  [Ionela Voinescu]
-2fc9164  arm/topology: link arch_scale_min_freq_capacity to cpufreq  [Ionela Voinescu]
-aa831f2  arm64/topology: link arch_scale_min_freq_capacity to cpufreq  [Chris Redpath]
-ad44c40  sched: add arch_scale_min_freq_capacity to track minimum capacity caps  [Ionela Voinescu]
-68f2d75  cpufreq: add scaled minimum capacity tracking for policy changes  [Ionela Voinescu]
-2b85e0e  arm64: enable max frequency capping  [Dietmar Eggemann]
-7ad2828  arm: enable max frequency capping  [Dietmar Eggemann]
-f5afeca6  cpufreq: implement max frequency capping  [Dietmar Eggemann]
-ab197a3  sched/fair: introduce an arch scaling function for max frequency capping  [Dietmar Eggemann]
-404ba2c  cpufreq: remove max frequency capping from scale_freq_capacity()  [Dietmar Eggemann]
-4a3eabf  Revert "cpufreq: Max freq invariant scheduler load-tracking and cpu capacity support"  [Quentin Perret]
-6628b6f  Revert "arm: Enable max freq invariant scheduler load-tracking and capacity support"  [Quentin Perret]
-e3776fb  Revert "arm64: Enable max freq invariant scheduler load-tracking and capacity support"  [Quentin Perret]
-2c178f2  sched/fair: reduce rounding errors in energy computations  [Patrick Bellasi]
-062f947  sched/fair: re-factor energy_diff to use a single (extensible) energy_env  [Patrick Bellasi]
-77882e4  sched/fair: cleanup select_energy_cpu_brute to be more consistent  [Patrick Bellasi]
-a3c7ca8  sched/fair: remove capacity tracking from energy_diff  [Patrick Bellasi]
-86734ce  sched/fair: remove energy_diff tracepoint in preparation to re-factoring  [Patrick Bellasi]
-10e77d0  sched/fair: use *p to reference task_structs  [Chris Redpath]
-e30436f  sched/cgroup: Fix/cleanup cgroup teardown/init  [Peter Zijlstra]
-77b9875  sched/cgroup: Fix cgroup entity load tracking tear-down  [Peter Zijlstra]
-cb34d6c  cgroup: make sure a parent css isn't freed before its children  [Tejun Heo]
-1b74469  cgroup: make sure a parent css isn't offlined before its children  [Tejun Heo]
-c4156a7  cgroup: add cgroup_subsys->css_released()  [Tejun Heo]
-8a08b45  sched/wait: Remove the lockless swait_active() check in swake_up*()  [Boqun Feng]
-8b03011  wait.[ch]: Introduce the simple waitqueue (swait) implementation  [Peter Zijlstra (Intel)]
-578184f  init: Remove new instance of __cpuinit that crept back in  [Paul Gortmaker]
-b5879bb  cpu: Silence log spam when a CPU is brought up  [Sultan Alsawaf]
-0fd76bd  rcu: Stop disabling interrupts in scheduler fastpaths  [Paul E. McKenney]
-f105583  rcu: Create transitive rnp->lock acquisition functions  [Peter Zijlstra]
-acfd68e  rcu: Squash up through msm-wahoo-4.4-pie-qpr1  [Paul E. McKenney]
-1d787ae  rcu: Don't disable CPU hotplug during OOM notifiers  [Paul E. McKenney]
-1832f1e  rcu: Make RCU_FAST_NO_HZ take advantage of numbered callbacks  [Paul E. McKenney]
-7001c68  binder: squash updates through kernel-common/4.4  [Todd Kjos]
-f2a4490  binder: move to the "real" part of the kernel  [Greg Kroah-Hartman]
-c113662  zen-tune: Implement zen-tune v4.12  [Steven Barrett]
-5bd2e80  bcache: use routines from lib/crc64.c for CRC64 calculation  [Coly Li]
-63d8c36  lib: add crc64 calculation routines  [Coly Li]
-bff6cdf  arm64: support __int128 on gcc 5+  [Jason A. Donenfeld]
-720b7fd  arm64: drop non-existing vdso-offsets.h from .gitignore  [Masahiro Yamada]
-f3f0728  arm64: cpufeature: add feature for CRC32 instructions  [Ard Biesheuvel]
-b5a7554  arm64/lib: improve CRC32 performance for deep pipelines  [Ard Biesheuvel]
-752120b  arm64/lib: add accelerated crc32 routines  [Ard Biesheuvel]
-ee40b91  lib/crc32: make core crc32() routines weak so they can be overridden  [Ard Biesheuvel]
-7955a42  crypto: arm64/crc32 - bring in line with generic CRC32  [Ard Biesheuvel]
-9669b1f  crypto: crc32 - Add ARM64 CRC32 hw accelerated module  [Yazen Ghannam]
-9c68565  msm: msm_bus: Don't enable QoS clocks when none are present  [Sultanxda]
-7d1289c  msm: sde: Convert workq to kernel thread in SDE rotator  [Benjamin Chan]
-b1b928c  msm: mdss: update mdss perf when changing refresh rate  [Ray Zhang]
-1d82ebd  msm: mdss: fix race condition with overlay off in doze mode  [Ingrid Gallardo]
-145e37e  msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input  [Sultan Alsawaf]
-eccd29a  msm: kgsl: Reschedule idle work in case transition to idle state fails  [Deepak Kumar]
-21a15f8  mmc: sdhci-msm: Disable controller clocks in suspend  [Sayali Lokhande]
-45e97c3  msm: ipa3: Fix redundant wakelock releases in error paths  [Sultan Alsawaf]
-5f5b6e8  msm: ipa: Race condition fix to avoid missing GSI interrupts  [Michael Adisumarta]
-9cc201f  clk: msm: clock-local2: Fix get_rate ops for branch clock  [Amit Nischal]
-bcac0e6  soc: qcom: glink_smem_native_xport: Check smem item in non cache region  [Dhoat Harpal]
-eb9973f  msm_serial_hs: Change GPIO config sequence during runtime resume/suspend  [Mukesh Kumar Savaliya]
-2e08fe9  jiffies: add time comparison functions for 64 bit jiffies  [Jason A. Donenfeld]
-034a14e  jiffies.h: Declare jiffies and jiffies_64 with ____cacheline_aligned_in_smp  [Matthias Kaehlcke]
-1faec95  msm-core: Compile out temperature polling  [Sultanxda]
-2fa55eb  msm-core: Fix issue with power table notifications  [Maulik Shah]
-80cf4fb  msm-core: Fix uninitialized temperature and cpu variable  [Archana Sathyakumar]
-9ddc0ae  msm-thermal: disable core_control for 8996  [Wei Wang]
-da85a51  suspend: make sync() on suspend-to-RAM optional  [Len Brown]
-d063cde  pm: supsend: read suspend time from timekeeping  [Lianwei Wang]
-524dc6e  PM / sleep: Make it possible to quiesce timers during suspend-to-idle  [Rafael J. Wysocki]
-65cab42  PM / sleep: make PM notifiers called symmetrically  [Lianwei Wang]
-1ba8cff  cpuidle: Do not select menu and ladder governors  [Maulik Shah]
-b9f5b91  cpuidle: lpm-levels: Fix snprintf string format  [Archana Sathyakumar]
-427e45f  cpuidle: lpm-levels: Update suspend wake time  [Maulik Shah]
-f104aed  cpuidle: lpm-levels: Fix div by zero bug  [Hong-Mei Li]
-df7037f  cpuidle: lpm-levels: Fix round off error in calculation  [Maulik Shah]
-abd084f  cpuidle: lpm-levels: Compute minimum residencies for LPM levels  [Raju P.L.S.S.S.N]
-ed35654  cpuidle: lpm-levels: Allow rpm handshake only with cluster LPM  [Maulik Shah]
-41b456e  cpuidle: lpm-levels: Fix low power mode selection  [Raju P.L.S.S.S.N]
-34ce435  alarmtimer: Program mpm wakeup time in milliseconds  [Mohit Aggarwal]
-3c7cd6a  time: Fix ktime_get_raw() incorrect base accumulation  [John Stultz]
-5896467  EAS: Silence logging caused by EAS changes  [RenderBroken]
-2cd537c  perf: core: Use hrtimer_start()  [Thomas Gleixner]
-c03a820  sched,perf: Fix periodic timers  [Peter Zijlstra]
-852fa4f  sched: Cleanup bandwidth timers  [Peter Zijlstra]
-f66ab5d  sched: core: Use hrtimer_start[_expires]()  [Thomas Gleixner]
-5091edf  sched: fix duplicate sched_group_energy const specifiers  [Greg Hackmann]
-723294b  sched/walt: make walt_ktime_suspended __read_mostly  [Todd Poynor]
-44fbea3  sched/core: Remove pointless printout in sched_show_task()  [Linus Torvalds]
-934b656  sched/core: Remove unlikely() annotation from sched_move_task()  [Steven Rostedt (VMware)]
-c8a3de2  sched/core: Remove a parameter in the migrate_task_rq() function  [xiaofeng.yan]
-0cc5ce5  sched: Stop switched_to_rt() from sending IPIs to offline CPUs  [Paul E. McKenney]
-8b602f9  sched/core: Fix an SMP ordering race in try_to_wake_up() vs. schedule()  [Peter Zijlstra]
-c16480a  sched/core: Clear the root_domain cpumasks in init_rootdomain()  [Xunlei Pang]
-f4e2a2f  sched/core: Remove false-positive warning from wake_up_process()  [Sasha Levin]
-3c80747  sched/core: Idle_task_exit() shouldn't use switch_mm_irqs_off()  [Andy Lutomirski]
-f5f07e7  sched/core: Add switch_mm_irqs_off() and use it in the scheduler  [Andy Lutomirski]
-61ad4f5  sched/rt: Avoid obvious configuration fail  [Peter Zijlstra]
-b356b9a  sched/rt: Add a missing rescheduling point  [Sebastian Andrzej Siewior]
-afe8e8b  sched/rt: Up the root domain ref count when passing it around via IPIs  [Steven Rostedt (VMware)]
-520daaa  sched/rt: Use container_of() to get root domain in rto_push_irq_work_func()  [Steven Rostedt (VMware)]
-4604da3  sched/rt: Do not pull from current CPU if only one CPU to pull  [Steven Rostedt]
-52d183d  sched/rt: Simplify the IPI based RT balancing logic  [Steven Rostedt (Red Hat)]
-97c346a  sched/rt: Hide the push_irq_work_func() declaration  [Arnd Bergmann]
-505b9a1  sched/rt: Use IPI to trigger RT task push migration instead of pulling  [Steven Rostedt]
-6c7853a  sched/deadline: Fix migration of SCHED_DEADLINE tasks  [Luca Abeni]
-ac77455  sched/deadline: Remove a redundant condition from task_woken_dl()  [Xunlei Pang]
-660f994  sched/rt: Remove a redundant condition from task_woken_rt()  [Xunlei Pang]
-1e7dd95  sched/dl: Convert switched_{from, to}_dl() / prio_changed_dl() to balance callbacks  [Peter Zijlstra]
-b2ffe8c  sched/dl: Remove return value from pull_dl_task()  [Peter Zijlstra]
-bc22aed  sched,rt: Convert switched_{from, to}_rt() / prio_changed_rt() to balance callbacks  [Peter Zijlstra]
-0eee23b0  sched,rt: Remove return value from pull_rt_task()  [Peter Zijlstra]
-ae40e86  sched: Allow balance callbacks for check_class_changed()  [Peter Zijlstra]
-b013eb7  sched: Replace post_schedule with a balance callback list  [Peter Zijlstra]
-6f6377f  sched/deadline: Reduce rq lock contention by eliminating locking of non-feasible target  [Wanpeng Li]
-185c2a3  sched/rt: Reduce rq lock contention by eliminating locking of non-feasible target  [Tim Chen]
-c2bd5a6  sched/rt: schedtune: Add boost retention to RT  [Joel Fernandes]
-d33f75d  sched/rt: add schedtune accounting  [Joel Fernandes]
-ad970ac  sched: EAS: check energy_aware() before calling select_energy_cpu_brute() in up-migrate path  [Ke Wang]
-88be978  sched: EAS: Initialize push_task as NULL to avoid direct reference on out_unlock path  [Ke Wang]
-eca3a11  sched: EAS/WALT: Don't take into account of running task's util  [Ke Wang]
-5a7f2e2  sched: EAS: Fix the calculation of group util in group_idle_state()  [Ke Wang]
-715ed74  sched: EAS: update trg_cpu to backup_cpu if no energy saving for target_cpu  [Ke Wang]
-0f5c5a9  sched: EAS: Fix the condition to distinguish energy before/after  [Ke Wang]
-2f802b1  sched: EAS: upmigrate misfit current task  [Joonwoo Park]
-5ade926  sched: avoid pushing tasks to an offline CPU  [Prasad Sodagudi]
-0998843  sched: Extend active balance to accept 'push_task' argument  [Srivatsa Vaddagiri]
-db3f84e  sched: walt: Correct WALT window size initialization  [Vikram Mulukutla]
-cc8d588  sched/fair: Use wake_q length as a hint for wake_wide  [Brendan Jackman]
-9172a95  sched: Implement lockless wake-queues  [Peter Zijlstra]
-2f98c20  sched: WALT: account cumulative window demand  [Joonwoo Park]
-2896a56  sched/fair: remove useless variable in find_best_target  [Leo Yan]
-e3747cb  sched/tune: access schedtune_initialized under CGROUP_SCHEDTUNE  [Russ Weight]
-a9e20b3  sched/fair: consider task utilization in group_max_util()  [Patrick Bellasi]
-bff86e7  sched/fair: consider task utilization in group_norm_util()  [Chris Redpath]
-1707395  sched/fair: enforce EAS mode  [Patrick Bellasi]
-1d939cf  sched/fair: ignore backup CPU when not valid  [Patrick Bellasi]
-a42ea8c  sched/fair: trace energy_diff for non boosted tasks  [Patrick Bellasi]
-b770392  sched/fair: Sync task util before slow-path wakeup  [Brendan Jackman]
-172dd67  sched/fair: Fix usage of find_idlest_group() when the local group is idlest  [Brendan Jackman]
-11c295c  sched/fair: Fix usage of find_idlest_group() when no groups are allowed  [Brendan Jackman]
-881e2cb  sched/fair: Fix find_idlest_group when local group is not allowed  [Brendan Jackman]
-245758d  sched/fair: Remove unnecessary comparison with -1  [Brendan Jackman]
-6ac8a84  sched/fair: Move select_task_rq_fair slow-path into its own function  [Brendan Jackman]
-f4491a6  sched/fair: Force balancing on nohz balance if local group has capacity  [Brendan Jackman]
-0ed160b  sched/core: Add missing update_rq_clock() call in sched_move_task()  [Peter Zijlstra]
-e04fc0f  sched/core: Add missing update_rq_clock() call in set_user_nice()  [Peter Zijlstra]
-4f88e57  sched/core: Add missing update_rq_clock() call for task_hot()  [Peter Zijlstra]
-7c3c6ad  sched/core: Add missing update_rq_clock() in detach_task_cfs_rq()  [Peter Zijlstra]
-d239f1d  sched/core: Add missing update_rq_clock() in post_init_entity_util_avg()  [Peter Zijlstra]
-0f02691  sched/core: Fix find_idlest_group() for fork  [Vincent Guittot]
-33b0e70  sched/cgroup: Fix cpu_cgroup_fork() handling  [Vincent Guittot]
-34e001c  sched/fair: Fix and optimize the fork() path  [Peter Zijlstra]
-6180b21  cpufreq/sched: Consider max cpu capacity when choosing frequencies  [Chris Redpath]
-506ee45  sched/autogroup: Do not use autogroup->tg in zombie threads  [Oleg Nesterov]
-8dcbb9a  sched/autogroup: Fix autogroup_move_group() to never skip sched_move_task()  [Oleg Nesterov]
-ac44da3  sched/fair: Select correct capacity state for energy_diff  [Chris Redpath]
-74c30d9  cpufreq: schedutil: clamp util to CPU maximum capacity  [Leo Yan]
-37d83e7  cpufreq/sched: Use cpu max freq rather than policy max  [Chris Redpath]
-1adb476  sched/fair: remove erroneous RCU_LOCKDEP_WARN from start_cpu()  [Dietmar Eggemann]
-b73dbac  sched: EAS/WALT: finish accounting prior to task_tick  [Joonwoo Park]
-b46432c  cpufreq: sched: update capacity request upon tick always  [Joonwoo Park]
-18568a5  sched/fair: prevent meaningless active migration  [Joonwoo Park]
-23ff15c  sched: walt: Leverage existing helper APIs to apply invariance  [Vikram Mulukutla]
-1c3c494  sched: Update task->on_rq when tasks are moving between runqueues  [Olav Haugan]
-4f7459b  sched: Move p->nr_cpus_allowed check to select_task_rq()  [Wanpeng Li]
-bc643b2  cgroup/cpuset: remove circular dependency deadlock  [Prateek Sood]
-7db3a6c  sched/cpuset/pm: Fix cpuset vs. suspend-resume bugs  [Peter Zijlstra]
-48107b1  Revert "sched/fair: ensure utilization signals are synchronized before use"  [Brendan Jackman]
-763a054  schedutil: Reset cached freq if it is not in sync with next_freq  [Viresh Kumar]
-49d8b7b  cpufreq: schedutil: use now as reference when aggregating shared policy requests  [Juri Lelli]
-99677e9  cpufreq: schedutil: Use policy-dependent transition delays  [Rafael J. Wysocki]
-3492add  sched: WALT: fix window mis-alignment  [Joonwoo Park]
-c496921  sched: EAS: kill incorrect nohz idle cpu kick  [Joonwoo Park]
-539f5fe  sched: EAS: fix incorrect energy delta calculation due to rounding error  [Joonwoo Park]
-4f957c3  sched: EAS/WALT: take into account of waking task's load  [Joonwoo Park]
-c31cd44  cpufreq: sched: WALT: don't apply capacity margin twice  [Joonwoo Park]
-bb28547  sched: WALT: fix potential overflow  [Joonwoo Park]
-4a000de  sched: EAS: schedfreq: fix CPU util over estimation  [Joonwoo Park]
-fcc7715  sched: EAS/WALT: use cr_avg instead of prev_runnable_sum  [Joonwoo Park]
-8d7ab02  sched: WALT: fix broken cumulative runnable average accounting  [Joonwoo Park]
-4471c7e  sched: deadline: WALT: account cumulative runnable avg  [Joonwoo Park]
-f41402e  cpufreq: schedutil: Use unsigned int for iowait boost  [Joel Fernandes]
-7cab280  cpufreq: schedutil: Make iowait boost more energy efficient  [Joel Fernandes]
-d238d03  sched/fair: Add a backup_cpu to find_best_target  [Chris Redpath]
-b59c578  sched/fair: Try to estimate possible idle states.  [Chris Redpath]
-1e3940a  sched/fair: Sync task util before EAS wakeup  [Brendan Jackman]
-f03dfc9  sched/fair: kick nohz idle balance for misfit task  [Leo Yan]
-e33ab68  sched/fair: Update signals of nohz cpus if we are going idle  [Chris Redpath]
-7f8fa8f  events: add tracepoint for find_best_target  [Patrick Bellasi]
-8b1fb02  sched/fair: streamline find_best_target heuristics  [Patrick Bellasi]
-cf912a9  sched/loadavg: Use {READ,WRITE}_ONCE() for sample window  [Matt Fleming]
-8fae05f  sched/loadavg: Avoid loadavg spikes caused by delayed NO_HZ accounting  [Matt Fleming]
-12bc44f  sched/tune: fix tracepoint location  [Patrick Bellasi]
-cc5aa65  sched: walt: fix window misalignment when HZ=300  [Joonwoo Park]
-23665de  Revert "sched/tune: Initialize raw_spin_lock in boosted_groups"  [David Lin]
-19fae44  cpufreq: schedutil: Trace frequency only if it has changed  [Chris Redpath]
-80a3f9b  cpufreq: schedutil: Avoid reducing frequency of busy CPUs prematurely  [Chris Redpath]
-26d353c  cpufreq: schedutil: Refactor sugov_next_freq_shared()  [Chris Redpath]
-050c65d  cpufreq: schedutil: Fix per-CPU structure initialization in sugov_start()  [Chris Redpath]
-ff31476  cpufreq: schedutil: Pass sg_policy to get_next_freq()  [Viresh Kumar]
-a853464  cpufreq: schedutil: move cached_raw_freq to struct sugov_policy  [Chris Redpath]
-c145cab  cpufreq: schedutil: Rectify comment in sugov_irq_work() function  [Viresh Kumar]
-e09af85  cpufreq: schedutil: irq-work and mutex are only used in slow path  [Chris Redpath]
-3699806  cpufreq: schedutil: enable fast switch earlier  [Chris Redpath]
-98ba301  cpufreq: schedutil: Avoid indented labels  [Chris Redpath]
-b44484a  sched/tune: allow negative cpu boosts  [Connor O'Brien]
-4e919d5  sched/tune: don't use schedtune before it is ready  [Chris Redpath]
-1f7800d  sched/fair: use SCHED_CAPACITY_SCALE for energy normalization  [Patrick Bellasi]
-ae9612d  sched/{fair,tune}: use reciprocal_value to compute boost margin  [Patrick Bellasi]
-6361352  sched/tune: Initialize raw_spin_lock in boosted_groups  [Srinath Sridharan]
-6c68d68  sched/tune: report when SchedTune has not been initialized  [Patrick Bellasi]
-bb78cda  sched/tune: fix sched_energy_diff tracepoint  [Chris Redpath]
-97af803  sched/tune: increase group count to 5  [Chris Redpath]
-b083041  cpufreq/schedutil: Fix schedutil's 'default governor' machinery  [Chris Redpath]
-960b9c0  cpufreq/schedutil: use boosted_cpu_util for PELT to match WALT  [Chris Redpath]
-78f5180  sched/fair: Fix sched_group_energy() to support per-cpu capacity states  [Morten Rasmussen]
-3704584  sched/fair: discount task contribution to find CPU with lowest utilization  [Valentin Schneider]
-e259c93  sched/fair: ensure utilization signals are synchronized before use  [Chris Redpath]
-4b6fb73  sched/walt: Add CONFIG_USE_WALT to change default usage of WALT  [Chris Redpath]
-0313ddc  sched/fair: remove task util from own cpu when placing waking task  [Chris Redpath]
-aacdb3a  sched/trace: Make util_avg in load_avg trace reflect PELT/WALT as used  [Chris Redpath]
-b6b8ff2  sched/fair: Fix sched_load_avg_cpu events for task_groups  [Brendan Jackman]
-ccc30ac  sched/fair: Fix missing sched_load_avg_cpu events  [Brendan Jackman]
-1e50d8e  sched/walt: fix build failure if FAIR_GROUP_SCHED=n  [Amit Pundir]
-6751d46  sched/walt: kill {min,max}_capacity  [Juri Lelli]
-f45ce39  sched/fair: Add eas (& cas) specific rq, sd and task stats  [Dietmar Eggemann]
-67803f8  sched/core: Fix PELT jump to max OPP upon util increase  [Andres Oportus]
-219b7d9  sched: EAS & 'single cpu per cluster'/cpu hotplug interoperability  [Dietmar Eggemann]
-42584a9  sched/fair: Multiple upstream load tracking changes  [Vincent Guittot]
-316f8cd  sched/fair: Fix effective_load() to consistently use smoothed load  [Peter Zijlstra (Intel)]
-891c85c  sched/fair: Propagate asynchrous detach  [Vincent Guittot]
-a3797f9  sched/fair: Propagate load during synchronous attach/detach  [Vincent Guittot]
-8cae8af  sched/fair: Fix hierarchical order in rq->leaf_cfs_rq_list  [Vincent Guittot]
-e9797ea  sched/fair: Factorize PELT update  [Vincent Guittot]
-b3dfc2b  sched/fair: Factorize attach/detach entity  [Vincent Guittot]
-e8ea723  sched/fair: Improve PELT stuff some more  [Peter Zijlstra (Intel)]
-113ea78  sched/fair: Apply more PELT fixes  [Peter Zijlstra (Intel)]
-1d0cc89  sched/fair: Fix post_init_entity_util_avg() serialization  [Peter Zijlstra]
-ac913bb  sched/fair: Initiate a new task's util avg to a bounded value  [Yuyang Du]
-b36334a  sched/fair: Simplify idle_idx handling in select_idle_sibling()  [Dietmar Eggemann]
-007e277  sched/fair: refactor find_best_target() for simplicity  [Dietmar Eggemann]
-48992f7  sched/fair: Change cpu iteration order in find_best_target()  [Dietmar Eggemann]
-d6a9249  sched/core: Add first cpu w/ max/min orig capacity to root domain  [Dietmar Eggemann]
-6918ce0  sched/core: Remove remnants of commit fd5c98da1a42  [Dietmar Eggemann]
-d10a888  sched: Remove sysctl_sched_is_big_little  [Dietmar Eggemann]
-a0b7a94  sched/fair: Code !is_big_little path into select_energy_cpu_brute()  [Dietmar Eggemann]
-dbc052f  sched/fair: Re-integrate 'honor sync wakeups' into wakeup path  [Dietmar Eggemann]
-9bfc862  sched/fair.c: Set SchedTune specific struct energy_env.task  [Dietmar Eggemann]
-0287caa  sched/fair: Energy-aware wake-up task placement  [Morten Rasmussen]
-8e548a1  sched/fair: Add energy_diff dead-zone margin  [Morten Rasmussen]
-a61a1db  sched/fair: Decommission energy_aware_wake_cpu()  [Dietmar Eggemann]
-cedb53c  sched/fair: Do not force want_affine eq. true if EAS is enabled  [Dietmar Eggemann]
-28928b6  arm64: Set SD_ASYM_CPUCAPACITY sched_domain flag on DIE level  [Dietmar Eggemann]
-638a595  sched/fair: Fix incorrect comment for capacity_margin  [Morten Rasmussen]
-9cc6fa9  sched/fair: Avoid pulling tasks from non-overloaded higher capacity groups  [Morten Rasmussen]
-06150c3  sched/fair: Add per-CPU min capacity to sched_group_capacity  [Morten Rasmussen]
-d3e598e  sched/fair: Consider spare capacity in find_idlest_group()  [Morten Rasmussen]
-372fa47  sched/fair: Compute task/cpu utilization at wake-up correctly  [Morten Rasmussen]
-2e761bc  sched/fair: Let asymmetric CPU configurations balance at wake-up  [Morten Rasmussen]
-0b099d8  sched/core: Enable SD_BALANCE_WAKE for asymmetric capacity systems  [Morten Rasmussen]
-d1f8bbe  sched/core: Pass child domain into sd_init()  [Morten Rasmussen]
-85ddb47  sched/core: Introduce SD_ASYM_CPUCAPACITY sched_domain topology flag  [Morten Rasmussen]
-4783cd5  sched/core: Remove unnecessary NULL-pointer check  [Morten Rasmussen]
-2f2df62  sched/fair: Optimize find_idlest_cpu() when there is no choice  [Morten Rasmussen]
-85a1199  sched/fair: Make the use of prev_cpu consistent in the wakeup path  [Morten Rasmussen]
-1c7ecbe  sched/core: Fix power to capacity renaming in comment  [Morten Rasmussen]
-a689c8e  Partial Revert: "sched: Add cpu capacity awareness to wakeup balancing"  [Dietmar Eggemann]
-a59cf9c  Revert "sched: Consider spare cpu capacity at task wake-up"  [Dietmar Eggemann]
-31fbf8f  schedutil: Fix linkage of schedutil and walt  [Chris Redpath]
-2adf618  cpufreq: schedutil: add up/down frequency transition rate limits  [Steve Muckle]
-5d418937  sched/trace: add rq utilization signal for WALT  [Juri Lelli]
-f118ae9  sched/cpufreq: make schedutil use WALT signal  [Juri Lelli]
-e3714a1  sched: cpufreq: use rt_avg as estimate of required RT CPU capacity  [Steve Muckle]
-b1b763e  cpufreq: schedutil: move slow path from workqueue to SCHED_FIFO task  [Viresh Kumar]
-371d956  sched: backport schedutil governor from 4.9-rc4  [Steve Muckle]
-71711bd  sched: backport cpufreq hooks from 4.9-rc4  [Steve Muckle]
-6a863ba  kthread: allow to cancel kthread work  [Petr Mladek]
-325988f  sched/cpufreq: fix tunables for schedfreq governor  [Steve Muckle]
-382b7b6  sched: This kernel expects sched_cfs_boost to be signed  [Chris Redpath]
-4ddadae  Revert "UTIL_EST: sched: update tracepoint to report estimated CPU utilzation"  [Chris Redpath]
-f5728f6  sched/walt: Drop arch-specific timer access  [Chris Redpath]
-d70de3a  sched/tune: backport 'fix accounting for runnable tasks'  [Patrick Bellasi]
-9cfc5f2  sched: Fix sysctl_sched_cfs_boost type to be int  [Dmitry Shmidt]
-e5610d7  sched/walt: use do_div instead of division operator  [Amit Pundir]
-814ebbd  schedtune: Guarding against compile errors  [Chris Redpath]
-a66fb1f  Unify whitespace layout with android-3.18  [Chris Redpath]
-2f674b1  Revert: UTIL_EST code from 'fix set_cfs_cpu_capacity when WALT is in use"  [Chris Redpath]
-399b94f  sched/fair: missing parts of 'optimize idle cpu selection for boosted tasks'  [Chris Redpath]
-6b6ac89  eas/sched/fair: Fixing comments in find_best_target.  [Srinath Sridharan]
-8fc8310  sched/tune: move schedtune_nornalize_energy into fair.c  [Patrick Bellasi]
-e02f98b  sched/tune: update accouting before CPU capacity  [Patrick Bellasi]
-1c2ed77  Revert "WIP: UTIL_EST: sched/fair: add support for estimated utilization"  [Chris Redpath]
-dc95dbc  Revert "WIP: UTIL_EST: sched/{core,fair}: add support to use estimated utilization"  [Chris Redpath]
-2e6f341  sched: revert UTIL_EST usage from commit 6bf72ca7f1  [Chris Redpath]
-1676110  Revert "WIP: UTIL_EST: switch to usage of tasks's estimated utilization"  [Chris Redpath]
-e1efb3f  Revert "WIP: UTIL_EST: sched/fair: use estimated utilization to drive CPUFreq"  [Chris Redpath]
-244cd79  Revert "WIP: UTIL_EST: use estimated utilization on energy aware wakeup path"  [Chris Redpath]
-21eec92  Revert "WIP: UTIL_EST: use estimated utilization on load balancing paths"  [Chris Redpath]
-815559b  sched: tune: Fix lacking spinlock initialization  [Ke Wang]
-5fb3122  sched/tune: schedtune_allow_attach() can be static  [kbuild test robot]
-6f276e5  sched/tune: __pcpu_scope_cpu_boost_groups can be static  [kbuild test robot]
-ecf7200  sched/eas: Squash revert of some commits from AOSP  [mydongistiny]
-9245d1a  include: asm-generic: Use the HZ value of defconfig instead  [ahmedradaideh]
-bec0abd  msm: clock-osm: Use CLKFLAG_NO_RATE_CACHE for pwrcl and perfcl clk  [Sultan Alsawaf]
-b6e565b  clk: msm: clock-cpu-8996: Use CLKFLAG_NO_RATE_CACHE for perfcl_hf_mux  [Sultanxda]
-7221b02  qcom-cpufreq: Use CLKFLAG_NO_RATE_CACHE  [Sultanxda]
-f1983af  qcom-cpufreq: skip frequencies that round to same rate  [Rohit Gupta]
-7903324  Revert "Overclocking with cmdline option"  [spezi77]
-0561206  qcom-cpufreq: Use cpufreq_table_validate_and_show to fill freq_table  [Junjie Wu]
-84ac090  cpufreq: Restore policy min/max limits on CPU online  [Viresh Kumar]
-76db280  cpufreq: flush queued work before freeing policy  [Santosh Mardi]
-0f9c8f6  cpufreq-dt: Set sane defaults for schedutil rate limits  [Brendan Jackman]
-967fb97  cpufreq: use memcpy() to copy policy  [Viresh Kumar]
-56e9783  arm64: eliminate the .eh_frame sections from vmlinux and kernel modules  [William Cohen]
-4effb25  arm64: Implement optimised IP checksum helpers  [Eliminater74]
-721836d  clock-cpu-8996: Add early boot frequency to reduce boot up time  [Eliminater74]
-528c1e9  zsmalloc: squash to keep max_object in size_class  [Minchan Kim]
-5d16b14  zswap/zpool: squash up to latest mainline kernel  [Dan Streetman]
-426f100  zram: Squash switch to crypto compress API  [Sergey Senozhatsky]
-da027a0  zram: reduce load operation in page_same_filled  [Sangwoo Park]
-bb30178  zram: extend zero pages to same element pages  [zhouxianrong]
-90c833a  zram: remove obsolete sysfs attrs  [Sergey Senozhatsky]
-4dee4fc  zram: support BDI_CAP_STABLE_WRITES  [Minchan Kim]
-4ca446e  zram: revalidate disk under init_lock  [Minchan Kim]
-ec2c6fd  zram: user per-cpu compression streams  [Sergey Senozhatsky]
-4f2da09  mm, swap: fix race between swap count continuation operations  [Huang Ying]
-0e31b5a  lib/string.c: add multibyte memset functions  [Matthew Wilcox]
-3e7acd5  lib: Don't enable DEBUG_BUGVERBOSE by default  [Sultanxda]
-d0aa058  lib/int_sqrt: optimize small argument  [Peter Zijlstra]
-89d05e7  int_sqrt: Improve 3x faster integer sqrt  [FlyFrog]
-9849e16  int_sqrt.c: Correction square root algo with naming  [ramgear]
-7f181e6  dm: do not allow readahead to limit IO size  [Jaegeuk Kim]
-5971227  readahead: stricter check for bdi io_pages  [Markus Stockhausen]
-dcad806  mm: don't cap request size based on read-ahead setting  [Jens Axboe]
-662fbe7  tcp: add CDG congestion control  [Kenneth Klette Jonassen]
-9886aef  msm8996: Remove redundant CPU bandwidth devfreq devices  [Sultanxda]
-2a1f47a  msm: kgsl: Increase priority of RT thread  [Alex Naidis]
-2280e83  msm: mdss: Update RT priority  [Alex Naidis]
-6273507  ASoC: Backport the WCD DSP manager driver and SPI driver  [Bhalchandra Gajare]
-6a0e189e  Kbuild, LLVMLinux: allow overriding clang target triple  [Greg Hackmann]
-d94df93  kbuild: Steal gcc's pie from the very beginning  [Borislav Petkov]
-0a92bad  arm64: vdso32: fix CC=clang build  [Mark Salyzyn]
-f9bd3ae  arm64:crypto: Target generic armv8 cpu for aes-ce  [Joe Maples]
-8de7b0d  arm64: ensure the kernel is compiled for LP64  [Andrew Pinski]
-2add884  kbuild: clang: remove crufty HOSTCFLAGS  [Nick Desaulniers]
-5f68e9c  kbuild: add clang-version.sh  [Sami Tolvanen]
-4da77db  kbuild: add __cc-ifversion and compiler-specific variants  [Sami Tolvanen]
-83585c7  kbuild: allow cc-ifversion to have the argument for false condition  [Masahiro Yamada]
-ff39492  kbuild: do not add $(call ...) to invoke cc-version or cc-fullversion  [Masahiro Yamada]
-ad45a27  kbuild: fix cc-ifversion macro  [Masahiro Yamada]
-dcba8b1  arm64: remove bogus TASK_SIZE_64 check  [Ard Biesheuvel]
-915615f  arm64: avoid overflow in VA_START and PAGE_OFFSET  [Nick Desaulniers]
-1583fb4  kbuild: Fix clang detection  [Michal Marek]
-d1777ae  crypto: clang: Explicitly pass through assembler options  [Mark Charlebois]
-bd7ca10  include/linux/dcache.h: use unsigned chars in struct name_snapshot  [Stephen Rothwell]
-ef9e7c2  msm: sde: fix unaligned memory read  [Sami Tolvanen]
-8641bec  soc: qcom: smp2p: fix __iomem access in SMP2P_{GET,SET}_*  [Sami Tolvanen]
-d082936  drivers: qcacld-2.0: suppress bogus clang shift warnings  [Greg Hackmann]
-c1c6871  drivers: media: msm: don't use nested functions  [Greg Hackmann]
-e63856a  drivers: soc: qcom: fix register names on ARM64  [Greg Hackmann]
-60a7d96  soc: qcom: scm: fix boot issue when compiled with clang  [Satya Durga Srinivasu Prabhala]
-b558df2  Input: mousedev - fix implicit conversion warning  [Nick Desaulniers]
-c0ae15e  drivers: firmware: qcom: more specific -Wno-* subdirs  [Nick Desaulniers]
-d5cd059  kernel.h: handle pointers to arrays better in container_of()  [Ian Abbott]
-f4a0f41  bug: split BUILD_BUG stuff out into <linux/build_bug.h>  [Ian Abbott]
-46f0df0  netfilter: ctnetlink: Make some parameters integer to avoid enum mismatch  [Matthias Kaehlcke]
-2982458  netfilter: nf_nat_h323: fix logical-not-parentheses warning  [Nick Desaulniers]
-c09dd64  mm/zsmalloc: Change stat type parameter to int  [Matthias Kaehlcke]
-79ed862  mm/zsmalloc.c: fix -Wunneeded-internal-declaration warning  [Nick Desaulniers]
-217f86c  PCI: Make PCI_ROM_ADDRESS_MASK a 32-bit constant  [Nick Desaulniers]
-e1d0e32  dm ioctl: remove double parentheses  [Matthias Kaehlcke]
-457de05  llist: clang: introduce member_address_is_nonnull()  [Alexander Potapenko]
-5a7670a  sched/sysctl: Fix attributes of some extern declarations  [Matthias Kaehlcke]
-ed80f44  module: Remove const attribute from alias for MODULE_DEVICE_TABLE  [Matthias Kaehlcke]
-7e45bc9  tools: Support relative directory path for 'O='  [Josh Poimboeuf]
-a8e4a33  kbuild: fix asm-offset generation to work with clang  [Jeroen Hofstee]
-257244e  kbuild: do not call cc-option before KBUILD_CFLAGS initialization  [Masahiro Yamada]
-ed22f27  kbuild: clang: fix build failures with sparse check  [David Lin]
-0cfe505  compiler: clang: properly override 'inline' for clang  [Linus Torvalds]
-e2f7802  compiler: clang: suppress warning for unused static inline functions  [David Rientjes]
-cfba7a3  compiler: clang: always inline when CONFIG_OPTIMIZE_INLINING is disabled  [David Rientjes]
-ffdde22  kbuild: disable clangs default use of -fmerge-all-constants  [Daniel Borkmann]
-cab90c7  kbuild: add -no-integrated-as to KBUILD_[AC]FLAGS  [Michael Davidson]
-3af3dfe  kbuild: drop -Wno-unknown-warning-option from clang options  [Masahiro Yamada]
-ac16d68  kbuild: Add __cc-option macro  [Matthias Kaehlcke]
-e1c419f  kbuild: clang: Disable the 'duplicate-decl-specifier' warning  [Matthias Kaehlcke]
-c844ceb  kbuild: clang: Disable 'address-of-packed-member' warning  [Matthias Kaehlcke]
-c0a624f  Kbuild: disable clang -Wpointer-bool-conversion  [Greg Hackmann]
-1fd5af9  efi/libstub/arm64: Set -fpie when building the EFI stub  [Ard Biesheuvel]
-43c8a75  kasan: add clang-specific CFLAGS_KASAN  [Greg Hackmann]
-b5b61a4  fs: clang: Remove warning from COMPATIBLE_IOCTL  [Mark Charlebois]
-f4fc959  kbuild: consolidate redundant sed script ASM offset generation  [Masahiro Yamada]
-a31c0a6  kbuild: Consolidate header generation from ASM offset information  [Matthias Kaehlcke]
-ae6f524  kbuild: do not add $(bounds-file) and $(offsets-file) to targets  [Masahiro Yamada]
-9c10516  kbuild: Don't reset timestamps in include/generated if not needed  [Michal Marek]
-3e00218b  kbuild: remove redundant line from bounds.h/asm-offsets.h  [Masahiro Yamada]
-6042121  kbuild: merge bounds.h and asm-offsets.h rules  [Masahiro Yamada]
-82dc819  Kbuild: fix GCC_TOOLCHAIN definition  [Greg Hackmann]
-d218454  kbuild: use -Oz instead of -Os when using clang  [Behan Webster]
-d75bdaa  kbuild: Add -Werror to cc-option to support clang  [Mark Charlebois]
-c9d8792  kbuild: Add more compiler options for clang  [Behan Webster]
-47ba0ea  kbuild: Add support to generate LLVM assembly files  [Vinícius Tinti]
-5a43162  Kbuild: Disable the use of the Integrated Assembler when compiling with Clang  [Mark Charlebois]
-64b7d35  kbuild: Add better clang cross build support  [Behan Webster]
-5a41577  Makefile: remove -Werror  [Greg Hackmann]
-5270df2  tick/nohz: Optimize nohz idle enter  [Gaurav Jindal]
-71ca5e1  tick/broadcast: Prevent NULL pointer dereference  [Thomas Gleixner]
-ae10c07  tick: sched: Remove hrtimer_active() checks  [Thomas Gleixner]
-e36527c  workqueue: make the workqueues list RCU walkable  [Tejun Heo]
-0d5a036  kernel/workqueue.c: remove ifdefs over wq_power_efficient  [Luis R. Rodriguez]
-3f4d5fc5  workqueue: allow rescuer thread to do more work  [NeilBrown]
-d841c32  qpnp-haptic: prevent system from resetting vib  [flar2]
-cd7ba0c  msm: qpnp-haptic: Use a high-priority workqueue for haptics  [Sultanxda]
-814825e  msm: qpnp-haptic: Process haptics asynchronously  [Sultanxda]
-49a358f  display: add a simple api to query the display state  [franciscofranco]
-3852700  block, scheduler: convert xxx_var_store to void  [weiping zhang]
-c07ab4b  block/cfq: cache rightmost rb_node  [Davidlohr Bueso]
-d058f15  block/cfq: replace cfq_rb_root leftmost caching  [Davidlohr Bueso]
-d0d01bd  rbtree: cache leftmost node internally  [Davidlohr Bueso]
-a337731  cfq-iosched: temporarily boost queue priority for idle classes  [Jens Axboe]
-03d4c12  cfq-iosched: Reorder checks in cfq_should_preempt()  [Jan Kara]
-1b48ce3  cfq: fix starvation of asynchronous writes  [Glauber Costa]
-cc4cdfe  cfq-iosched: minor cleanups  [Tejun Heo]
-b901ae0  cfq-iosched: fix oom cfq_queue ref leak in cfq_set_request()  [Tejun Heo]
-6bfa18c  cfq-iosched: fix async oom queue handling  [Tejun Heo]
-fb108f7  cfq-iosched: simplify control flow in cfq_get_queue()  [Tejun Heo]
-c6ed7d3  block: silently forbid sending any ioctl to a partition  [Paolo Bonzini]
-3e31616  block: set slice_idle to 0 on bfqv8r6 and cfq  [DespairFactor]
-6ad6c5ac  blk-mq: abstract tag allocation out into sbitmap library  [Omar Sandoval]
-3192fdb  block: maple-iosched: Convert to use fb_notifier  [flar2]
-9a89eef  block: maple: Improve coding style  [Nathan Chancellor]
-ff8cd8f  block: Add Maple I/O Scheduler  [Joe Maples]
-bdcc1b6  msm8996: fix EM to be monotonically increasing  [RenderBroken]
-43a47de  Revert "ANDROID: dm verity: add minimum prefetch size"  [Sami Tolvanen]
-1cf35b8  ARM: dts: marlin: Disable verity on /vendor  [Christian Oder]
-58d4ef3  md: disable dm-verity  [Ethan Yonker]
-a8c13df  marlin: puttin the hertz on  [Dan Pasanen]
-bd35903  epoll: Guard header to avoid conflicts with userspace  [Ethan Chen]
-5848f8a  Wake Gestures: Per default set sweep2sleep to off.  [spezi77]
-5beb65f  Makefile: Remove ipa_common when mr proper  [mydongistiny]
-f18fd4f  arch: Unbreak mrproper/clean  [Steve Kondik]
-ab49b6a  defconfig: Don't build kernel modules.  [spezi77]
-6f5ed95  Create my own defconfig based on the one by flar2.  [spezi77]
-092e29f  gitignore: add build and clean scripts.  [spezi77]
-2ad2ce3  [Squashed] Linux: 3.18.122 to 3.18.133  [spezi77]
-
- * kernel/google/wahoo
-f011f6b  Merge 4.4.173 into android-msm-wahoo-4.4  [Nathan Chancellor]
-343f981  Linux 4.4.173  [Greg Kroah-Hartman]
-1692595  fs: don't scan the inode cache before SB_BORN is set  [Dave Chinner]
-57d8138  mm: migrate: don't rely on __PageMovable() of newpage after unlocking it  [David Hildenbrand]
-a51bbfe  drivers: core: Remove glue dirs from sysfs earlier  [Benjamin Herrenschmidt]
-8f51e79  cifs: Always resolve hostname before reconnecting  [Paulo Alcantara]
-c3ef8a4  mm, oom: fix use-after-free in oom_kill_process  [Shakeel Butt]
-e790eea  kernel/exit.c: release ptraced tasks before zap_pid_ns_processes  [Andrei Vagin]
-3027ecc  mmc: sdhci-iproc: handle mmc_of_parse() errors during probe  [Stefan Wahren]
-86a395c  platform/x86: asus-nb-wmi: Drop mapping of 0x33 and 0x34 scan codes  [João Paulo Rechi Vita]
-5d0868d  platform/x86: asus-nb-wmi: Map 0x35 to KEY_SCREENLOCK  [João Paulo Rechi Vita]
-970e5c2  gfs2: Revert "Fix loop in gfs2_rbm_find"  [Andreas Gruenbacher]
-7685bb0  arm64: hyp-stub: Forbid kprobing of the hyp-stub  [James Morse]
-1472585  ARM: cns3xxx: Fix writing to wrong PCI config registers after alignment  [Koen Vandeputte]
-e31a6a9  fs/dcache: Fix incorrect nr_dentry_unused accounting in shrink_dcache_sb()  [Waiman Long]
-600c4bd  CIFS: Do not count -ENODATA as failure for query directory  [Pavel Shilovsky]
-245426d  l2tp: fix reading optional fields of L2TPv3  [Jacob Wen]
-f5f5d31  l2tp: remove l2specific_len dependency in l2tp_core  [Lorenzo Bianconi]
-3154a8a  ucc_geth: Reset BQL queue when stopping device  [Mathias Thore]
-8034f36  net/rose: fix NULL ax25_cb kernel panic  [Bernard Pidoux]
-ce29e8a  netrom: switch to sock timer API  [Cong Wang]
-265f211  net/mlx4_core: Add masking for a few queries on HCA caps  [Aya Levin]
-a0d1b4a  l2tp: copy 4 more bytes to linear part if necessary  [Jacob Wen]
-f9b9a8e  ipv6: Consider sk_bound_dev_if when binding a socket to an address  [David Ahern]
-fb0c332  fs: add the fsnotify call to vfs_iter_write  [Jimmy Durand Wesolowski]
-dda2017  s390/smp: Fix calling smp_call_ipl_cpu() from ipl CPU  [David Hildenbrand]
-e1e584b  Revert "loop: Fold __loop_release into loop_release"  [Greg Kroah-Hartman]
-f1f952b  Revert "loop: Get rid of loop_index_mutex"  [Greg Kroah-Hartman]
-55bbe71  Revert "loop: Fix double mutex_unlock(&loop_ctl_mutex) in loop_control_ioctl()"  [Greg Kroah-Hartman]
-896354c  f2fs: read page index before freeing  [Pan Bian]
-029b5be  arm64: mm: remove page_mapping check in __sync_icache_dcache  [Shaokun Zhang]
-1b284d7  irqchip/gic-v3-its: Align PCI Multi-MSI allocation on their size  [Marc Zyngier]
-2cbf0a6  perf unwind: Take pgoff into account when reporting elf to libdwfl  [Milian Wolff]
-38155e1  perf unwind: Unwind with libdw doesn't take symfs into account  [Martin Vuille]
-6a923fc  vt: invoke notifier on screen size change  [Nicolas Pitre]
-8781bfd  can: bcm: check timer values before ktime conversion  [Oliver Hartkopp]
-17cb939  can: dev: __can_get_echo_skb(): fix bogous check for non-existing skb by removing it  [Manfred Schlaegl]
-5efadf3  x86/kaslr: Fix incorrect i8254 outb() parameters  [Daniel Drake]
-43473a6  KVM: x86: Fix single-step debugging  [Alexander Popov]
-74d609f  Input: xpad - add support for SteelSeries Stratus Duo  [Tom Panfil]
-278541a  CIFS: Fix possible hang during async MTU reads and writes  [Pavel Shilovsky]
-8db4fe2  tty/n_hdlc: fix __might_sleep warning  [Paul Fulghum]
-fe88138  tty: Handle problem if line discipline does not have receive_buf  [Greg Kroah-Hartman]
-b6a23bd  staging: rtl8188eu: Add device code for D-Link DWA-121 rev B1  [Michael Straube]
-29f7c74  char/mwave: fix potential Spectre v1 vulnerability  [Gustavo A. R. Silva]
-86dd006  s390/smp: fix CPU hotplug deadlock with CPU rescan  [Gerald Schaefer]
-74be2fc  s390/early: improve machine detection  [Christian Borntraeger]
-c25a126  ARC: perf: map generic branches to correct hardware condition  [Eugeniy Paltsev]
-d9084840  ASoC: atom: fix a missing check of snd_pcm_lib_malloc_pages  [Kangjie Lu]
-437f0e4  USB: serial: pl2303: add new PID to support PL2303TB  [Charles Yeh]
-1d8dfed  USB: serial: simple: add Motorola Tetra TPG2200 device id  [Max Schulze]
-e98f787  net: bridge: Fix ethernet header pointer before check skb forwardable  [Yunjian Wang]
-749cbfc  net_sched: refetch skb protocol for each filter  [Cong Wang]
-289992e  net: ipv4: Fix memory leak in network namespace dismantle  [Ido Schimmel]
-e5c13a9  openvswitch: Avoid OOB read when parsing flow nlattrs  [Ross Lagerwall]
-52a30a6e  net: Fix usage of pskb_trim_rcsum  [Ross Lagerwall]
-
- * packages/apps/Launcher3
-5808257  Merge tag 'android-9.0.0_r33' into p  [spezi77]
-
- * vendor/google_devices
-604c5cf  marlin/sailfish: PQ2A.190205.003  [spezi77]
-
- * vendor/support
-9f67b36  Revert "Allow to show a simple led color picker for crappy devices [1/3]"  [spezi77]
-
-
- 2019-02-06:
- * art
-7ead026  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/art into p  [spezi77]
-
- * bionic
-77001c4  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/bionic into p  [spezi77]
-
- * build/kati
-25ff492  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/build/kati into p  [spezi77]
-
- * build/make
-2534680  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/build into p  [spezi77]
-
- * device/google/marlin
-b370fc9  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/device/google/marlin into p  [spezi77]
-
- * frameworks/av
-97f71cc  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/frameworks/av into p  [spezi77]
-
- * frameworks/native
-9d4bd69  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/frameworks/native into p  [spezi77]
-
- * kernel/google/marlin
-cea1ebe  update defconfig  [flar2]
-f46ac12  Merge remote-tracking branch 'googlesource/android-msm-marlin-3.18-pie-qpr2' into ElementalX-4.00  [flar2]
-
- * kernel/google/wahoo
-f9fddeb  Merge tag 'android-9.0.0_r0.62' into android-msm-wahoo-4.4  [Nathan Chancellor]
-
- * packages/apps/Settings
-8b3a538  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Settings into p  [spezi77]
-
- * packages/inputmethods/LatinIME
-1264f6b  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/packages/inputmethods/LatinIME into p  [spezi77]
-
- * packages/providers/DownloadProvider
-fa359a5  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into p  [spezi77]
-
- * packages/providers/MediaProvider
-e298399  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/packages/providers/MediaProvider into p  [spezi77]
-
- * packages/services/Telecomm
-fa2f12e  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/packages/services/Telecomm into p  [spezi77]
-
- * packages/services/Telephony
-91776eb  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/packages/services/Telephony into p  [spezi77]
-
- * system/core
-82cb309  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/system/core into p  [spezi77]
-
- * system/netd
-84853f7  netd: Allow devices to opt-out of the tethering active FTP helper  [Kevin F. Haggerty]
-87d297b  netd: Allow devices to force-add directly-connected routes  [Lukas0610]
-
- * system/sepolicy
-da9e066  Merge tag 'android-9.0.0_r33' of https://android.googlesource.com/platform/system/sepolicy into p  [spezi77]
-
- * vendor/pixeldust
-e3a80e5  products: Update blueline/marlin/sailfish build desc for PQ2A.190205.003  [spezi77]
-
-
- 2019-02-05:
-
-
- 2019-02-04:
-
- * frameworks/base
-d709d91  Add wellbeing theme for all system themes  [Alex]
-24d8b28  Utils: Introduce method to determine countries that use Fahrenheit  [Alex]
-0cef63a  Revert "StatusBarSignalPolicy: Fix missing provisioned in equals and copyTo"  [spezi77]
-
- * packages/apps/Settings
-7004995  Battery temp: Use MCC to determine the scale type  [Alex]
-50cdc67  Settings: Bring back Uptime  [Stefan Berger]
-
- * packages/apps/SmartNav
-b97b650  Allow home action on keyguard  [SpiritCroc]
-
- * vendor/pixeldust
-14f263a  Shamu: Correct vendor path and name  [nitin1438]
-ce29cca  Revert "shamu: include minimal set of gapps"  [nitin1438]
-81b3f26  Allow adding Pixel Launcher per device. Let's add it for a few devices which cannot be compiled with launcher3  [spezi77]
-8627a25  Fix light statusbar and navbar on Wellbeing  [Henrique Silva]
-106a6cc  Add wellbeing theme for all system themes Also ensure consistency in package names  [Henrique Silva]
-a87631e  Fix the legacy color icons  [ElDainosor]
-
-
- 2019-02-03:
- * art
-0f0afce  Pause GC during deoptimization work  [Alex Light]
-ae13402  art: Only allow debugging on Eng builds  [HolyAngel]
-dd5ed6a  build: disable ART debugging  [Miguel Martinez]
-
- * build/make
-ab5a50d  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/build into p  [spezi77]
-
- * build/soong
-0deab76  Stop using GCC in toolchain_library  [Dan Willemsen]
-
- * device/google/wahoo
-b5620f7  Disable CustomDoze options that are in system/gesture settings  [Alex]
-96068c2  Enable ambient brightness changer in CustomDoze package  [Ezio Lacandia Bijelkic]
-
- * device/moto/shamu
-511a858  Changes needed for PixelDust :)  [nitin1438]
-
- * frameworks/av
-863e8f3  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/frameworks/av into p  [spezi77]
-
- * frameworks/base
-91c9eb2  Merge branch 'pie-gsi' of https://android.googlesource.com/platform//frameworks/base into p  [spezi77]
-43b24b1  Weather: Use Fahrenheit on some countries, based on MCC [1/2]  [Henrique Silva]
-e5aa207  Include InCallNotification.ogg in AllAudio.mk file  [Beverly]
-f55d502  Add ChargingStarted + InCallNotif to AudioPackage  [Beverly]
-79dd88b  am: Fix top activity resume with secure keyguard  [Oleksiy Avramchenko]
-00ac69d  Fix disappearing home/recents button  [Tetsutoki Shiozawa]
-6d9741f  Remove the check of mService when BluetoothHidDevice doUnbind  [jiangyou li]
-9ba6312  Update navigation bar upon change of display density  [rleix]
-e486b05  SystemUI: don't add already attached qs tile views  [Roman Birg]
-dff6c70  LatinIME: fix navigation bar for expanded desktop  [mydongistiny]
-702e12d  StatusBarSignalPolicy: Fix missing provisioned in equals and copyTo  [Nico]
-74b5ae2  SystemUI: Check List<CachedBluetoothDevice>.empty() before getting battery level  [LuK1337]
-ebd1e38  Update sim colors [1/4]  [Razziell]
-
- * frameworks/native
-09657f9  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/frameworks/native into p  [spezi77]
-
- * frameworks/opt/telephony
-3e1df43  Update sim colors [3/4]  [ShevT]
-
- * packages/apps/Launcher3
-10db021  Launcher3: fix getting permission DEVICE_POWER  [maxwen]
-a5cd094  Launcher3: Minor hotseat fix for icons  [Giuseppe Maggio]
-c109f48  Launcher3: Use generic android icon for IconPack chooser  [Giuseppe Maggio]
-0dff857  Lock desktop: Disable folder name edit when locked  [hundeva]
-5ff443a  Lock desktop: Remove widget button when locked  [Alex]
-5b2c2fe  Add option to lock desktop  [hundeva]
-987fcb5  App names with two lines: Deactivate for now. Second line needs a fix (vertical space)  [spezi77]
-aeb926d  Add option to allow app names to be two lines  [hundeva]
-
- * packages/apps/PixelDustSettings
-a313728  Weather: Use Fahrenheit on some countries, based on MCC [2/2]  [Henrique Silva]
-
- * packages/apps/Settings
-544ab8b  Update sim colors [2/4]  [Razziell]
-
- * packages/services/Telephony
-7283cd7  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/packages/services/Telephony into p  [spezi77]
-
- * system/core
-5ec4b70  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/core into p  [spezi77]
-
- * system/sepolicy
-ad7a90e  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/sepolicy into p  [spezi77]
-
- * system/vold
-9bd945b  Merge branch 'pie-gsi' of https://android.googlesource.com/platform/system/vold into HEAD  [spezi77]
-
- * vendor/pixeldust
-139c529  Update sim colors [4/4]  [ShevT]
-
-
- 2019-02-02:
-
- * bionic
-3a47501  libc: Optimize ARM memcmp by using NEON  [Kyle Repinski]
-eec367b  bionic: update for using jemalloc 5+  [Christopher Ferris]
-6db9a54  bionic: linker: Fix fd leak  [Vic Yang]
-a0a6394  Revert "linker: Make platform text relocations denial optional"  [Paul Keith]
-f4d0465  bionic: Use legacy pthread_mutex_init() behavior on pre-P API levels  [nx111]
-04d62fb  Implement per-process target SDK version override.  [Danny Baumann]
-
- * build/soong
-848894e  config: don't add +2 to NumCPU() for number of jobs  [mydongistiny]
-
- * frameworks/base
-8d05e46e  base: add Cookie QS style [2/3]  [Anay Wadhera]
-f4f24c8  Ambient brightness values: use a custom system setting [1/2]  [ezio84]
-0e2454f  SystemUI: Fixes context for tiles without longClick  [Fabian Kozynski]
-5cb73a6  RecentsIconPack: Fallback to default icons on icon pack removal  [Giuseppe Maggio]
-1238c10  Screenrecorder: don't show tmp in some apps and improve code  [ezio84]
-c56cc9e  Utils: Add method to determine battery temp  [Alex Cruz]
-4c45a03  Add more action utils  [Alex]
-
- * packages/apps/CustomDoze
-50be3f3  Ambient brightness: Add a better title for this view.  [spezi77]
-
- * packages/apps/PixelDustSettings
-21d0541  RecentsIconPack: Extend and use IconPackPreference  [Giuseppe Maggio]
-
- * packages/apps/Settings
-7f207ff  Settings: add Cookie QS style [3/3].  [spezi77]
-9827c5d  Utilize our support vendor  [Alex Cruz]
-6fa3c77  Power detail pages: Finish off the rest of the icon tinting  [Alex]
-b7fc598  Settings: fix icon tinting in power detail pages  [maxwen]
-9801640  Battery temp: Ensure preference is updated  [Alex]
-a45e8d9  Battery stats: Display battery temperature  [Alex Cruz]
-
- * vendor/pixeldust
-d03441d  vendor: add Cookie QS style [1/3]  [HrX]
-
-
- 2019-02-01:
-
- * packages/apps/CustomDoze
-f72129c  Ambient brightness values: use a custom system setting [2/2]  [ezio84]
-ad668c4  Allow to change default Ambient brightness values  [ezio84]
-
- * packages/apps/PixelDustSettings
-1715709  RecentsIconPack: Improve preference logic  [Giuseppe Maggio]
-
- * vendor/support
-e4c8d5c  PD'ify.  [spezi77]
-
-
- 2019-01-31:
-
- * build/make
-c7a13f4  build: Remove some debugging props  [Henrique Silva]
-
- * frameworks/base
-4ae3b69  Dark theme: Fix notification channel info text color  [Alex Cruz]
-
-
- 2019-01-30:
-
-
- 2019-01-29:
-
- * frameworks/base
-63f9b79  Ambient Display battery toggle: Enable by default.  [spezi77]
-
-
- 2019-01-28:
-
- * build/make
-1b0ebef  Revert "kernel.mk: Support kernels that use LTO"  [spezi77]
-04637f8  Revert "ccache: Use prebuilt by default for system and kernel"  [spezi77]
-
- * frameworks/base
-9da754f  Revert "Themes: SystemUI: Expose QS edit item decoration background color"  [spezi77]
-
- * packages/apps/PixelDustSettings
-b8241ba  Ambient Music Ticker: Improve wording for "de".  [spezi77]
-
- * vendor/pixeldust
-10a6744  Revert "Use ccache. Why not?"  [spezi77]
-
- * vendor/support
-c889cd7  support: Adapt IconPackPreference class from Launcher3  [Giuseppe Maggio]
-
-
- 2019-01-27:
-
- * build/make
-02e57b2  Makefile: zip package meta information: cut off the path information.  [spezi77]
-b5d9dfe  build: Introduce SubstratumHelperService  [Ivan Iskandar]
-
- * device/google/wahoo
-aef83c7  Merge pull request #1 from blueyes27/p  [Nitin1438]
-d8e2723  Update fstab.hardware  [blueyes]
-
- * frameworks/base
-4b603c4  Force disable PlayServices OTA checks  [ezio84]
-52ec785  Statusbar clock: Play nice with heads-up notifications. It has been observed that the left clock is getting duplicated after a heads-up notification collapsed while using one of the following clock styles: center, right or hidden  [spezi77]
-885494c  Revert "Statusbar clock: Play nice with heads-up notifications."  [spezi77]
-6ff25b5  base: Keyguard: Hide check button when using PIN quick unlock  [carlosavignano]
-
- * kernel/google/wahoo
-77fffaf  Merge 4.4.172 into android-msm-wahoo-4.4  [Nathan Chancellor]
-626b008  Linux 4.4.172  [Greg Kroah-Hartman]
-cd2402d  ipmi:ssif: Fix handling of multi-part return messages  [Corey Minyard]
-de61497  net: speed up skb_rbtree_purge()  [Eric Dumazet]
-e660576  mm, proc: be more verbose about unstable VMA flags in /proc/<pid>/smaps  [Michal Hocko]
-4c0b9a2  mm/page-writeback.c: don't break integrity writeback on ->writepage() error  [Brian Foster]
-829ff9b  ocfs2: fix panic due to unrecovered local alloc  [Junxiao Bi]
-09d3be7  scsi: megaraid: fix out-of-bound array accesses  [Qian Cai]
-36b9630  sysfs: Disable lockdep for driver bind/unbind files  [Daniel Vetter]
-5d0ab08  ALSA: bebob: fix model-id of unit for Apogee Ensemble  [Takashi Sakamoto]
-8ccd81e  dm snapshot: Fix excessive memory usage and workqueue stalls  [Nikos Tsironis]
-e31cc4b  dm kcopyd: Fix bug causing workqueue stalls  [Nikos Tsironis]
-0bce6d2  perf parse-events: Fix unchecked usage of strncpy()  [Arnaldo Carvalho de Melo]
-7b9677e  perf svghelper: Fix unchecked usage of strncpy()  [Arnaldo Carvalho de Melo]
-55f67c9  perf intel-pt: Fix error with config term "pt=0"  [Adrian Hunter]
-48cb2db  mmc: atmel-mci: do not assume idle after atmci_request_end  [Jonas Danielsson]
-0e81765  kconfig: fix memory leak when EOF is encountered in quotation  [Masahiro Yamada]
-6b25c8d  kconfig: fix file name and line number of warn_ignored_character()  [Masahiro Yamada]
-60a7d18  clk: imx6q: reset exclusive gates on init  [Lucas Stach]
-10a9729  scsi: target: use consistent left-aligned ASCII INQUIRY data  [David Disseldorp]
-0438580  net: call sk_dst_reset when set SO_DONTROUTE  [yupeng]
-bb23dfd  media: firewire: Fix app_info parameter type in avc_ca{,_app}_info  [Nathan Chancellor]
-3f92e24  powerpc/pseries/cpuidle: Fix preempt warning  [Breno Leitao]
-f250e4c  pstore/ram: Do not treat empty buffers as valid  [Joel Fernandes (Google)]
-4d91973  jffs2: Fix use of uninitialized delayed_work, lockdep breakage  [Daniel Santos]
-2ec43b2  arm64: perf: set suppress_bind_attrs flag to true  [Anders Roxell]
-c890a45  MIPS: SiByte: Enable swiotlb for SWARM, LittleSur and BigSur  [Maciej W. Rozycki]
-568736f  writeback: don't decrement wb->refcnt if !wb->bdi  [Anders Roxell]
-73bf147  e1000e: allow non-monotonic SYSTIM readings  [Miroslav Lichvar]
-0c4a25c  platform/x86: asus-wmi: Tell the EC the OS will handle the display off hotkey  [João Paulo Rechi Vita]
-f00ebf4f  xfs: don't fail when converting shortform attr to long form during ATTR_REPLACE  [Darrick J. Wong]
-cc97500  ipv6: Take rcu_read_lock in __inet6_bind for mapped addresses  [David Ahern]
-8fccab3  ipv6: Consider sk_bound_dev_if when binding a socket to a v4 mapped address  [David Ahern]
-e419374  r8169: Add support for new Realtek Ethernet  [Kai-Heng Feng]
-da6c1b1  media: vb2: be sure to unlock mutex on errors  [Mauro Carvalho Chehab]
-e896840  drm/fb-helper: Ignore the value of fb_var_screeninfo.pixclock  [Ivan Mironov]
-9ec298c  loop: Fix double mutex_unlock(&loop_ctl_mutex) in loop_control_ioctl()  [Tetsuo Handa]
-611f771  loop: Get rid of loop_index_mutex  [Jan Kara]
-4ee414c  loop: Fold __loop_release into loop_release  [Jan Kara]
-b3f3107  block/loop: Use global lock for ioctl() operation.  [Tetsuo Handa]
-02035be  tipc: fix uninit-value in tipc_nl_compat_doit  [Ying Xue]
-c25352f  tipc: fix uninit-value in tipc_nl_compat_name_table_dump  [Ying Xue]
-0ff9dec  tipc: fix uninit-value in tipc_nl_compat_link_set  [Ying Xue]
-0ae6754  tipc: fix uninit-value in tipc_nl_compat_bearer_enable  [Ying Xue]
-93ece92  tipc: fix uninit-value in tipc_nl_compat_link_reset_stats  [Ying Xue]
-3fb0cbe  sctp: allocate sctp_sockaddr_entry with kzalloc  [Xin Long]
-9ef38b2  selinux: fix GPF on invalid policy  [Stephen Smalley]
-84ba6b7  sunrpc: handle ENOMEM in rpcb_getport_async  [J. Bruce Fields]
-f76e38e  media: vb2: vb2_mmap: move lock up  [Hans Verkuil]
-ac0e225  LSM: Check for NULL cred-security on free  [James Morris]
-4bc8621  media: vivid: set min width/height to a value > 0  [Hans Verkuil]
-8185cc4  media: vivid: fix error handling of kthread_run  [Hans Verkuil]
-505c2ac  omap2fb: Fix stack memory disclosure  [Vlad Tsyrklevich]
-93e6b26  Disable MSI also when pcie-octeon.pcie_disable on  [YunQiang Su]
-af135bd  mfd: tps6586x: Handle interrupts on suspend  [Jonathan Hunter]
-db58a20  mips: fix n32 compat_ipc_parse_version  [Arnd Bergmann]
-2f8018d  scsi: sd: Fix cache_type_store()  [Ivan Mironov]
-e08323f7  Yama: Check for pid death before checking ancestry  [Kees Cook]
-bc42c4f  btrfs: wait on ordered extents on abort cleanup  [Josef Bacik]
-461652e  crypto: authenc - fix parsing key with misaligned rta_len  [Eric Biggers]
-ca3f892  crypto: authencesn - Avoid twice completion call in decrypt path  [Harsh Jain]
-471a110  ip: on queued skb use skb_header_pointer instead of pskb_may_pull  [Willem de Bruijn]
-b57db51  packet: Do not leak dev refcounts on error exit  [Jason Gunthorpe]
-01267fc  net: bridge: fix a bug on using a neighbour cache entry without checking its state  [JianJhen Chen]
-876d681  ipv6: fix kernel-infoleak in ipv6_local_error()  [Eric Dumazet]
-5b1d8e5  arm64: Don't trap host pointer auth use to EL2  [Mark Rutland]
-0b6c227  arm64/kvm: consistently handle host HCR_EL2 flags  [Mark Rutland]
-b820fe2  proc: Remove empty line in /proc/self/status  [Gwendal Grignou]
-9e86549  media: em28xx: Fix misplaced reset of dev->v4l::field_count  [Ben Hutchings]
-afd1167  f2fs: fix validation of the block count in sanity_check_raw_super  [Martin Blumenstingl]
-a0c9aa9  f2fs: fix missing up_read  [Jaegeuk Kim]
-b50d8b9  f2fs: fix invalid memory access  [Chao Yu]
-98beb84  f2fs: fix to do sanity check with cp_pack_start_sum  [Chao Yu]
-4901e12  f2fs: fix to do sanity check with block address in main area v2  [Chao Yu]
-bdffda8  f2fs: fix to do sanity check with block address in main area  [Chao Yu]
-3bfe204  f2fs: fix to do sanity check with reserved blkaddr of inline inode  [Chao Yu]
-cbe5e5c  f2fs: fix to do sanity check with node footer and iblocks  [Chao Yu]
-24f8bb8  f2fs: Add sanity_check_inode() function  [Ben Hutchings]
-b31ccde  f2fs: fix to do sanity check with user_block_count  [Chao Yu]
-056120a  f2fs: fix to do sanity check with secs_per_zone  [Chao Yu]
-5b0e78c  f2fs: introduce and spread verify_blkaddr  [Chao Yu]
-89e13ff  f2fs: clean up with is_valid_blkaddr()  [Chao Yu]
-812bc5b  f2fs: enhance sanity_check_raw_super() to avoid potential overflow  [Jaegeuk Kim]
-4e262ae  f2fs: sanity check on sit entry  [Jaegeuk Kim]
-d551645  f2fs: check blkaddr more accuratly before issue a bio  [Yunlei He]
-f666f11  f2fs: return error during fill_super  [Jaegeuk Kim]
-a4f4f97  f2fs: fix race condition in between free nid allocator/initializer  [Chao Yu]
-db0e91e  f2fs: free meta pages if sanity check for ckpt is failed  [Jaegeuk Kim]
-b37804d  f2fs: detect wrong layout  [Jaegeuk Kim]
-e465e93  f2fs: fix to determine start_cp_addr by sbi->cur_cp_pack  [Jaegeuk Kim]
-9213c2b  f2fs: put directory inodes before checkpoint in roll-forward recovery  [Jaegeuk Kim]
-2f958b8  f2fs: introduce get_checkpoint_version for cleanup  [Tiezhu Yang]
-65b9d53  f2fs: use crc and cp version to determine roll-forward recovery  [Jaegeuk Kim]
-5dfb9eb  f2fs: avoid unneeded loop in build_sit_entries  [Chao Yu]
-6ef26eb  f2fs: not allow to write illegal blkaddr  [Yunlei He]
-70c3578  f2fs: fix to avoid reading out encrypted data in page cache  [Chao Yu]
-4aa4ce1  f2fs: fix inode cache leak  [Chao Yu]
-6d07c0f  f2fs: factor out fsync inode entry operations  [Chao Yu]
-8f7c4fb  f2fs: remove an obsolete variable  [Jaegeuk Kim]
-1499d39  f2fs: give -EINVAL for norecovery and rw mount  [Jaegeuk Kim]
-523972a  f2fs: fix to convert inline directory correctly  [Chao Yu]
-8c5dfff  f2fs: move sanity checking of cp into get_valid_checkpoint  [Shawn Lin]
-87a099c  f2fs: cover more area with nat_tree_lock  [Jaegeuk Kim]
-139211c  f2fs: clean up argument of recover_data  [Chao Yu]
-693ae29  can: gw: ensure DLC boundaries after CAN frame modification  [Oliver Hartkopp]
-d93216e  tty/ldsem: Wake up readers after timed out down_write()  [Dmitry Safonov]
-
- * packages/apps/PixelDustSettings
-e771883  Quick Pulldown QS panel: Change that toggle into a preference. Now, it's much clearer and intuitive for the user. However, that toggle has been a relict and was never designed to work with PA's OnTheSpot-snackbar.  [spezi77]
-
- * vendor/pixeldust
-e7bee35  Fix QS edit page background color for Dark theme.  [spezi77]
-8a7c56a  Update Dark Theme to become more consistent with the others.  [spezi77]
-
-
- 2019-01-26:
-
- * build/make
-14b49d0  Makefile: Let the message "Package target files:" show up with color.  [spezi77]
-
- * packages/apps/Settings
-6c2a946  Added a shortcut to Music Ticker in the 'Ambient display' category. I'm almost convinced that people really expected that preference somewehere here  [spezi77]
-
-
- 2019-01-25:
-
- * packages/apps/CustomDoze
-74ae63d  Add toggle to show/hide ambient display battery percentage.  [spezi77]
-4bb55d2  Make the UI more "pixel like" and add "de" translations. Also fix a spelling mistake while we're at it  [spezi77]
-
- * packages/apps/PixelDustSettings
-b90d508  Ambient music ticker: Improved the wording a tad bit.  [spezi77]
-33336f3  Ambient music ticker: Make it look nicer by adding an illustration. Borrowed from Google Pixel factory image.  [spezi77]
-
- * packages/apps/Settings
-4710e76  Strings: add missing "de" translation for theme_category_title.  [spezi77]
-
- * vendor/pixeldust
-7a4778f  Use ccache. Why not?  [spezi77]
-a08a705  themes: Fix the last issues for Dark and Black UI. e.g.: use dark background and light text for QS edit panel  [spezi77]
-
-
- 2019-01-24:
-
- * build/make
-842f991  kernel.mk: And fix another colored output message.  [spezi77]
-ae09263  ccache: Use prebuilt by default for system and kernel  [mydongistiny]
-54fb2df  Makefile: Fix "Package OTA" message to be shown with color.  [spezi77]
-
- * frameworks/base
-7cc828c  AmbientDisplay/AOD qs tile: Don't launch AmbientDisplaySettings on long click if CustomDoze is enabled for this device.  [spezi77]
-
- * vendor/pixeldust
-689d332  Add bootanimation specially adapted for blueline. Thanks very much @RogerdotT  [spezi77]
-4ac77b3  products: Add blueline (Pixel 3) in the roaster.  [spezi77]
-931a916  PixelDustOTA: Add in more devices.  [spezi77]
-455263a  Build CustomDoze for all devices  [ezio84]
-6baaaf5  Add AmbientSensePrebuilt: it's used also by Google app/SoundSearch tile  [ezio84]
 

@@ -27,8 +27,8 @@
     </sailfish>
 
     <shamu>
-      <Filename>pixeldust_shamu-pie-release-five-20190223-0122.zip</Filename>
-      <RomUrl id="rom" title="rom" description="Download The Latest Build">https://sourceforge.net/projects/pixeldustproject/files/shamu/pixeldust_shamu-pie-release-five-20190223-0122.zip/download</RomUrl>
+      <Filename>pixeldust_shamu-pie-release-six-20190311-1056.zip</Filename>
+      <RomUrl id="rom" title="rom" description="Download The Latest Build">https://sourceforge.net/projects/pixeldustproject/files/shamu/pixeldust_shamu-pie-release-six-20190311-1056.zip/download</RomUrl>
       <RomMirrorUrl id="romirror" title="XDA Thread" description="Visit The XDA Thread">https://forum.xda-developers.com/nexus-6/development/rom-pixel-dust-pie-nexus-6-shamu-t3867094</RomMirrorUrl>
       <ChangelogUrl id="changelogs" title="Changelogs" description="Check Out The Latest Changes">https://github.com/pixeldustproject-p/DeviceOTA/raw/p/Changelogs/Changelog_shamu.txt</ChangelogUrl>
       <PaypalUrl id="donation" title="Donation" description="Donate To The Developer">https://paypal.me/nitinchobhe</PaypalUrl>
