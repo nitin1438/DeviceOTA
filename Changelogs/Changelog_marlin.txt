@@ -1,4 +1,29 @@
 
+ 2019-03-12:
+
+ * frameworks/base
+ee44abb  WeatherClient: Update the SERVICE_PACKAGE to make things fly.  [spezi77]
+eb58b52  WeatherClient: Check boot completed prop  [jhenrique09]
+0d4fd4c  WeatherClient: Update timeout to 10 minutes  [jhenrique09]
+6b487bb  WeatherClient: Conditionally allow query when adding observer  [Sirhc95]
+6f351af  frameworks: Grant READ_WEATHER permission  [jhenrique09]
+3dafec2  WeatherClient: Don't enforce READ_WEATHER permission  [jhenrique09]
+848966e  Weather client: fix refresh at boot and improve/cleanup code [1/2]  [ezio84]
+3083024  base: Switch to PE WeatherClient [2/3].  [spezi77]
+
+
+ 2019-03-11:
+
+ * device/google/marlin
+dfe61fd  Force compiling the kernel with clang.  [spezi77]
+
+ * frameworks/base
+d12cd45  core: ViewRootImpl: Stop the 'requestLayout() improperly called' logspam  [Adithya R]
+b6361dd  Power menu: Fix de string for restart to recovery.  [spezi77]
+5c55275  BatteryMeterView: Fix logcat spam  [Henrique Silva]
+f256933  BatteryMeterView: Fix logspam with battery percent view. The previous commit didn't cover it: https://github.com/pixeldust *-p/android_frameworks_base/commit/273466750337ecb55366441b90023d992505862a#diff-254f5c602fc359b5355d1be6d2bf7971  [spezi77]
+
+
  2019-03-10:
 
  * device/google/marlin
@@ -26,23 +51,14 @@ b284718  Toggleable recovery/bootloader action  [ezio84]
 
  * kernel/google/marlin
 27bb470  DTS: Fix my derp  [bdashore3]
-
- * packages/apps/PixelDustSettings
-61d7baf  Power menu: Add screenrecord toggle [2/2].  [spezi77]
+0e035d7  Defconfig: Change SLMK parameters  [bdashore3]
+330480f  Disable msm_thermal_simple  [bdashore3]
 
 
  2019-03-09:
 
  * device/google/marlin
 27380c1  Modify BoardConfig for proper clang compilation  [bdashore3]
-
- * kernel/google/marlin
-0e035d7  Defconfig: Change SLMK parameters  [bdashore3]
-330480f  Disable msm_thermal_simple  [bdashore3]
-
- * vendor/google
-e4aef31  Taimen: Update blobs to Android 9.0 (PQ2A.190305.002)  [Josh Chasky]
-90cdbcd  Bluecross: Update blobs to Android 9.0 (PQ2A.190305.002)  [Josh Chasky]
 
 
  2019-03-08:
@@ -64,9 +80,6 @@ aaa3c97  Revert "Kernel tweaks: Deactivate dynamic stune boost for now."  [bdash
 
  * kernel/google/marlin
 a5de380  Revert "proc: Remove additional SafetyNet flags from /proc/cmdline"  [bdashore3]
-
- * vendor/pixeldust
-f448bfc  Fix build number by moving ota.mk behind version.mk  [spezi77]
 
 
  2019-03-06:
@@ -101,20 +114,9 @@ ee0bf22  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platf
  * kernel/google/marlin
 e2852f1  Update msm_thermal_simple  [bdashore3]
 33f9091  Merge tag 'android-9.0.0_r0.64' into KingKernel  [bdashore3]
-
- * system/core
-950282d  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/system/core into p  [spezi77]
-
- * system/vold
-4233a3b  Merge tag 'android-9.0.0_r34' of https://android.googlesource.com/platform/system/vold into p  [spezi77]
-
- * vendor/google_devices
-90a304a  Fix double foreslash.  [spezi77]
-4e104ce  marlin/sailfish: PQ2A.190305.002  [spezi77]
-
- * vendor/pixeldust
-4bb3f95  version: Bump up to release six. Clean up while I'm at it -> move build props to ota.mk  [spezi77]
-010de60  products: Update pixels build desc for PQ2A.190305.002  [spezi77]
+1f06e9e  cpuset: Adjust requested cpusets to accommodate for offline CPUs  [Sultan Alsawaf]
+005e442  cpufreq: Don't let userspace set max freq when using msm-thermal-simple  [bdashore3]
+0b9f601  cpu_input_boost: Fix negative frame boost timeout not applying  [kdrag0n]
 
 
  2019-03-05:
@@ -143,9 +145,6 @@ b5653451  Revert "Add rect-parameter to makeImageSnapshot and stop using chromiu
 7574d2f  Revert "Improve performance of unclipped save layers"  [spezi77]
 
  * kernel/google/marlin
-1f06e9e  cpuset: Adjust requested cpusets to accommodate for offline CPUs  [Sultan Alsawaf]
-005e442  cpufreq: Don't let userspace set max freq when using msm-thermal-simple  [bdashore3]
-0b9f601  cpu_input_boost: Fix negative frame boost timeout not applying  [kdrag0n]
 d57f29d  Refactor devfreq boost and change naming scheme of msm_thermal_simple  [bdashore3]
 90b924a3  arm64: strcmp: align to 64B cache line  [Yuanyuan Zhong]
 bc7b83f  arm64: lib: memory utilities optimization  [Hong-Mei Li]
@@ -226,28 +225,10 @@ b1b329b  hw-keys: enable powermenu on hwkeys actions  [bigrushdog]
 c9ca206  Hardware key disable support  [Randall Rushing]
 df4f913  Bring up hardware key action binding framework  [Randall Rushing]
 32e2a3c  Initial checkin on Pie for SmartNav navigation suite [1/4]  [bigrushdog]
-
- * packages/apps/PixelDustSettings
-fac9edc  New active edge icon. Thanks @ROGERdotT  [spezi77]
-87082fa  Fallback to "no action" when an application gets removed [2/2]  [Giuseppe Maggio]
-e3cec85  Active Edge: allow to choose a specific app activity [3/4]  [Ezio Lacandia Bijelkic]
-83cb0a6  Introduce long squeeze action [2/3]  [Alex]
-
- * packages/providers/WeatherProvider
-f9da4c3  WeatherChannelApi: Fix allocation abuse  [Harsh Shandilya]
-
- * vendor/support
-40edfe7  Active Edge: allow to choose a specific app activity [2/4]  [Ezio Lacandia Bijelkic]
+8cf4375  Revert current "SmartNav / HWKeys action binding" implementation.  [spezi77]
 
 
  2019-03-03:
-
- * frameworks/base
-8cf4375  Revert current "SmartNav / HWKeys action binding" implementation.  [spezi77]
-
- * packages/apps/PixelDustSettings
-84561f1  MiscSettings: Wakeup when plugged or unplugged [1/2]  [Jon Evans]
-adc3a10  QuickSettings: Add toggle to turn off "Secure tiles require unlocking before being accessible" [2/2].  [spezi77]
 
 
  2019-03-02:
@@ -292,18 +273,6 @@ e564290  RIL: Allow overriding RadioResponse and RadioIndication  [Paul Keith]
 1f80849  Add choice for zipalign/sqlite tweaks  [bdashore3]
 268647c  cpu_input_boost: Revise SchedTune boost configuration  [kdrag0n]
 2faa039  edit makefile  [bdashore3]
-
- * packages/services/Telephony
-64ede0d  Fix carrier config option not hidden on a CDMA phone  [dianlujitao]
-be9dddb  Don't start SIP service before decrypted  [dianlujitao]
-eb318d4  Fix non-protected broadcasts sent from phone process.  [Umashankar Godachi]
-ddb464f  Telephony: Support muting by RIL command  [Artem Borisov]
-
- * vendor/google
-d519fd3  Remove Tycho as it is already present in Gapps  [nitin1438]
-ee0a09e  Revert "vendor: Add EaselServicePrebuilt"  [nitin1438]
-460f91a  Revert "Add prebuilts for Now Playing"  [nitin1438]
-16d0cd8  Revert "taimen: update now playing package"  [nitin1438]
 
 
  2019-02-27:
@@ -354,9 +323,6 @@ a7a1b62  Add module for suspend_stune_boost  [bdashore3]
 3064b16  Squash Makefile fixups  [bdashore3]
 0db640b  sched: Update schedtune hold based on the android-4.14 version  [Nathan Chancellor]
 
- * packages/apps/PixelDustSettings
-647f7db  Network Traffic: Add more customizations and improvement [1/2]  [Pranav Vashi]
-
 
  2019-02-24:
 
@@ -381,9 +347,6 @@ f9dc437  vsock: cope with memory allocation failure at socket creation time  [Pa
 6ac6410  sky2: Increase D3 delay again  [Kai-Heng Feng]
 9b7b363  net: fix IPv6 prefix route residue  [Zhiqiang Liu]
 
- * packages/apps/SmartNav
-a19c8e7  Navigator: Add isFullGestureMode method  [Harsh Shandilya]
-
 
  2019-02-23:
 
@@ -399,9 +362,6 @@ f593b5b  cpu_input_boost: Remove SCREEN_AWAKE bit  [bdashore3]
 54a682a  sched/debug: Remove SCHED_DEBUG dependency on DEBUG_KERNEL  [kdrag0n]
 427d133  Revert "Revert "ANDROID: dm verity: add minimum prefetch size""  [bdashore3]
 b498f0b  BACKPORT: init/main.c: extract early boot entropy from the passed cmdline  [Daniel Micay]
-
- * packages/apps/SmartNav
-e6e3479  Switch to new ActionUtils.  [spezi77]
 
 
  2019-02-22:
@@ -428,13 +388,6 @@ d319910  Try to get rid of on-boot warning  [bdashore3]
 99c971b  Revert "state_notifier: add a third case for boosting"  [kdrag0n]
 ddeacdc  cpu_input_boost: Allow full general boost control via timeout  [kdrag0n]
 31f5937  cpu_input_boost: Fix incorrect SchedTune boost location  [Tyler Nijmeh]
-
- * packages/apps/PixelDustSettings
-feefbbc  Switch over to latest hw-key action utils.  [spezi77]
-5aeb594  CustomActions: Use settings provider to store value [3/3]  [Alex]
-
- * vendor/support
-ee74574  AppPicker: Import from external/google for other uses  [Alex]
 
 
  2019-02-21:
@@ -591,11 +544,6 @@ c2808e3  dlm: Don't swamp the CPU with callbacks queued during recovery  [Bob Pe
 a160cf4  ARM: 8808/1: kexec:offline panic_smp_self_stop CPU  [Yufen Wang]
 a3d19b2  staging: iio: adc: ad7280a: handle error from __ad7280_read32()  [Slawomir Stepien]
 
- * packages/apps/PixelDustSettings
-9719f2b  CustomActions: Add ringer modes  [Mazda--]
-72e0329  Add in 5 more actions for Active Edge  [pimpmaneaton]
-a0cf9c2  CustomActions: Add support to launch applications [2/2]  [Mazda--]
-
 
  2019-02-20:
 
@@ -674,9 +622,6 @@ b9b36e2  sched: Turn on MIN_CAPACITY_CAPPING feature  [Josh Choo]
 cdd9e01  edit the late script  [bdashore3]
 4685778  Merge tag 'v3.18.134' into KingKernel  [bdashore3]
 
- * vendor/googleapps
-99e8ab3  GoogleDialer: Use version from DU's pixelgapps.  [spezi77]
-
 
  2019-02-17:
 
@@ -685,10 +630,6 @@ cdd9e01  edit the late script  [bdashore3]
 
  * external/google
 e125c29  PD'fy.  [spezi77]
-
- * kernel/google/bluecross
-8493b51  ANDROID: arm64: kbuild: only specify code model with LTO for modules  [Sami Tolvanen]
-93b39fc  ANDROID: arm64: lse: fix LSE atomics with LTO  [Sami Tolvanen]
 
  * kernel/google/marlin
 63b3a3d  Revert "cpu_input_boost: introduce display-on stune boost floor"  [kdrag0n]
@@ -735,22 +676,11 @@ acdf40b  UPSTREAM: binder: fix race that allows malicious free of live buffer  [
 b034e3b  Update sailfish and add performance_profiles.rc  [bdashore3]
 2b9da3d  Modify a ton of stuff  [bdashore3]
 
- * packages/apps/PixelDustSettings
-ac50526  Active Edge: Add missed out action strings.  [spezi77]
-
 
  2019-02-15:
 
  * build/make
 72e5d11  Fix userdebug builds (allow insecure adb at boot time). Things got messed up when picking this one: https://github.com/pixeldust *-p/android_build_make/commit/c7a13f426f82c192d0e4c9d7284a1ccfbb653adc  [spezi77]
-
- * device/google/crosshatch
-18a08a0  Only inherit Elmyra for Pixel devices  [Alex]
-bfbeea3  Disable CustomDoze options that are in system/gesture settings  [Alex]
-025f7fd  Enable ambient brightness changer in CustomDoze package  [Ezio Lacandia Bijelkic]
-7c24c3f  Raise doze brightness for mid light  [Ezio Lacandia Bijelkic]
-e864326  Revert "Define BOARD_PREBUILT_VENDORIMAGE"  [spezi77]
-2875df7  blueline: Change vendor path to match with ours.  [spezi77]
 
  * kernel/google/marlin
 e396bcd0  Edit move.sh and change gpu cpu_input_boost tweaks  [bdashore3]
@@ -800,36 +730,11 @@ a2d6337  Refactor input boost freqs in defconfig  [kingbri]
 2cc3ee7f  kernel: Reduce app launch boost timeout to 75 ms  [kdrag0n]
 959df70  initramfs: Expose in_recovery boolean variable  [kdrag0n]
 
- * packages/apps/PixelDustSettings
-a1622cf  Only inherit Elmyra for Pixel devices  [Alex]
-c5b269e  Active edge settings 3/? Squashed in: - Add a footer to Active Edge settings  [Alex]
-
- * packages/apps/Settings
-5616397  Active edge settings 6/?  [Alex]
-
- * packages/providers/WeatherProvider
-b602e05  Revert "WeatherProvider: Remove permission requirements"  [spezi77]
-
- * vendor/google
-78af551  Elmyra: add elmyra lib and permission  [Giuseppe Maggio]
-
- * vendor/googleapps
-3578051  Update dialer jar file for safety reasons. On taimen GoogleDialer threw an odd error in the log: Dialer  : PixelDeviceCompatibilityChecker.checkCompatibility - pixel system feature is not found!  [spezi77]
-
- * vendor/support
-8662bd2  Color Picker: Remove OnClick listener to fix disabling  [xyyx]
-
 
  2019-02-14:
 
  * external/google
 48994c1  Gestures: Add camera action  [Alex]
-
- * packages/apps/PixelDustSettings
-b672976  Restore old icon pack impl. which is still required by SmartNavSettings. Got removed by this commit: https://github.com/pixeldust *-p/android_packages_apps_PixelDustSettings/commit/146410c01af05681b133e2927cbf2b93eab3c7d7  [spezi77]
-
- * vendor/googleapps
-1a316d4  Add a shamu compatible version of GoogleDialer. Select the arm64-v8a version for other devices for now -- it can be changed at a later time if required.  [spezi77]
 
 
  2019-02-13:
@@ -841,9 +746,6 @@ b672976  Restore old icon pack impl. which is still required by SmartNavSettings
 75a6e42  Remove more machine like cycles from ElmyraService  [Giuseppe Maggio]
 9cff1c0  Remove more loggers and rename classes as I found them  [Giuseppe Maggio]
 d5ce050  Additional cleanup for janky methods  [Giuseppe Maggio]
-
- * vendor/googleapps
-7cfe3dc  Restore full Google Dialer support.  [spezi77]
 
 
  2019-02-11:
@@ -871,17 +773,6 @@ c390714  Keyguard: Avoid starting FP authentication right after cancelling  [dia
 6b65aec  Improve performance of unclipped save layers  [Derek Sollenberger]
 3eb1c8c  SystemUI: fix landscape powermenu layout  [DennySPB]
 
- * packages/apps/Launcher3
-25dc42f  Quickspace: Fix memory leak in intent receivers  [Chris]
-a7952e0  Lock desktop: Ensure that widgets can't be resized  [Alex]
-
- * packages/providers/WeatherProvider
-ddcd9e5  WeatherProvider: Remove permission requirements  [Chris Crump]
-c776787  WeatherProvider: Update google play services libs  [Chris Crump]
-
- * prebuilts/clang/host/linux-x86/clang-9.0
-e2c76d6  Initial commit  [kingbri]
-
 
  2019-02-10:
 
@@ -890,82 +781,4 @@ e2c76d6  Initial commit  [kingbri]
 25e430b  Remove unused resources  [Alex]
 0a5cc17  Elmyra: Bring in the resources  [Alex]
 2d581d9  Active edge Settings 5/?  [Alex]
-
- * kernel/google/bluecross
-a958375  Merge branch 'Release' of https://github.com/freak07/Kirisakura_bluecross into Release  [Squid7331]
-
- * vendor/google
-b44f448  Taimen: Update blobs to Android 9.0.0 (PQ2A.190205.002)  [Josh Chasky]
-
- * vendor/pixeldust
-b09ec09  Shishu themes: Remove shishufied settings launcher icon.  [spezi77]
-8cf2891  taimen: update fingerprint PQ2A.190205.002  [nitin1438]
-4532a04  shamu: add basic gapps package  [nitin1438]
-
-
- 2019-02-09:
-
- * build/make
-c6ec342  build: Support system-as-root A-only backuptool  [LuK1337]
-a673b67  Default libnfc-nci.conf for GSI  [Justin Yun]
-6165148  Don't build vendor rro  [ezio84]
-7596b72  Don't compile notch emulation overlays  [Alex Cruz]
-
- * external/google
-aec691a  Partial removal of weird cycles in ElmyraService  [Giuseppe Maggio]
-9588521  Properly cleanup CHREGestureSensor  [Giuseppe Maggio]
-
- * frameworks/base
-173d185  Reload more assets on overlay change  [Ivan Iskandar]
-228e7da  Ambient music: show on lockscreen only for Google's Now Playing  [ezio84]
-6c59c6d  Theme Now Playing for our dark themes as well.  [spezi77]
-7da347b  Theme Now Playing and Gboard for light theme [2/2]  [Alex Cruz]
-d307fe0  NotificationEntryManager: Fix ClassCastException  [Harsh Shandilya]
-e3fe07b  StatusBar: Silence logspam  [Harsh Shandilya]
-f9e9874  Statusbar clock: restore qsheader check within a saved instance  [ezio84]
-b8f147d  Merge branch 'pie-qpr2-release' of https://github.com/aosp-mirror/platform_frameworks_base into p  [spezi77]
-
- * packages/apps/Launcher3
-5d34020  Decompiled feed lib with dark theme support  [Amir Zaidi]
-
- * vendor/googleapps
-6a89582  Good bye Pixel Launcher. We'll handle this device-wise in pixeldust/vendor  [spezi77]
-7ba7c18  Add more make files (basic, minimal) to support low-memory devices.  [spezi77]
-42629d6  Update permission whitelist for latest PlayStore update.  [spezi77]
-ea89f2d  Update to latest 9.0 Google Apps (Feb 2019).  [spezi77]
-
-
- 2019-02-08:
-
- * external/google
-c79ccd6  Merge branch 'dev'  [Giuseppe Maggio]
-be11ed7  Clean up gesture configuration in preparation for user config  [Alex]
-3d633d7  Move calls to System.Secure instead  [Alex]
-c754003  Switch to the assist manager for the Assistant action  [Alex]
-d33c098  Remove various dumps methods, the sensor works just fine  [Giuseppe Maggio]
-d1cf98a  JNIGestureSensor isn't used anymore  [Giuseppe Maggio]
-38bf166  Cleanup UserContentObserver  [Giuseppe Maggio]
-e86e308  Merge branch 'dev'  [Giuseppe Maggio]
-03c608c  Animation and vibration: Ensure it respects 'no action' in multiuser  [Alex]
-066537f  Add more gestures  [Alex]
-a74565b  Disable navbar animation and vibration with no action  [Alex]
-41a9448  Remove useless qualifiers for other classes  [Giuseppe Maggio]
-cc5ad4f  Google's protobuf isn't needed  [Giuseppe Maggio]
-c90ced9  Last synthetic lambda conversions  [Giuseppe Maggio]
-4a66a7c  Oh, our CustomAction class is now alone  [Giuseppe Maggio]
-63723a0  Move and convert "syntethic" lambdas down Action  [Giuseppe Maggio]
-73e5e8c  Remove OPA classes and references  [Giuseppe Maggio]
-409d018  Remove SetupWizard action and gate  [Giuseppe Maggio]
-27f8d44  Delete classes CameraAction and CameraVisibility  [Giuseppe Maggio]
-5aff109  Convert jank lambdas to clean anonymous classes  [Giuseppe Maggio]
-
- * kernel/google/bluecross
-19031af  defconfig: bump  [freak07]
-792e267  BACKPORT: net: dev_is_mac_header_xmit() true for ARPHRD_RAWIP  [Maciej Żenczykowski]
-9bda9f3  UPSTREAM: binder: filter out nodes when showing binder procs  [Todd Kjos]
-7e19269  Merge tag 'v4.9.155' into Release  [freak07]
-
- * vendor/pixeldust
-d591b8b  Theme Now Playing [1/2]  [Alex Cruz]
-812d1ec  Fix Gboard overlay for light theme  [Alex Cruz]
 
