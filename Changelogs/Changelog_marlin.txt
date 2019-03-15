@@ -1,4 +1,26 @@
 
+ 2019-03-15:
+
+ * frameworks/base
+00e3a5b  NavigationBarFragment: Catch a NPE while we're in full gesture mode.  [spezi77]
+8c3415b  KeyguardStatusBarView: Request batteryview update only when required  [Pranav Vashi]
+a8b525f  NavigationBarFragment: Update modes only when attached  [Pranav Vashi]
+0304a7f  Disable SwipeUI when navbar is disabled [1/2]  [Pranav Vashi]
+639f6ef  Battery: Fix "Show percentage in QSHeader" after https://github.com/pixeldust *-p/android_frameworks_base/commit/f2569338da95409d101cc919a65dac2083574c22#diff-254f5c602fc359b5355d1be6d2bf7971  [spezi77]
+7acba67  Code improvements for 'Only inherit Elmyra for Pixel devices'  [Harsh Shandilya]
+acbd3de  Add support for the .opus file format  [Ayke van Laethem]
+2aa116f  SystemUI: Fix flickering issue when live wallpaper is showing on aod/pulsing  [Henrique Silva]
+
+
+ 2019-03-14:
+
+
+ 2019-03-13:
+
+ * device/google/marlin
+44f11de  kKernel target tc: Use aosp clang 9.0.1  [spezi77]
+
+
  2019-03-12:
 
  * frameworks/base
