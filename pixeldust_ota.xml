@@ -3,8 +3,8 @@
   <Stable>
 
     <marlin>
-      <Filename>pixeldust_marlin-pie-release-seven-20190407-2054.zip</Filename>
-      <RomUrl id="rom" title="rom" description="Download The Latest Build">https://sourceforge.net/projects/pixeldustproject/files/marlin/pixeldust_marlin-pie-release-seven-20190407-2054.zip/download</RomUrl>
+      <Filename>pixeldust_marlin-pie-release-eight-20190512-1930.zip</Filename>
+      <RomUrl id="rom" title="rom" description="Download The Latest Build">https://sourceforge.net/projects/pixeldustproject/files/marlin/pixeldust_marlin-pie-release-eight-20190512-1930.zip/download</RomUrl>
       <RomMirrorUrl id="romirror" title="XDA Thread" description="Visit The XDA Thread">https://forum.xda-developers.com/pixel-xl/development/rom-pixeldust-marlin-t3581750/</RomMirrorUrl>
       <ChangelogUrl id="changelogs" title="Changelogs" description="Check Out The Latest Changes">https://github.com/pixeldustproject-p/DeviceOTA/raw/p/Changelogs/Changelog_marlin.txt</ChangelogUrl>
       <PaypalUrl id="donation" title="Donation" description="Donate To The Developer">https://tinyurl.com/yawypkah</PaypalUrl>
@@ -19,8 +19,8 @@
     </taimen>
 
     <sailfish>
-      <Filename>pixeldust_sailfish-pie-release-seven-20190407-2241.zip</Filename>
-      <RomUrl id="rom" title="rom" description="Download The Latest Build">https://sourceforge.net/projects/pixeldustproject/files/sailfish/pixeldust_sailfish-pie-release-seven-20190407-2241.zip/download</RomUrl>
+      <Filename>pixeldust_sailfish-pie-release-eight-20190512-2152.zip</Filename>
+      <RomUrl id="rom" title="rom" description="Download The Latest Build">https://sourceforge.net/projects/pixeldustproject/files/sailfish/pixeldust_sailfish-pie-release-eight-20190512-2152.zip/download</RomUrl>
       <RomMirrorUrl id="romirror" title="XDA Thread" description="Visit The XDA Thread">https://forum.xda-developers.com/pixel/development/rom-pixel-dust-sailfish-t3585007/</RomMirrorUrl>
       <ChangelogUrl id="changelogs" title="Changelogs" description="Check Out The Latest Changes">https://github.com/pixeldustproject-p/DeviceOTA/raw/p/Changelogs/Changelog_marlin.txt</ChangelogUrl>
       <PaypalUrl id="donation" title="Donation" description="Donate To The Developer">https://tinyurl.com/yawypkah</PaypalUrl>

@@ -1,280 +1,218 @@
-
- 2019-04-07:
+ 2019-05-12:
 
  * build/make
-a054690  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/build into p  [spezi77]
+5aac82f  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/build into p  [spezi77]
+
+ * device/google/marlin
+c08521e  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/device/google/marlin into p  [spezi77]
+
+ * external/skia
+f61952b  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/external/skia into p  [spezi77]
+
+ * frameworks/av
+ee18a18  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/av into p  [spezi77]
 
  * frameworks/base
-0c1f7fb  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/frameworks/base into p  [spezi77]
+323f035  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/base into p  [spezi77]
 
- * system/netd
-459177e  Merge tag 'android-9.0.0_r35' of https://android.googlesource.com/platform/system/netd into p  [spezi77]
+ * frameworks/native
+7d4277f  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/native into p  [spezi77]
 
- * vendor/pixeldust
-ba26376  version: Bump up to release seven.  [spezi77]
-76df25d  products: Update build desc for PQ2A.190405.003 for mainline devices.  [spezi77]
-
-
- 2019-04-06:
-
-
- 2019-04-05:
-
-
- 2019-04-04:
-
-
- 2019-04-03:
-
-
- 2019-04-02:
-
- * vendor/google_devices
-6cd52f0  crosshatch/blueline: PQ2A.190405.003  [mydongistiny]
-387d0fc  marlin/sailfish: PQ2A.190405.003  [mydongistiny]
-
-
- 2019-04-01:
-
-
- 2019-03-31:
-
-
- 2019-03-30:
-
-
- 2019-03-29:
-
-
- 2019-03-28:
-
-
- 2019-03-27:
-
-
- 2019-03-26:
-
- * vendor/pixeldust
-2e27b01  QStile themes: Cleanup from previous revert.  [spezi77]
-9364fe1  overlay: OMS: Enable qs tile tinting.  [spezi77]
-1d0b450  Revert "Expose QS tile colors [2/2]"  [spezi77]
-ae4849b  marlin: Switch to Google Pixel Launcher.  [spezi77]
-
-
- 2019-03-25:
-
- * frameworks/base
-df663c1  Themes: Expose QS tiles and label colors  [Adarsh-MR]
-6b8813e  Revert "Themes: base: expose QS tiles and label colors (1/2)"  [spezi77]
-77b82f8  Revert "Expose QS tile colors [1/2]"  [spezi77]
-
-
- 2019-03-24:
-
- * device/google/wahoo
-0e6a7ef  Merge branch 'p9x' of https://github.com/DirtyUnicorns/android_device_google_wahoo into HEAD  [nitin1438]
-
-
- 2019-03-23:
-
- * frameworks/base
-1f5a939  Method to detect a notch'd device  [Alex Cruz]
-06dd88f  Re-add WPS implementation (2/3)  [Lyudmila17]
-ac57db4  SystemUI: OneHandMode QS tile  [DennySPB]
-16781cf  Network traffic: Retain our notch check  [Alex]
-416886b  Ambient music ticker: fix text scrolling glitches  [ezio84]
-6d34fee  Improve ambient play layout on keyguard  [Henrique Silva]
-4801503  Revert "AmbientPlay: Animate ambient indication into view"  [spezi77]
-
-
- 2019-03-22:
-
- * frameworks/base
-fa8c20e  Support per-app icon and label customization [2/2]  [Anas Karbila]
-5e2f0ba  Code improvements for expandable volume panel  [Giuseppe Maggio]
-dc18e9d  Redo expanded volume panel for 9.x  [HrX03]
-
- * frameworks/opt/net/wifi
-4b18899  Re-add WPS implementation (3/3)  [Lyudmila17]
-
- * packages/apps/Launcher3
-896944a  Settings: fix method to hide dividers  [Alex]
-47b0a33  Icon edit: Add fast scrolling to icon pack RecyclerView  [Alex]
-6b4096e  Icon edit: Move resources to our namespace xml's  [Alex]
-be28731  Beautify icon edit dialog  [Alex]
-26b1404  Fix icon editor picking the wrong icon on tap  [ezio84]
-5fc962c  Support per-app icon and label customization [1/2]  [Anas Karbila]
-31a3989  Hide drag arrow in landscape  [Giuseppe Maggio]
+ * frameworks/opt/telephony
+92aaa4b  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/opt/telephony into p  [spezi77]
 
  * packages/apps/Settings
-9ad09a1  Re-add WPS implementation (1/3)  [Lyudmila17]
-bdd1351  Update the timestamp used for time zone filtering  [Neil Fuller]
-b235650  Settings: fix eject sdcard icon color  [Joey]
+296b9ba  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/apps/Settings into p  [spezi77]
 
- * vendor/googleapps
-fbeb7f6  Revert to last versio of GoogleDialer to avoid the warning on taimen  [nitin1438]
+ * packages/inputmethods/LatinIME
+daabc1a  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/inputmethods/LatinIME into p  [spezi77]
 
- * vendor/pixeldust
-71ddd21  prebuilts: Fix LatinIME library copying  [xyyx]
+ * packages/providers/DownloadProvider
+df53895  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into p  [spezi77]
 
+ * packages/providers/MediaProvider
+61d846d  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/providers/MediaProvider into p  [spezi77]
 
- 2019-03-21:
+ * packages/services/Telecomm
+74c502c  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/services/Telecomm into p  [spezi77]
 
+ * packages/services/Telephony
+c3197d6  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/services/Telephony into p  [spezi77]
 
- 2019-03-20:
+ * system/core
+707d10e  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/core into p  [spezi77]
 
+ * system/sepolicy
+872a2f0  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/sepolicy into p  [spezi77]
 
- 2019-03-19:
-
-
- 2019-03-18:
-
-
- 2019-03-17:
-
- * frameworks/base
-06c9072  Revert "BatteryMeterView: Fix logspam with battery percent view."  [spezi77]
-
-
- 2019-03-16:
-
-
- 2019-03-15:
-
- * frameworks/base
-00e3a5b  NavigationBarFragment: Catch a NPE while we're in full gesture mode.  [spezi77]
-8c3415b  KeyguardStatusBarView: Request batteryview update only when required  [Pranav Vashi]
-a8b525f  NavigationBarFragment: Update modes only when attached  [Pranav Vashi]
-0304a7f  Disable SwipeUI when navbar is disabled [1/2]  [Pranav Vashi]
-639f6ef  Battery: Fix "Show percentage in QSHeader" after https://github.com/pixeldust *-p/android_frameworks_base/commit/f2569338da95409d101cc919a65dac2083574c22#diff-254f5c602fc359b5355d1be6d2bf7971  [spezi77]
-7acba67  Code improvements for 'Only inherit Elmyra for Pixel devices'  [Harsh Shandilya]
-acbd3de  Add support for the .opus file format  [Ayke van Laethem]
-2aa116f  SystemUI: Fix flickering issue when live wallpaper is showing on aod/pulsing  [Henrique Silva]
-
- * packages/apps/Launcher3
-c66d7f1  Disable SwipeUI when navbar is disabled [2/2]  [Pranav Vashi]
-2055d16  Add INTERACT_ACROSS_USERS_FULL permission for quickstep  [Pranav Vashi]
-4839577  Launcher3: Add permission to allow updating database  [neobuddy89]
-04978b2  Launcher3: Improve label hide logic  [neobuddy89]
-
-
- 2019-03-14:
-
- * device/google/wahoo
-737036d  taimen/wahoo: Bump clang version to 9.0.1  [Giuseppe Maggio]
-
-
- 2019-03-13:
-
- * device/google/marlin
-44f11de  kKernel target tc: Use aosp clang 9.0.1  [spezi77]
+ * vendor/google_devices
+fc1c4c2  marlin/sailfish: PQ3A.190505.001  [spezi77]
 
  * vendor/pixeldust
-be68437  AOSP gesture library: Make it shippable for 64-bit devices.  [spezi77]
-9ee727a  vendor: Dynamically add custom APNs  [Rashed Abdel-Tawab]
+ae758ff  version: Bump up to release eight.  [spezi77]
+875b040  products: Update marlin/sailfish build desc for PQ3A.190505.001  [spezi77]
 
 
- 2019-03-12:
-
- * frameworks/base
-ee44abb  WeatherClient: Update the SERVICE_PACKAGE to make things fly.  [spezi77]
-
- * kernel/google/marlin
-5e78fb5  simple_lmk: Boost CPU and DDR bus when mem reclaim is invoked  [Sultan Alsawaf]
-0e43c71  simple_lmk: Introduce Simple Low Memory Killer for Android  [Sultan Alsawaf]
-fd31af5  Add simple LMK to defconfig  [bdashore3]
-0142b4b2  Squash revert old slmk  [bdashore3]
-e32332a  helpers: Add function to move lz4 image  [bdashore3]
-e779eb7  cpu_input_boost: Remove SCREEN_AWAKE  [bdashore3]
-1a46f2d  Fix slmk boost patterns and remove a duplicated include in fork.c  [bdashore3]
-
- * vendor/googleapps
-15eef47  Remove Photos for now (FC'ing).  [spezi77]
-d9067bd  Update to latest 9.0 Google Apps (Mar 2019). -Action Services (MatchmakerPrebuilt) -ArCore -Device Health Services (TurboPrebuilt) -Google (Velvet) -Google Connectivity Services (GCS) -Google Dialer -Google Recommendations (SettingsIntelligenceGooglePrebuilt) -Google Play Store (Phonesky) -Google VR Services (VRCore) -Calendar -Contacts -Messages (PrebuiltBugle) -Photos -PrebuiltDeskClockGoogle -Soundpicker  [spezi77]
+ 2019-05-11:
 
 
- 2019-03-11:
-
- * frameworks/base
-eb58b52  WeatherClient: Check boot completed prop  [jhenrique09]
-0d4fd4c  WeatherClient: Update timeout to 10 minutes  [jhenrique09]
-6b487bb  WeatherClient: Conditionally allow query when adding observer  [Sirhc95]
-6f351af  frameworks: Grant READ_WEATHER permission  [jhenrique09]
-3dafec2  WeatherClient: Don't enforce READ_WEATHER permission  [jhenrique09]
-848966e  Weather client: fix refresh at boot and improve/cleanup code [1/2]  [ezio84]
-3083024  base: Switch to PE WeatherClient [2/3].  [spezi77]
-d12cd45  core: ViewRootImpl: Stop the 'requestLayout() improperly called' logspam  [Adithya R]
-
- * packages/apps/Launcher3
-2f78408  Quickspace: Query weather data when observer is added  [Sirhc95]
-a08949b  QuickSpace: Don't check provider availability  [Sirhc95]
-
- * packages/apps/WeatherClient
-db95a22  Force stop application if running for more than 60 seconds  [jhenrique09]
-a4fba08  WeatherClient: Update google play services libs  [Sirhc95]
-
- * vendor/googleapps
-9664b37  Revert "Add a shamu compatible version of GoogleDialer."  [spezi77]
-
- * vendor/pixeldust
-fd7b501  Switch to PE WeatherClient [3/3].  [spezi77]
+ 2019-05-10:
 
 
- 2019-03-10:
-
- * device/google/marlin
-dfe61fd  Force compiling the kernel with clang.  [spezi77]
-
- * frameworks/base
-b6361dd  Power menu: Fix de string for restart to recovery.  [spezi77]
-5c55275  BatteryMeterView: Fix logcat spam  [Henrique Silva]
-f256933  BatteryMeterView: Fix logspam with battery percent view. The previous commit didn't cover it: https://github.com/pixeldust *-p/android_frameworks_base/commit/273466750337ecb55366441b90023d992505862a#diff-254f5c602fc359b5355d1be6d2bf7971  [spezi77]
-e9a0fd7  Power menu icons color: use theme accent  [ezio84]
-2393267  Power menu: Add screenrecord option [1/2].  [spezi77]
-518fe20  Fix airplane mode in new power menu  [camcory]
-7b23944  Powermenu Torch: Play nice with QS torch. Use a callback to retrieve the torch state. It will allow to toggle the torch from either the QS tile or from the powermenu without confusing the pressed/unpressed state of the powermenu torch button.  [spezi77]
-c25035b  Powermenu Torch option [1/2]  [LorDClockaN]
-1f5b6e9  Pimp the power menu out [1/2]  [Alex Cruz]
-9c12222  Add soft reboot option  [Roman Birg]
-25bf610  Use custom globalActionsList to avoid conflicts  [Alex Cruz]
-f6acdc8  Disable unused power menu items  [Alex Cruz]
-cd78f68  Comment out safe reboot on power menu item  [Alex Cruz]
-bebbee1  Expose power menu items  [ezio84]
-8f78088  Make Advanced reboot dynamic  [ezio84]
-b284718  Toggleable recovery/bootloader action  [ezio84]
-8170352  Revert current "power menu customization".  [spezi77]
-
- * packages/apps/PixelDustSettings
-61d7baf  Power menu: Add screenrecord toggle [2/2].  [spezi77]
+ 2019-05-09:
 
 
- 2019-03-09:
+ 2019-05-08:
 
- * device/google/marlin
-01cfa6f  Let's not use an absolute path for the tc.  [spezi77]
-f312229  Re-order msm_thermal line  [bdashore3]
-f1bc2c8  init: Change msm_thermal_enable from int to bool  [bdashore3]
-1e57d13  Revert "Remove msm_thermal sets"  [bdashore3]
-060c253  wahoo: Disable subsytem ramdumps  [Joe Maples]
-27380c1  Modify BoardConfig for proper clang compilation  [bdashore3]
+
+ 2019-05-07:
+
+
+ 2019-05-06:
+
+
+ 2019-05-05:
+
+
+ 2019-05-04:
+
+
+ 2019-05-03:
+
+
+ 2019-05-02:
+
+
+ 2019-05-01:
+
+
+ 2019-04-30:
+
+
+ 2019-04-29:
+
+
+ 2019-04-28:
+
+
+ 2019-04-27:
+
+
+ 2019-04-26:
+
+
+ 2019-04-25:
+
+
+ 2019-04-24:
+
+
+ 2019-04-23:
+
+
+ 2019-04-22:
 
  * kernel/google/marlin
-27bb470  DTS: Fix my derp  [bdashore3]
-0e035d7  Defconfig: Change SLMK parameters  [bdashore3]
-330480f  Disable msm_thermal_simple  [bdashore3]
+e79c5392  msm: pcie: Mark MSI cascade ISR as IRQF_NO_THREAD  [Danny Lin]
+0843184  Revert "sched: Turn on MIN_CAPACITY_CAPPING feature"  [Danny Lin]
+86cb946  pinctrl: qcom: Update irq handle for GPIO pins  [Archana Sathyakumar]
+ed550a8  msm: mdss: Mark display-wake kthread as performance critical  [Sultan Alsawaf]
+3913ce6  msm: mdss: Remove sync debug name generation from hot path  [Sultan Alsawaf]
+73510dd  msm: kgsl: Remove sync debug name generation from hot path  [Sultan Alsawaf]
+1c2b425  selinux: Remove audit dependency  [Sultan Alsawaf]
+a8743b7  kernel: Boost to the max for a short amount of time when zygote forks  [Sultan Alsawaf]
+ecb2c9b  UPDATE: kernel: Boost whenever a zygote-forked process becomes a top app  [Sultan Alsawaf]
+ac076f7  kernel: Force trivial, unbound kthreads onto low-power CPUs  [Sultan Alsawaf]
+6ce7549  defconfig: remove little cluster RCU binding for unbound kthreads  [bdashore3]
+f860c8a  Revert "rcu: Add support for binding offload threads to the little cluster"  [Danny Lin]
 
 
- 2019-03-08:
+ 2019-04-21:
 
  * kernel/google/marlin
-c329e28  Boot_tweaks: Change tweaks and update sqlite amalgamation  [bdashore3]
-f6c76d0  Revert "cpuset: Adjust requested cpusets to accommodate for offline CPUs"  [bdashore3]
-6a37446  Build-script: update  [bdashore3]
+b73a934  tree: Update task_check_booster syntax  [bdashore3]
+0c01eb0  exec: Rename boost task check function to match most task checks  [Danny Lin]
+992449c  msm: kgsl: Only wake GPU upon ioctl receipt when it isn't awake  [Sultan Alsawaf]
+19b8a5a  msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input  [Sultan Alsawaf]
+78b9f18  msm: mdss: Power on display asynchronously as early as possible  [Sultan Alsawaf]
+1b26928  msm: clock-osm: Use CLKFLAG_NO_RATE_CACHE for pwrcl and perfcl clk  [Sultan Alsawaf]
+82c7eec  msm: kgsl: Remove POPP  [Sultan Alsawaf]
+0fb5531  Revert "msm: kgsl: Remove POPP"  [bdashore3]
+f824bcb  devfreq_boost: Update code from Sultan Alsawaf and Danny Lin  [bdashore3]
+c7d109e  cpu_input_boost: Update from Sultan Alsawaf and Danny Lin  [bdashore3]
+e76bd7d  defconfig: configure little & big cpu masks  [bdashore3]
+6949379  kernel: Add API to mark IRQs and kthreads as performance critical  [Sultan Alsawaf]
+94359c7  cpumask: Add cpumasks for big and LITTLE CPU clusters  [Sultan Alsawaf]
+48a9d26  Revert "kernel: Boost cpubw devfreq device to the max for app launches"  [bdashore3]
+adfc8e0  Revert "kernel: Boost whenever a zygote-forked process becomes a top app"  [bdashore3]
+a79031c  Revert "kernel: Adjust top-app boost"  [bdashore3]
+83b3afc  Revert "msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input"  [bdashore3]
+f91a69a  Revert "qcom-cpufreq: Limit the rate of CPU clock-rate changes"  [bdashore3]
+bdaab24  Revert "[kernel] [MOD] [msm8996] Add API to mark IRQs and kthreads as performance critical:"  [bdashore3]
+0a2c6a8  Revert "kernel: Improve performance critical IRQ framework"  [bdashore3]
+7068f48  Revert "kthread: Add API to create kthreads bound to low-power CPUs"  [bdashore3]
+cf9b005  Revert "kernel: Force trivial, unbound kthreads onto low-power CPUs"  [bdashore3]
 
- * prebuilts/clang/host/linux-x86
-4011e87  Update prebuilt Clang to r353983.  [Yi Kong]
 
- * vendor/google
-e4aef31  Taimen: Update blobs to Android 9.0 (PQ2A.190305.002)  [Josh Chasky]
-90cdbcd  Bluecross: Update blobs to Android 9.0 (PQ2A.190305.002)  [Josh Chasky]
+ 2019-04-20:
+
+ * kernel/google/marlin
+e850a97  Use msm_thermal for now, but don't enable it  [bdashore3]
+
+
+ 2019-04-19:
+
+
+ 2019-04-18:
+
+
+ 2019-04-17:
+
+
+ 2019-04-16:
+
+ * kernel/google/marlin
+805a8f4  tsk_is_booster: Add libperfmgr support  [bdashore3]
+ca12acba  Revert "proc: Remove additional SafetyNet flags from /proc/cmdline"  [bdashore3]
+
+
+ 2019-04-15:
+
+
+ 2019-04-14:
+
+
+ 2019-04-13:
+
+ * kernel/google/marlin
+f53fc14  Remove sqlite3  [bdashore3]
+8d5b88d  flasher: Update  [bdashore3]
+e4c58b2  cpufreq: Always report sched to perfd  [Danny Lin]
+83c3d01  ipc_router_core: fix bad cherry-pick  [bdashore3]
+888530b  signal: modify even more for lmkd  [bdashore3]
+09fa82d  setup: track clang-9.0.2  [bdashore3]
+aeb57d8  printk: Add sleep time offset to all timestamps  [Danny Lin]
+4111059  printk: Add sleep time to timestamps  [Sultanxda]
+c082e01  Revert "printk: allow setting offset to timestamps"  [Danny Lin]
+e4e3afa  Revert "timekeeping: offset printk time upon resuming from suspend"  [Danny Lin]
+479ac4f  net: sch_generic: Remove unnecessary watchdog warning  [Danny Lin]
+a88e580  helpers: Don't copy System.map when creating zip  [Danny Lin]
+c021a60  signal: Rework lmkd kill acceleration code  [Danny Lin]
+8eb29d4  arm64: armv8_deprecated: Silence deprecated instruction warnings  [Danny Lin]
+b75ebfa  defconfig: Enable full BUG() functionality  [Danny Lin]
+294d315  kthread/smpboot: Disable irq while setting smpboot thread as running  [Gaurav Kohli]
+39acb3a  net: ipc_router: Don't allocate memory for logging context if disabled  [Danny Lin]
+
+
+ 2019-04-12:
+
+ * kernel/google/marlin
+e22179a  mm/z3fold.c: avoid modifying HEADLESS page and minor cleanup  [Vitaly Wool]
+de87077  z3fold: the 3-fold allocator for compressed pages  [Vitaly Wool]
+31cfb14  Update Defconfig  [bdashore3]
+38a7018  fs: create Kconfig tunable for cache pressure  [tytydraco]
+c6f5a80  qcom-cpufreq: Limit the rate of CPU clock-rate changes  [Sultan Alsawaf]
+edebc9a7b  qcom-cpufreq: Use CLKFLAG_NO_RATE_CACHE  [Sultan Alsawaf]
+fbb7e2a  Change up and down rate limits in perf profiles  [bdashore3]
+9f20913  cpufreq: schedutil: Hard-code rate-limit thresholds  [Sultan Alsawaf]
 
