@@ -11,8 +11,8 @@
     </marlin>
     
     <taimen>
-      <Filename>pixeldust_taimen-pie-release-eight-20190516-1231.zip</Filename>
-      <RomUrl id="rom" title="rom" description="Download The Latest Build">https://sourceforge.net/projects/pixeldustproject/files/taimen/pixeldust_taimen-pie-release-eight-20190516-1231.zip/download</RomUrl>
+      <Filename>pixeldust_taimen-pie-release-nine-20190617-2242.zip</Filename>
+      <RomUrl id="rom" title="rom" description="Download The Latest Build">https://sourceforge.net/projects/pixeldustproject/files/taimen/pixeldust_taimen-pie-release-nine-20190617-2242.zip/download</RomUrl>
       <RomMirrorUrl id="romirror" title="XDA Thread" description="Visit The XDA Thread">https://forum.xda-developers.com/pixel-2-xl/development/rom-pixel-dust-oreo-taimen-t3822544/</RomMirrorUrl>
       <ChangelogUrl id="changelogs" title="Changelogs" description="Check Out The Latest Changes">https://github.com/pixeldustproject-p/DeviceOTA/raw/p/Changelogs/Changelog_taimen.txt</ChangelogUrl>
       <PaypalUrl id="donation" title="Donation" description="Donate To The Developer">https://paypal.me/nitinchobhe</PaypalUrl>
@@ -27,8 +27,8 @@
     </sailfish>
 
     <shamu>
-      <Filename>pixeldust_shamu-pie-release-eight-20190513-2333.zip</Filename>
-      <RomUrl id="rom" title="rom" description="Download The Latest Build">https://sourceforge.net/projects/pixeldustproject/files/shamu/pixeldust_shamu-pie-release-eight-20190513-2333.zip/download</RomUrl>
+      <Filename>pixeldust_shamu-pie-release-nine-20190616-2252.zip</Filename>
+      <RomUrl id="rom" title="rom" description="Download The Latest Build">https://sourceforge.net/projects/pixeldustproject/files/shamu/pixeldust_shamu-pie-release-nine-20190616-2252.zip/download</RomUrl>
       <RomMirrorUrl id="romirror" title="XDA Thread" description="Visit The XDA Thread">https://forum.xda-developers.com/nexus-6/development/rom-pixel-dust-pie-nexus-6-shamu-t3867094</RomMirrorUrl>
       <ChangelogUrl id="changelogs" title="Changelogs" description="Check Out The Latest Changes">https://github.com/pixeldustproject-p/DeviceOTA/raw/p/Changelogs/Changelog_shamu.txt</ChangelogUrl>
       <PaypalUrl id="donation" title="Donation" description="Donate To The Developer">https://paypal.me/nitinchobhe</PaypalUrl>

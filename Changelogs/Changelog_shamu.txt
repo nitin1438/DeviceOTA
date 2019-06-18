@@ -1,210 +1,199 @@
 
- 2019-05-14:
+ 2019-06-18:
 
- * hardware/ril
-6f8e7ef  Merge branch 'p' of https://github.com/camcory/platform_hardware_ril into HEAD  [nitin1438]
-
-
- 2019-05-13:
-
- * build/make
-5aac82f  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/build into p  [spezi77]
-
- * device/google/marlin
-c08521e  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/device/google/marlin into p  [spezi77]
-
- * external/skia
-f61952b  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/external/skia into p  [spezi77]
-
- * frameworks/av
-ee18a18  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/av into p  [spezi77]
-
- * frameworks/base
-323f035  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/base into p  [spezi77]
-
- * frameworks/native
-7d4277f  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/native into p  [spezi77]
-
- * frameworks/opt/telephony
-92aaa4b  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/frameworks/opt/telephony into p  [spezi77]
-
- * packages/apps/Settings
-296b9ba  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/apps/Settings into p  [spezi77]
-
- * packages/inputmethods/LatinIME
-daabc1a  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/inputmethods/LatinIME into p  [spezi77]
-
- * packages/providers/DownloadProvider
-df53895  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into p  [spezi77]
-
- * packages/providers/MediaProvider
-61d846d  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/providers/MediaProvider into p  [spezi77]
-
- * packages/services/Telecomm
-74c502c  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/services/Telecomm into p  [spezi77]
-
- * packages/services/Telephony
-c3197d6  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/packages/services/Telephony into p  [spezi77]
-
- * system/core
-707d10e  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/core into p  [spezi77]
-
- * system/sepolicy
-872a2f0  Merge tag 'android-9.0.0_r37' of https://android.googlesource.com/platform/system/sepolicy into p  [spezi77]
-
- * vendor/google_devices
-fc1c4c2  marlin/sailfish: PQ3A.190505.001  [spezi77]
+ * device/google/wahoo
+28fa944  Merge branch 'p9x' of https://github.com/DirtyUnicorns/android_device_google_wahoo into HEAD  [nitin1438]
 
  * vendor/pixeldust
-ae758ff  version: Bump up to release eight.  [spezi77]
-875b040  products: Update marlin/sailfish build desc for PQ3A.190505.001  [spezi77]
+d181334  Revert "Add AmbientSensePrebuilt: it's used also by Google app/SoundSearch tile"  [nitin1438]
+3007b68  Update build fingerprint to PQ3A.190605.003  [nitin1438]
 
 
- 2019-05-12:
+ 2019-06-17:
+
+ * hardware/ril
+a8774f2  Merge branch 'p' of https://github.com/camcory/platform_hardware_ril into HEAD  [nitin1438]
 
 
- 2019-05-11:
+ 2019-06-16:
+
+ * bionic
+941196e  Merge tag 'android-9.0.0_r41' of https://android.googlesource.com/platform/bionic into p  [spezi77]
+
+ * bootable/recovery
+fbebb4c  Merge tag 'android-9.0.0_r41' of https://android.googlesource.com/platform/bootable/recovery into p  [spezi77]
+
+ * build/make
+7e137bf  Merge tag 'android-9.0.0_r41' of https://android.googlesource.com/platform/build into p  [spezi77]
+
+ * frameworks/av
+85545d4  Merge tag 'android-9.0.0_r41' of https://android.googlesource.com/platform/frameworks/av into p  [spezi77]
+
+ * frameworks/base
+220113a  Merge tag 'android-9.0.0_r41' of https://android.googlesource.com/platform/frameworks/base into p  [spezi77]
+
+ * frameworks/opt/net/wifi
+e745cca  Merge tag 'android-9.0.0_r41' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into p  [spezi77]
+
+ * hardware/interfaces
+ee4b86f  Merge tag 'android-9.0.0_r41' of https://android.googlesource.com/platform/hardware/interfaces into p  [spezi77]
+
+ * hardware/qcom/audio
+ef55353  Merge tag 'android-9.0.0_r41' of https://android.googlesource.com/platform/hardware/qcom/audio into p  [spezi77]
+
+ * hardware/qcom/media
+5c424d7  Revert "media: replace %zd with %ld in ssize_t argument"  [spezi77]
+
+ * packages/apps/Bluetooth
+9106feb  Merge tag 'android-9.0.0_r41' of https://android.googlesource.com/platform/packages/apps/Bluetooth into p  [spezi77]
+
+ * packages/apps/CustomDoze
+7af9f50  Update JPN language  [mamarama9904]
+bf09401  Create JPN translation  [mamarama9904]
+
+ * packages/apps/Launcher3
+cb0d3ce  Merge tag 'android-9.0.0_r41' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [spezi77]
+f2aa82a  Revert "Quickspace: Query weather data when observer is added"  [spezi77]
+
+ * packages/apps/Nfc
+dfa1628  Merge tag 'android-9.0.0_r41' of https://android.googlesource.com/platform/packages/apps/Nfc into p  [spezi77]
+
+ * packages/apps/PixelDustSettings
+867662a  Create JPN translation  [mamarama9904]
+
+ * packages/apps/SmartNav
+4cdda60  Update JPN tranlation  [mamarama9904]
+6f3e851  Update JPN translation  [mamarama9904]
+
+ * packages/apps/WeatherClient
+4db1cc9  Refactor weather api  [jhenrique09]
+af108c2  Revert "Force stop application if running for more than 60 seconds"  [spezi77]
+
+ * system/core
+7e269e3  Merge tag 'android-9.0.0_r41' of https://android.googlesource.com/platform/system/core into p  [spezi77]
+
+ * system/netd
+76b3fa2  Merge tag 'android-9.0.0_r41' of https://android.googlesource.com/platform/system/netd into p  [spezi77]
+
+ * system/vold
+275aa29  Merge tag 'android-9.0.0_r41' of https://android.googlesource.com/platform/system/vold into p  [spezi77]
+
+ * vendor/google_devices
+3699326  marlin/sailfish: PQ2A.190405.003  [spezi77]
+
+ * vendor/pixeldust
+b8d71f0  version: Bump up to release nine.  [spezi77]
+031dc12  products: Update marlin/sailfish build desc for PQ3A.190605.003  [spezi77]
+1a62aaf  Revert "marlin: Switch to Google Pixel Launcher."  [spezi77]
 
 
- 2019-05-10:
+ 2019-06-15:
 
 
- 2019-05-09:
+ 2019-06-14:
 
 
- 2019-05-08:
+ 2019-06-13:
 
 
- 2019-05-07:
+ 2019-06-12:
 
 
- 2019-05-06:
+ 2019-06-11:
 
 
- 2019-05-05:
+ 2019-06-10:
 
 
- 2019-05-04:
+ 2019-06-09:
 
 
- 2019-05-03:
+ 2019-06-08:
 
 
- 2019-05-02:
+ 2019-06-07:
+
+ * device/google/wahoo
+a9cb4a2  Merge tag 'android-9.0.0_r40' of https://android.googlesource.com/device/google/wahoo into HEAD  [spaceman860]
+
+ * kernel/google/wahoo
+1f2a458  Merge branch 'android-msm-wahoo-4.4' of https://github.com/android-linux-stable/wahoo into HEAD  [spaceman860]
+
+ * vendor/google
+02a1792  Bonito: Update blobs to Android 9.0 (PQ3B.190605.006)  [Josh Chasky]
+89d6b02  Merge "Taimen: Update blobs to Android 9.0 (PQ3A.190605.003)" into p9x  [Edwin Rivera]
 
 
- 2019-05-01:
+ 2019-06-06:
 
 
- 2019-04-30:
+ 2019-06-05:
+
+ * kernel/google/wahoo
+293c4e5  Merge tag 'android-9.0.0_r0.92' into android-msm-wahoo-4.4  [Nathan Chancellor]
+
+ * vendor/google
+46fc0b5  Taimen: Update blobs to Android 9.0 (PQ3A.190605.003)  [Josh Chasky]
+44bbba2  Bluecross: Update blobs to Android 9.0 (PQ3A.190605.003)  [Josh Chasky]
 
 
- 2019-04-29:
+ 2019-06-04:
+
+ * vendor/google
+b75b3c4  Add device specific files  [spaceman860]
 
 
- 2019-04-28:
+ 2019-06-03:
 
 
- 2019-04-27:
+ 2019-06-02:
 
 
- 2019-04-26:
+ 2019-06-01:
 
 
- 2019-04-25:
+ 2019-05-31:
 
 
- 2019-04-24:
+ 2019-05-30:
 
 
- 2019-04-23:
+ 2019-05-29:
 
 
- 2019-04-22:
-
- * kernel/google/marlin
-e79c5392  msm: pcie: Mark MSI cascade ISR as IRQF_NO_THREAD  [Danny Lin]
-0843184  Revert "sched: Turn on MIN_CAPACITY_CAPPING feature"  [Danny Lin]
-86cb946  pinctrl: qcom: Update irq handle for GPIO pins  [Archana Sathyakumar]
-ed550a8  msm: mdss: Mark display-wake kthread as performance critical  [Sultan Alsawaf]
-3913ce6  msm: mdss: Remove sync debug name generation from hot path  [Sultan Alsawaf]
-73510dd  msm: kgsl: Remove sync debug name generation from hot path  [Sultan Alsawaf]
-1c2b425  selinux: Remove audit dependency  [Sultan Alsawaf]
-a8743b7  kernel: Boost to the max for a short amount of time when zygote forks  [Sultan Alsawaf]
-ecb2c9b  UPDATE: kernel: Boost whenever a zygote-forked process becomes a top app  [Sultan Alsawaf]
-ac076f7  kernel: Force trivial, unbound kthreads onto low-power CPUs  [Sultan Alsawaf]
-6ce7549  defconfig: remove little cluster RCU binding for unbound kthreads  [bdashore3]
-f860c8a  Revert "rcu: Add support for binding offload threads to the little cluster"  [Danny Lin]
-b73a934  tree: Update task_check_booster syntax  [bdashore3]
-0c01eb0  exec: Rename boost task check function to match most task checks  [Danny Lin]
-992449c  msm: kgsl: Only wake GPU upon ioctl receipt when it isn't awake  [Sultan Alsawaf]
-19b8a5a  msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input  [Sultan Alsawaf]
-78b9f18  msm: mdss: Power on display asynchronously as early as possible  [Sultan Alsawaf]
-1b26928  msm: clock-osm: Use CLKFLAG_NO_RATE_CACHE for pwrcl and perfcl clk  [Sultan Alsawaf]
-82c7eec  msm: kgsl: Remove POPP  [Sultan Alsawaf]
-0fb5531  Revert "msm: kgsl: Remove POPP"  [bdashore3]
-f824bcb  devfreq_boost: Update code from Sultan Alsawaf and Danny Lin  [bdashore3]
-c7d109e  cpu_input_boost: Update from Sultan Alsawaf and Danny Lin  [bdashore3]
-e76bd7d  defconfig: configure little & big cpu masks  [bdashore3]
-6949379  kernel: Add API to mark IRQs and kthreads as performance critical  [Sultan Alsawaf]
-94359c7  cpumask: Add cpumasks for big and LITTLE CPU clusters  [Sultan Alsawaf]
+ 2019-05-28:
 
 
- 2019-04-21:
-
- * kernel/google/marlin
-48a9d26  Revert "kernel: Boost cpubw devfreq device to the max for app launches"  [bdashore3]
-adfc8e0  Revert "kernel: Boost whenever a zygote-forked process becomes a top app"  [bdashore3]
-a79031c  Revert "kernel: Adjust top-app boost"  [bdashore3]
-83b3afc  Revert "msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input"  [bdashore3]
-f91a69a  Revert "qcom-cpufreq: Limit the rate of CPU clock-rate changes"  [bdashore3]
-bdaab24  Revert "[kernel] [MOD] [msm8996] Add API to mark IRQs and kthreads as performance critical:"  [bdashore3]
-0a2c6a8  Revert "kernel: Improve performance critical IRQ framework"  [bdashore3]
-7068f48  Revert "kthread: Add API to create kthreads bound to low-power CPUs"  [bdashore3]
-cf9b005  Revert "kernel: Force trivial, unbound kthreads onto low-power CPUs"  [bdashore3]
-e850a97  Use msm_thermal for now, but don't enable it  [bdashore3]
+ 2019-05-27:
 
 
- 2019-04-20:
+ 2019-05-26:
 
 
- 2019-04-19:
+ 2019-05-25:
 
 
- 2019-04-18:
+ 2019-05-24:
+
+ * vendor/google
+8ece7db  Bluecross: Allow /product APK's to deodex  [Josh Chasky]
+b08f71b  Bluecross: Partial fix for Sprint users  [Josh Chasky]
 
 
- 2019-04-17:
-
- * kernel/google/marlin
-805a8f4  tsk_is_booster: Add libperfmgr support  [bdashore3]
+ 2019-05-23:
 
 
- 2019-04-16:
-
- * kernel/google/marlin
-ca12acba  Revert "proc: Remove additional SafetyNet flags from /proc/cmdline"  [bdashore3]
+ 2019-05-22:
 
 
- 2019-04-15:
+ 2019-05-21:
 
 
- 2019-04-14:
+ 2019-05-20:
 
- * kernel/google/marlin
-f53fc14  Remove sqlite3  [bdashore3]
-8d5b88d  flasher: Update  [bdashore3]
-e4c58b2  cpufreq: Always report sched to perfd  [Danny Lin]
-83c3d01  ipc_router_core: fix bad cherry-pick  [bdashore3]
-888530b  signal: modify even more for lmkd  [bdashore3]
-09fa82d  setup: track clang-9.0.2  [bdashore3]
-aeb57d8  printk: Add sleep time offset to all timestamps  [Danny Lin]
-4111059  printk: Add sleep time to timestamps  [Sultanxda]
-c082e01  Revert "printk: allow setting offset to timestamps"  [Danny Lin]
-e4e3afa  Revert "timekeeping: offset printk time upon resuming from suspend"  [Danny Lin]
-479ac4f  net: sch_generic: Remove unnecessary watchdog warning  [Danny Lin]
-a88e580  helpers: Don't copy System.map when creating zip  [Danny Lin]
-c021a60  signal: Rework lmkd kill acceleration code  [Danny Lin]
-8eb29d4  arm64: armv8_deprecated: Silence deprecated instruction warnings  [Danny Lin]
-b75ebfa  defconfig: Enable full BUG() functionality  [Danny Lin]
+
+ 2019-05-19:
+
+ * build/make
+79585c7  Version bump to PQ3A.190605.004.A1 [core/build_id.mk]  [android-build-team Robot]
 
